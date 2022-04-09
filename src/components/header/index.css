@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: url("../../drawables/heroimg.png") no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    padding: 30px 50px;
+}
+
+.header-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 474px;
+}
+
+.header-text h2 {
+    /* font-family: "SQ Market Bold"; */
+    font-weight: 700;
+    font-size: 46.7174px;
+    line-height: 55px;
+    color: #ffffff;
+    word-break: break-all;
+}

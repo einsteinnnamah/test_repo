@@ -1,0 +1,106 @@
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.topnav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.divider {
+    width: 2px;
+    height: 20px;
+    background-color: #c3b8b8;
+    margin: 0 20px;
+}
+
+h6 {
+    /* font-family: "SQ Market"; */
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.topnav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.topnav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav-links p,
+select {
+    /* font-family: "SQ Market"; */
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+p,
+select,
+button,
+.topnav-mode {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+select {
+    border: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+.topnav-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+}
+
+.topnav-login p {
+    /* font-family: 'SQ Market'; */
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #173963;
+}
+
+.topnav-login button {
+    background: #3aa64c;
+    border-radius: 10px;
+    /* font-family: 'SQ Market'; */
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+
+    padding: 10px 15px;
+    border: none;
+}
+
+.topnav-login button:hover {
+    background: #6acb7b;
+}
+
+.topnav-mode {
+    display: flex;
+}

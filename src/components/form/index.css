@@ -1,0 +1,129 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    /* width: 368.98px;
+    height: 448.29px; */
+
+    background: #ffffff;
+    border-radius: 20px;
+    border: none;
+    /* min-width: 250px; */
+    min-width: 300px;
+    /* padding: 15px; */
+    padding: 20px;
+}
+
+.form h3 {
+    /* font-family: 'SQ Market Bold'; */
+    font-weight: 700;
+    font-size: 17.5429px;
+    line-height: 21px;
+    color: #173963;
+}
+
+.form h3,
+.form-details,
+.charges {
+    margin-bottom: 15px;
+}
+
+.form-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.tender,
+.buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.tender {
+    border: 0.7px solid #173963;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.buy {
+    border: 0.7px solid #c4c4c4;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.tender-left p:first-child,
+.buy-left p:first-child {
+    /* font-family: 'SQ Market'; */
+    font-weight: 300;
+    font-size: 13.3331px;
+    line-height: 16px;
+    color: #656565;
+}
+
+.tender-left p:last-child,
+.buy-left p:last-child {
+    /* font-family: 'SQ Market'; */
+    font-weight: 500;
+    font-size: 22.3331px;
+    line-height: 27px;
+    color: #b3b3b3;
+}
+
+.tender-right select,
+.buy-right select {
+    background: #f5faff;
+    border-radius: 6.55855px;
+    padding: 5px;
+
+    /* font-family: 'SQ Market'; */
+    font-weight: 400;
+    font-size: 15.3529px;
+    line-height: 19px;
+    color: #173963;
+}
+
+.charges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.charges p:first-child,
+.form button {
+    margin-left: 0;
+}
+
+.charges p:first-child {
+    /* font-family: 'SQ Market'; */
+    font-weight: 400;
+    font-size: 10.043px;
+    line-height: 12px;
+    color: #5c5c5c;
+}
+
+.charges p:last-child {
+    /* font-family: 'SQ Market'; */
+    font-weight: 500;
+    font-size: 10.5748px;
+    line-height: 13px;
+    text-align: right;
+    color: #000000;
+}
+
+.form button {
+    background: #3aa64c;
+    border-radius: 6px;
+    /* font-family: 'SQ Market'; */
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+}
+
+.form button:hover {
+    background: #6cb678;
+}
