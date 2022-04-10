@@ -2,7 +2,7 @@ import React from "react";
 // import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import usaflag from "../../drawables/usaflag.png";
+import usaflag from "../../assets/drawables/usaflag.png";
 import "./index.css";
 
 const Card = () => {
