@@ -1,0 +1,60 @@
+// flex mixin
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+@mixin webkit2 {
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #f0f2f3;
+    background: #c4c4c4;
+    border-radius: 30px;
+  }
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 4px;
+    background: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: white;
+  }
+}
+
+@mixin mq($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+@mixin modalLay {
+  background: #ffffff;
+  border-radius: 11px;
+  padding: 1.5rem 30px;
+  margin: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+// webkit scrollbar mixins
+@mixin webkit {
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #f0f2f3;
+  }
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 4px;
+    background: #eee;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #eee;
+  }
+}

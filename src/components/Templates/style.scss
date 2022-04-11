@@ -1,0 +1,41 @@
+@use "../../assets/sass/index" as *;
+.pd_auth_template {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  .left_container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    .center_container {
+      width: 40%;
+      margin: auto;
+      margin-top: 100px;
+      @include mq(968px) {
+        width: 60%;
+      }
+      @include mq(568px) {
+        width: 80%;
+      }
+    }
+    @include mq(768px) {
+      width: 100%;
+    }
+  }
+  .right_container {
+    position: sticky;
+    top: 0;
+    width: 30%;
+    right: 0;
+    background-image: url("../../assets/drawables/authPng.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-color: $primary;
+    @include mq(768px) {
+      display: none;
+    }
+  }
+}
