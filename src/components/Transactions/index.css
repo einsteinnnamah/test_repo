@@ -1,0 +1,13 @@
+.transactions {
+  display: flex;
+  align-items: center;
+  background: #f5faff;
+}
+
+.transactions .transactions-left {
+  flex: 1.5;
+}
+
+.transactions .transactions-right {
+  flex: 1;
+}

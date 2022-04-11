@@ -1,5 +1,7 @@
 .transfer {
   display: flex;
+  /* padding: 50px; */
+  padding: 2rem 5rem;
 }
 
 .transfer p {
@@ -13,6 +15,7 @@
 
 .transfer-right {
   flex: 1.5;
+  padding: 20px;
 }
 
 /* .transfer-left .successful {
@@ -100,7 +103,7 @@
   margin-bottom: 20px;
 }
 
-.transfer-card .transfer-amount h5 {
+.transfer-card .transfer-amount > h5 {
   /* font-family: "SQ Market"; */
   font-weight: 600;
   font-size: 20.7954px;

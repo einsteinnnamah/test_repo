@@ -4,6 +4,7 @@ import BottomNav from "components/navbar/bottom_navbar";
 import Header from "components/header";
 import Market from "components/market";
 import Transfer from "components/Transfer";
+import Transactions from "components/Transactions";
 
 const Landing = () => {
   return (
@@ -13,6 +14,7 @@ const Landing = () => {
       <Header />
       <Market />
       <Transfer />
+      <Transactions />
     </div>
   );
 };
