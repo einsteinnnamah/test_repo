@@ -1,0 +1,57 @@
+.rectangle {
+  background: #f5faff;
+  border-radius: 9.31149px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.rectangle .rectangle-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle-left > p {
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 8.52001px;
+  line-height: 10px;
+  color: #0d458a;
+  margin-bottom: 10px;
+}
+
+.rectangle-left .rect-box {
+  background: #e1f0ff;
+  border-radius: 27.9345px;
+  height: 10px;
+}
+
+.rectangle-left .rect-box.long {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.rectangle-left .rect-box.short {
+  width: 80px;
+}
+
+.rectangle .rectangle-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rectangle .rectangle-right > p {
+  /* font-family: 'SQ Market'; */
+  font-weight: 500;
+  font-size: 8.69048px;
+  line-height: 11px;
+  text-align: right;
+  color: #0d458a;
+}
+
+.rectangle .rectangle-right > img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
