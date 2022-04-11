@@ -7,10 +7,11 @@ import DummyRectangle from "components/Reusable/DummyRectangle";
 import Feature from "components/Reusable/Feature";
 import licencedkey from "../../assets/drawables/licencedkey.png";
 import transferImg from "../../assets/drawables/transferImg.png";
+import transfer from "../../assets/drawables/transfer.png";
 
 const Transfer = () => {
   return (
-    <div className="transfer">
+    <div className="transfer section__padding">
       <div className="transfer-left">
         {/* <div className="successful">
           <p>Successful</p>
@@ -40,7 +41,11 @@ const Transfer = () => {
             </div>
           </div>
           <div className="recipient">
-            <DummyRectangle />
+            <DummyRectangle
+              title="RECIPIENT"
+              subheading="Bank Transfer"
+              img={transfer}
+            />
           </div>
           <div className="transfer-amount">
             <h5>Total: $21.54</h5>

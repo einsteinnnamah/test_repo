@@ -3,10 +3,13 @@ import React from "react";
 import "./index.css";
 import currency from "../../assets/drawables/currency.png";
 import cash from "../../assets/drawables/cash.png";
+import TransactionCard from "components/Reusable/TransactionCard";
+import transusaflag from "../../assets/drawables/trans-usaflag.png";
+import eurflag from "../../assets/drawables/eurflag.png";
 
 const Transactions = () => {
   return (
-    <div className="transactions">
+    <div className="transactions section__padding">
       <div className="transactions-left">
         <Feature
           title="Free foreign accounts for all your international transactions"
@@ -21,7 +24,18 @@ const Transactions = () => {
         />
       </div>
       <div className="transactions-right">
-        <h1>hello</h1>
+        <TransactionCard
+          img={transusaflag}
+          title="USD"
+          subtitle="UNITED STATES DOLLAR"
+          className="trans-card1"
+        />
+        <TransactionCard
+          img={eurflag}
+          title="EUR"
+          subtitle="EUROPEAN EUROS"
+          className="trans-card2"
+        />
       </div>
     </div>
   );

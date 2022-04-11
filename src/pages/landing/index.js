@@ -5,6 +5,7 @@ import Header from "components/header";
 import Market from "components/market";
 import Transfer from "components/Transfer";
 import Transactions from "components/Transactions";
+import Referral from "components/Referral";
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
       <Market />
       <Transfer />
       <Transactions />
+      <Referral />
     </div>
   );
 };
