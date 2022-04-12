@@ -1,10 +1,8 @@
-import { FormProvider, useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import "./style.scss";
 import OtpInput from "react-otp-input";
 import { useState } from "react";
 const Otp = () => {
-  const methods = useForm();
   const [otp, setOtp] = useState("");
 
   const handleChange = (otp) => {
@@ -17,16 +15,15 @@ const Otp = () => {
         <p className="sub_header_text">
           A 5-digit code has been sent to +234808********90
         </p>
-        <FormProvider {...methods}>
-          <form action="">
-            <OtpInput
-              value={otp}
-              onChange={handleChange}
-              numInputs={5}
-              separator={<span> </span>}
-            />
-          </form>
-        </FormProvider>
+        <div className="otp_wrap">
+          <OtpInput
+            value={otp}
+            onChange={handleChange}
+            numInputs={5}
+            separator={<span> </span>}
+          />
+        </div>
+
         <button className="resend_btn">Resend</button>
         <Link className="later_link" to="/">
           I will do this later

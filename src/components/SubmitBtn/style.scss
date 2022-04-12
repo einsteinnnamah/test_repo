@@ -16,6 +16,13 @@
   &.disabled {
     opacity: 0.7;
   }
+  &.icon {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 6px;
+    }
+  }
 }
 div.spin {
   width: 20px;

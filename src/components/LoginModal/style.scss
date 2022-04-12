@@ -1,0 +1,25 @@
+@use "../../assets/sass/index" as *;
+
+.pd_login_modal {
+  width: 100%;
+  padding: 0 7px;
+  .indicator_center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 31px;
+    img {
+      margin-right: 6px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+
+      color: #173963;
+      margin: 0;
+    }
+  }
+}

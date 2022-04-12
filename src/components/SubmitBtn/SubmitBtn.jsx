@@ -5,6 +5,7 @@ const SubmitBtn = ({
   className,
   style,
   disabled,
+  icon,
   ...others
 }) => {
   return (
@@ -12,12 +13,21 @@ const SubmitBtn = ({
       type="submit"
       style={style}
       className={`btn-primary submit-btn ${className ? className : ""} ${
-        disabled || isLoading ? "disabled" : ""
-      } `}
+        icon ? "icon" : ""
+      } ${disabled || isLoading ? "disabled" : ""} `}
       disabled={disabled || isLoading}
       {...others}
     >
-      {isLoading ? <div className="spin" /> : btnText}
+      {isLoading ? (
+        <div className="spin" />
+      ) : icon ? (
+        <>
+          {" "}
+          <img src={icon} alt="lock" /> {btnText}{" "}
+        </>
+      ) : (
+        btnText
+      )}
     </button>
   );
 };

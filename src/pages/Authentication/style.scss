@@ -1,5 +1,12 @@
 @use "../../assets/sass/index" as *;
 .pd_signup {
+  .forgot {
+    font-weight: 400;
+    font-size: 11.6318px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #173e6f;
+  }
   .indicate {
     display: flex;
     .icon {
@@ -124,20 +131,35 @@ p.sub_header_text {
   margin-top: 80px;
 }
 .pd_otp {
-  form {
+}
+button.resend_btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #173963;
+  margin: 0;
+  margin-top: 33px;
+
+  border: none;
+  background: none;
+  outline: none;
+}
+.otp_wrap {
+  label {
+    @include label;
+  }
+  div {
+    justify-content: space-between;
     div {
-      justify-content: space-between;
-      div {
-        height: 60px;
-        width: 60px;
-        @include mq(1090px) {
-          width: 50px;
-          height: 50px;
-        }
-        @include mq(600px) {
-          width: 40px;
-          height: 40px;
-        }
+      height: 60px;
+      width: 60px;
+      @include mq(1090px) {
+        width: 50px;
+        height: 50px;
+      }
+      @include mq(600px) {
+        width: 40px;
+        height: 40px;
       }
     }
   }
@@ -148,17 +170,5 @@ p.sub_header_text {
     border: 0.7px solid #c9c9c9;
     box-sizing: border-box;
     border-radius: 6px;
-  }
-  button.resend_btn {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #173963;
-    margin: 0;
-    margin-top: 33px;
-
-    border: none;
-    background: none;
-    outline: none;
   }
 }
