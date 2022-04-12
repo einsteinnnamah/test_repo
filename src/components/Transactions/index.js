@@ -9,7 +9,7 @@ import eurflag from "../../assets/drawables/eurflag.png";
 
 const Transactions = () => {
   return (
-    <div className="transactions section__padding">
+    <div className="transactions">
       <div className="transactions-left">
         <Feature
           title="Free foreign accounts for all your international transactions"

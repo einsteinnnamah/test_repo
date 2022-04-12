@@ -4,7 +4,7 @@
   background: #ffffff;
   box-shadow: 0px 3.49959px 26.2469px rgba(0, 0, 0, 0.1);
   border-radius: 17.4979px;
-  padding: 15px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
 }
@@ -15,7 +15,7 @@
 }
 
 .trans-card .trans-card-top img {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .trans-card-top .trans-card-text {

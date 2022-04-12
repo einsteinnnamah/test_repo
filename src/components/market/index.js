@@ -28,7 +28,7 @@ const cardData = [
 
 const Market = () => {
   return (
-    <div className="market section__padding">
+    <div className="market">
       <div className="market-title">
         <h4>Market Highlights</h4>
         <p>Get insight on how world currencies are performing</p>

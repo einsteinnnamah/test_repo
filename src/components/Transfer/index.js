@@ -11,7 +11,7 @@ import transfer from "../../assets/drawables/transfer.png";
 
 const Transfer = () => {
   return (
-    <div className="transfer section__padding">
+    <div className="transfer">
       <div className="transfer-left">
         {/* <div className="successful">
           <p>Successful</p>

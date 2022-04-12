@@ -1,90 +1,96 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    /* max-width: 25%; */
-    padding: 15px;
-    background: #1c4170;
-    border-radius: 12.2903px;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 25%; */
+  padding: 20px;
+  background: #1c4170;
+  border-radius: 12.2903px;
 }
 
 .card p {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .card-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .card-title > img {
-    margin-right: 5px;
+  margin-right: 7px;
 }
 
 .card-title > p {
-    /* font-family: 'SQ Market'; */
-    font-weight: 400;
-    font-size: 13.3853px;
-    line-height: 16px;
-    color: #ffffff;
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 13.3853px;
+  line-height: 16px;
+  color: #ffffff;
 }
 
 .card-price {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .card-price > h5 {
-    /* font-family: 'SQ Market'; */
-    font-weight: 400;
-    font-size: 31.1352px;
-    line-height: 38px;
-    color: #ffffff;
-    margin-bottom: 5px;
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 31.1352px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .card-price .card-rate {
-    display: flex;
+  display: flex;
+}
+
+.card-price .card-rate .redicon {
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
 }
 
 .card-price > .card-rate > p {
-    /* font-family: 'SQ Market'; */
-    font-weight: 500;
-    font-size: 15.7202px;
-    line-height: 19px;
-    color: #34e36f;
+  /* font-family: 'SQ Market'; */
+  font-weight: 500;
+  font-size: 15.7202px;
+  line-height: 19px;
+  color: #34e36f;
 }
 
 .card-date {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-date > p {
-    /* font-family: 'SQ Market'; */
-    font-weight: 400;
-    font-size: 10.6982px;
-    line-height: 13px;
-    color: #84a8d3;
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 10.6982px;
+  line-height: 13px;
+  color: #84a8d3;
 }
 
 .card-track {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #eaac0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eaac0c;
 }
 
 .card-track > p {
-    /* font-family: 'SQ Market'; */
-    font-weight: 400;
-    font-size: 17.0176px;
-    line-height: 21px;
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 17.0176px;
+  line-height: 21px;
 }
 
 .card-track .track-icon {
-    font-size: 15px;
-    margin-left: 5px;
+  font-size: 15px;
+  margin-left: 3px;
 }
