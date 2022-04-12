@@ -130,11 +130,24 @@ p.sub_header_text {
       div {
         height: 60px;
         width: 60px;
+        @include mq(1090px) {
+          width: 50px;
+          height: 50px;
+        }
+        @include mq(600px) {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }
   input {
-    height: 60px;
+    height: 100%;
+    width: 100% !important;
+    background: #ffffff;
+    border: 0.7px solid #c9c9c9;
+    box-sizing: border-box;
+    border-radius: 6px;
   }
   button.resend_btn {
     font-weight: 400;

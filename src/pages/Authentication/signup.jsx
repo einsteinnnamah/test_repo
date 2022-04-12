@@ -7,7 +7,6 @@ import { ReactComponent as Indicate } from "../../assets/drawables/indicate.svg"
 // import { ReactComponent as Facebook } from "../../assets/drawables/facebook.svg";
 import "./style.scss";
 
-import ContrySelectFlag from "components/InputFields/countrySelectFlag";
 import { Checkbox } from "@mui/material";
 import SubmitBtn from "components/SubmitBtn/SubmitBtn";
 import IconWidget from "components/IconWidget";
@@ -59,7 +58,7 @@ const Signup = () => {
                 I agree to ICE's <a href="/">Terms of Service</a>{" "}
               </p>
             </div>
-            <SubmitBtn disabled={true} isLoading={false} btnText={"Sign up"} />
+            <SubmitBtn disabled={false} isLoading={false} btnText={"Sign up"} />
           </form>
           <p className="continue">Or Continue with</p>
           <div className="socials">

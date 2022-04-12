@@ -176,14 +176,7 @@
   width: 100%;
 
   label {
-    color: #0d458a !important;
-    margin-bottom: 8px;
-    font-weight: 500;
-    @include flex($justify: space-between);
-    width: 100%;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
+    @include label;
   }
 
   &.half-width {
@@ -366,14 +359,7 @@
   }
   .cover_all {
     label {
-      color: #0d458a !important;
-      margin-bottom: 8px;
-      font-weight: 500;
-      @include flex($justify: space-between);
-      width: 100%;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 19px;
+      @include label;
     }
     .drop_box {
       background: #ffffff;
@@ -408,46 +394,7 @@
   }
 
   .drop_down {
-    background: #ffffff;
-    border: 0.7px solid #dbdbdb;
-    box-sizing: border-box;
-    border-radius: 6px;
-
-    margin-top: -5px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    height: 329px;
-    width: 100%;
-    z-index: 5;
-    padding: 26px 22px;
-    padding-top: 31px;
-    position: absolute;
-    display: none;
-    &.show {
-      display: block;
-    }
-    p.empty {
-      margin: 0;
-      color: #f34018;
-    }
-    .overflow {
-      height: 100%;
-      overflow-y: auto;
-      width: 100%;
-      @include webkit3;
-    }
-    .own_country,
-    .all_country {
-      width: 100%;
-      .title {
-        font-weight: 400;
-        font-size: 7.43423px;
-        line-height: 9px;
-        margin: 0;
-        color: #000000;
-        margin-bottom: 13px;
-      }
-    }
+    @include drop_down;
   }
 }
 .pd_each_location {
@@ -474,5 +421,76 @@
     font-size: 12.4342px;
     line-height: 15px;
     color: #000000;
+  }
+}
+
+.each_number {
+  display: flex;
+  align-items: center;
+  img {
+    width: 16px;
+    margin-right: 6px;
+  }
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 11.7045px;
+    line-height: 14px;
+
+    color: #000000;
+  }
+}
+
+.pd_input_phone {
+  width: 100%;
+
+  padding: 10px 0;
+  label {
+    @include label;
+  }
+  .pd_mobile_container {
+    background: #ffffff;
+    border: 0.7px solid #c9c9c9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 8.12px 6.5px;
+    display: flex;
+    position: relative;
+    .number_div {
+      background: #edf5ff;
+      border-radius: 5px;
+      width: 85px;
+      padding: 10px 9.5px;
+      .current_hold {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        img.flag {
+          width: 16px;
+        }
+        p {
+          font-weight: 600;
+          font-size: 11.7045px;
+          line-height: 14px;
+          color: #000000;
+          margin: 0 10.4px 0 6.25px;
+        }
+        img.drop {
+        }
+      }
+    }
+    input {
+      border: none;
+      background: none;
+      flex: auto;
+      outline: none;
+      padding: 10px;
+    }
+    .drop_down {
+      @include drop_down;
+      margin-top: 0;
+      left: 0;
+      top: 48px;
+    }
   }
 }
