@@ -6,32 +6,32 @@ import { ReactComponent as Indicate } from "../../assets/drawables/indicate.svg"
 // import { ReactComponent as Google } from "../../assets/drawables/google.svg";
 // import { ReactComponent as Facebook } from "../../assets/drawables/facebook.svg";
 import "./style.scss";
-
-import { Checkbox } from "@mui/material";
 import SubmitBtn from "components/SubmitBtn/SubmitBtn";
 import IconWidget from "components/IconWidget";
 import google from "../../assets/drawables/google.svg";
 import facebook from "../../assets/drawables/facebook.svg";
 import apple from "../../assets/drawables/apple.svg";
-import CustomFlagDropDown from "components/InputFields/customFlagDropDown";
-import { Link, useNavigate } from "react-router-dom";
-const Signup = () => {
+import lock from "../../assets/drawables/lock.svg";
+import { Link } from "react-router-dom";
+import Modal from "components/ModalPopUp";
+import LoginModal from "components/LoginModal";
+import { useState } from "react";
+import SignUpModal from "components/SignUpModal";
+const Login = () => {
   const methods = useForm();
-  const navigate = useNavigate();
-
+  const [openModal, setOpenModal] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/verify");
+    setOpenModal(true);
   };
   return (
     <div className="pd_signup">
       <AuthTemplate>
-        <p className="header_text">Create an account</p>
+        <p className="header_text">Welcome Back</p>
 
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>
-            <CustomFlagDropDown />
-
             <InputField
               type="email"
               name="email"
@@ -48,20 +48,17 @@ const Signup = () => {
               label="Password"
               errMsg="invalid input"
             />
-            <div className="indicate">
-              <Indicate className="icon" />
-              <p>
-                Your password should be at least 8 characters, and include 1
-                upper case letter, 1 lower case letter and 1 number
-              </p>
-            </div>
-            <div className="check_container">
-              <Checkbox defaultChecked color="secondary" />
-              <p>
-                I agree to ICE's <a href="/">Terms of Service</a>{" "}
-              </p>
-            </div>
-            <SubmitBtn disabled={false} isLoading={false} btnText={"Sign up"} />
+
+            <Link className="forgot" to="/signup">
+              Forgot Password
+            </Link>
+
+            <SubmitBtn
+              disabled={false}
+              isLoading={false}
+              icon={lock}
+              btnText={"Sign in"}
+            />
           </form>
           <p className="continue">Or Continue with</p>
           <div className="socials">
@@ -83,12 +80,28 @@ const Signup = () => {
           </div>
 
           <p className="login_text">
-            Already have an account?<Link to="/login"> Log in</Link>{" "}
+            I don’t have an account?
+            <button
+              onClick={() => {
+                setOpenModal2(true);
+              }}
+              className="link_to"
+            >
+              {" "}
+              Sign Up
+            </button>{" "}
           </p>
         </FormProvider>
       </AuthTemplate>
+
+      <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
+        <LoginModal />
+      </Modal>
+      <Modal closeModal={() => setOpenModal2(false)} openModal={openModal2}>
+        <SignUpModal />
+      </Modal>
     </div>
   );
 };
 
-export default Signup;
+export default Login;

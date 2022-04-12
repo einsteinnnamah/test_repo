@@ -16,7 +16,7 @@ const SignUpModal = () => {
     { type: "personal", img: woman },
     { type: "business", img: bag },
   ];
-  const [accountType, setAccountType] = useState("personal");
+  const [accountType, setAccountType] = useState("");
   const handleAccount = (val) => {
     console.log(val);
     setAccountType(val);

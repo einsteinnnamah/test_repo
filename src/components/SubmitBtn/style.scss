@@ -10,11 +10,18 @@
   border: none;
   border-radius: 6px;
   width: 100%;
-
+  cursor: pointer;
   margin: auto;
   margin-top: 31px;
   &.disabled {
     opacity: 0.7;
+  }
+  &.icon {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 6px;
+    }
   }
 }
 div.spin {
