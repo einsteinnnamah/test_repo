@@ -1,0 +1,164 @@
+@use "../../assets/sass/index" as *;
+.pd_signup {
+  .indicate {
+    display: flex;
+    .icon {
+      margin-right: 10px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 9px;
+      margin: 0;
+      line-height: 11px;
+
+      color: #000000;
+    }
+  }
+  .check_container {
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+
+    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root {
+      padding: 0;
+    }
+    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+      color: #eaac0c;
+    }
+    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root {
+      color: #eaac0c;
+    }
+    p {
+      font-weight: 300;
+      font-size: 9.63183px;
+      line-height: 12px;
+      text-align: center;
+      margin-left: 5px;
+      a {
+        text-decoration: none;
+        color: $primary;
+        font-weight: 600;
+      }
+    }
+  }
+  .continue {
+    font-weight: 400;
+    font-size: 11.549px;
+    line-height: 14px;
+    color: #656565;
+    margin: 0;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 19px;
+  }
+  .socials {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .login_text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 11.8058px;
+    line-height: 14px;
+    /* identical to box height */
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}
+
+.header_text {
+  font-weight: 500;
+  font-size: 23.7045px;
+  line-height: 29px;
+  color: #173963;
+  margin: 0;
+  margin-bottom: 26px;
+
+  @include mq(668px) {
+    font-size: 18px;
+  }
+}
+p.sub_header_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #656565;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.pd_verify_phone {
+  width: 100%;
+  margin-top: 127px;
+  .center_container {
+    width: 30%;
+    margin: auto;
+    @include mq(908px) {
+      width: 50%;
+    }
+    @include mq(508px) {
+      width: 80%;
+    }
+  }
+}
+.later_link {
+  font-weight: 400;
+  font-size: 14.8058px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #173e6f;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+}
+.pd_otp {
+  form {
+    div {
+      justify-content: space-between;
+      div {
+        height: 60px;
+        width: 60px;
+        @include mq(1090px) {
+          width: 50px;
+          height: 50px;
+        }
+        @include mq(600px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  input {
+    height: 100%;
+    width: 100% !important;
+    background: #ffffff;
+    border: 0.7px solid #c9c9c9;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  button.resend_btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #173963;
+    margin: 0;
+    margin-top: 33px;
+
+    border: none;
+    background: none;
+    outline: none;
+  }
+}

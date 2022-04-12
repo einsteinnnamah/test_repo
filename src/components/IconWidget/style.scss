@@ -1,0 +1,12 @@
+.pd_icon_widget {
+  background: #f5faff;
+  border: 0.7px solid #87b9f8;
+  box-sizing: border-box;
+  border-radius: 5.31273px;
+  padding: 9px 30px;
+  width: 85px;
+  margin-right: 11.8px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
