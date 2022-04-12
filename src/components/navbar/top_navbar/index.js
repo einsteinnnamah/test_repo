@@ -6,9 +6,11 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Modal from "components/ModalPopUp";
 import { useState } from "react";
 import SignUpModal from "components/SignUpModal";
+import { useNavigate } from "react-router-dom";
 
 const TopNavbar = () => {
   const [openModal, setOpenModal] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="topnav">
       <div className="topnav-left">
@@ -27,7 +29,13 @@ const TopNavbar = () => {
           </select>
         </div>
         <div className="topnav-login">
-          <p>Log In</p>
+          <p
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            Log In
+          </p>
           <button
             onClick={() => {
               setOpenModal(true);
