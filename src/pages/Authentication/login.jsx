@@ -16,9 +16,11 @@ import { Link } from "react-router-dom";
 import Modal from "components/ModalPopUp";
 import LoginModal from "components/LoginModal";
 import { useState } from "react";
+import SignUpModal from "components/SignUpModal";
 const Login = () => {
   const methods = useForm();
   const [openModal, setOpenModal] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
   const onSubmit = (data) => {
     console.log(data);
     setOpenModal(true);
@@ -78,13 +80,25 @@ const Login = () => {
           </div>
 
           <p className="login_text">
-            I don’t have an account?<Link to="/"> Sign Up</Link>{" "}
+            I don’t have an account?
+            <button
+              onClick={() => {
+                setOpenModal2(true);
+              }}
+              className="link_to"
+            >
+              {" "}
+              Sign Up
+            </button>{" "}
           </p>
         </FormProvider>
       </AuthTemplate>
 
       <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
         <LoginModal />
+      </Modal>
+      <Modal closeModal={() => setOpenModal2(false)} openModal={openModal2}>
+        <SignUpModal />
       </Modal>
     </div>
   );

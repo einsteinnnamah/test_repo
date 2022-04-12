@@ -74,8 +74,13 @@
     text-align: center;
     color: #000000;
     margin-top: 30px;
-    a {
+    a,
+    .link_to {
       font-weight: 600;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin: 0;
       text-decoration: none;
       color: $primary;
     }
