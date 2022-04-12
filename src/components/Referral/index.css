@@ -1,0 +1,15 @@
+.referral {
+  display: flex;
+  /* padding: 50px; */
+  /* padding: 2rem 5rem; */
+}
+
+.referral-left {
+  flex: 1;
+  /* padding: 30px; */
+}
+
+.referral-right {
+  flex: 1.5;
+  /* padding: 20px; */
+}

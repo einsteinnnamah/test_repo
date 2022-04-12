@@ -2,12 +2,14 @@ import InputPhone from "components/InputFields/inputPhone";
 import PhoneInputField from "components/InputFields/PhoneInputField";
 import SubmitBtn from "components/SubmitBtn/SubmitBtn";
 import { FormProvider, useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import "./style.scss";
 const VerifyPhone = () => {
   const methods = useForm();
+  const navigate = useNavigate()
   const onSubmit = (val) => {
     console.log(val);
+    navigate('/otp')
   };
   return (
     <div className="pd_verify_phone">
@@ -19,9 +21,7 @@ const VerifyPhone = () => {
         </p>
         <FormProvider {...methods}>
           <form
-            onSubmit={() => {
-              methods.handleSubmit(onSubmit);
-            }}
+            onSubmit={methods.handleSubmit(onSubmit)}
           >
             <InputPhone />
             <SubmitBtn
