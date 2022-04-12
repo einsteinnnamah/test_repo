@@ -1,18 +1,24 @@
-import './index.css'
+import "./index.css";
 import TopNavbar from "components/navbar/top_navbar";
 import BottomNav from "components/navbar/bottom_navbar";
 import Header from "components/header";
 import Market from "components/market";
+import Transfer from "components/Transfer";
+import Transactions from "components/Transactions";
+import Referral from "components/Referral";
 
 const Landing = () => {
-    return (
-        <div className={"landing_wrapper"}>
-            <TopNavbar />
-            <BottomNav />
-            <Header />
-            <Market />
-        </div>
-    )
-}
+  return (
+    <div className={"landing_wrapper"}>
+      <TopNavbar />
+      <BottomNav />
+      <Header />
+      <Market />
+      <Transfer />
+      <Transactions />
+      <Referral />
+    </div>
+  );
+};
 
-export default Landing
+export default Landing;

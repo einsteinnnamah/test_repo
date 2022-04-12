@@ -1,0 +1,15 @@
+.transactions {
+  display: flex;
+  align-items: center;
+  background: #f5faff;
+  padding: 6rem 10rem;
+  gap: 12px;
+}
+
+.transactions .transactions-left {
+  flex: 1.5;
+}
+
+.transactions .transactions-right {
+  flex: 1;
+}

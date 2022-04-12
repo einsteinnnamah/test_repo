@@ -1,0 +1,130 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  /* padding: 20px; */
+}
+
+.feature .feature-heading {
+  margin-bottom: 50px;
+}
+
+.feature-heading h3 {
+  /* font-family: 'SQ Market Bold'; */
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  color: #173e6f;
+}
+
+.feature-heading > p {
+  /* font-family: 'SQ Market Bold'; */
+  font-weight: 700;
+  font-size: 13.4061px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.feature .feature-content {
+  display: flex;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  align-items: flex-start;
+  gap: 55px;
+  margin-bottom: 30px;
+  width: 87%;
+}
+
+.feature-content .feature-content-left,
+.feature-content .feature-content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.feature-content .feature-content-left img,
+.feature-content .feature-content-right img {
+  margin-bottom: 15px;
+  /* width: 30px;
+  height: 30px; */
+}
+
+.feature-content .feature-content-left h5,
+.feature-content .feature-content-right h5 {
+  /* font-family: 'SQ Market'; */
+  font-weight: 600;
+  font-size: 17.4669px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.feature-content .feature-content-left p,
+.feature-content .feature-content-right p {
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 15.5618px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+/* .feature-content .feature-content-left button,
+.feature-content .feature-content-right button {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+} */
+
+/* new btn */
+.feature .feature-btns {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+}
+
+.feature-btns button {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  width: 45%;
+  padding: 20px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.feature-btns button:first-child {
+  background: #3aa64c;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.feature-btns button:last-child {
+  color: #3aa64c;
+  background: #ffffff;
+  border: 1px solid #3aa64c;
+}
+
+/* new btn stops */
+
+/* .feature-content .feature-content-left button {
+  background: #3aa64c;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.feature-content .feature-content-right button {
+  color: #3aa64c;
+  background: #ffffff;
+  border: 1px solid #3aa64c;
+} */

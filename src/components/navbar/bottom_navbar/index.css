@@ -1,48 +1,48 @@
 .bottomnav {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    /* width: 100%; */
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    background: #002149;
-    padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  background: #002149;
+  padding: 5px 0;
 }
 
 .bottomnav::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+  width: 0px;
+  background: transparent;
 }
 
 .bottomnav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .bottomnav-item p:first-child {
-    /* font-family: 'SQ Market Bold'; */
-    font-weight: 700;
-    font-size: 13.6115px;
-    line-height: 17px;
-    color: #ffffff;
+  /* font-family: 'SQ Market Bold'; */
+  font-weight: 700;
+  font-size: 13.6115px;
+  line-height: 17px;
+  color: #ffffff;
 }
 
 .bottomnav-item p:last-child {
-    font-family: "SQ Market";
-    font-weight: 500;
-    font-size: 13.6115px;
-    line-height: 17px;
-    color: #34e36f;
-    margin-left: 0;
+  font-family: "SQ Market";
+  font-weight: 500;
+  font-size: 13.6115px;
+  line-height: 17px;
+  color: #34e36f;
+  margin-left: 0;
 }
 
 .redicon {
-    color: red;
+  color: red;
 }
 
 .greenicon {
-    color: #34e36f;
+  color: #34e36f;
 }
