@@ -5,6 +5,7 @@ import england from "../../assets/drawables/england.svg";
 import nigeria from "../../assets/drawables/nigeria.svg";
 import angola from "../../assets/drawables/angola.svg";
 import EachLocation from "./EachLocation";
+import { useFormContext } from "react-hook-form";
 const CustomFlagDropDown = () => {
   // const [selected, setSelected] = useState({ img: "", code: "", country: "" });
   const [show, setShow] = useState(false);
@@ -49,12 +50,18 @@ const CustomFlagDropDown = () => {
           .toLocaleLowerCase()
           .includes(searchValue.toLocaleLowerCase());
       });
-      console.log(newList);
+
       setSearchResult(newList);
     } else {
       setSearchResult(countryList);
     }
   }, [searchValue]);
+
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+  // const error = get(errors, 'country');
 
   return (
     <div className="pd_custom_flag_drop_down">
@@ -66,7 +73,11 @@ const CustomFlagDropDown = () => {
             onClick={() => {
               setShow(true);
             }}
+            name="country"
             value={searchValue}
+            {...register("country", {
+              required: true,
+            })}
             onChange={(e) => {
               setSearchValue(e.target.value);
             }}

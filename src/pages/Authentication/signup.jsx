@@ -28,11 +28,6 @@ const Signup = () => {
 
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>
-            {/* <ContrySelectFlag
-              placeholder="Select Country"
-              name="country"
-              label="Where do you reside?"
-            /> */}
             <CustomFlagDropDown />
 
             <InputField
