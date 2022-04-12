@@ -14,11 +14,14 @@ import google from "../../assets/drawables/google.svg";
 import facebook from "../../assets/drawables/facebook.svg";
 import apple from "../../assets/drawables/apple.svg";
 import CustomFlagDropDown from "components/InputFields/customFlagDropDown";
+import {useNavigate} from "react-router-dom";
 const Signup = () => {
   const methods = useForm();
+  const navigate = useNavigate()
 
   const onSubmit = (data) => {
     console.log(data);
+    navigate('/verify')
   };
   return (
     <div className="pd_signup">
