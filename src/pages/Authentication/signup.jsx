@@ -14,6 +14,7 @@ import IconWidget from "components/IconWidget";
 import google from "../../assets/drawables/google.svg";
 import facebook from "../../assets/drawables/facebook.svg";
 import apple from "../../assets/drawables/apple.svg";
+import CustomFlagDropDown from "components/InputFields/customFlagDropDown";
 const Signup = () => {
   const methods = useForm();
 
@@ -27,11 +28,13 @@ const Signup = () => {
 
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>
-            <ContrySelectFlag
+            {/* <ContrySelectFlag
               placeholder="Select Country"
               name="country"
               label="Where do you reside?"
-            />
+            /> */}
+            <CustomFlagDropDown />
+
             <InputField
               type="email"
               name="email"

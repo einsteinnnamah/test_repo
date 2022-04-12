@@ -104,6 +104,58 @@
   .input select {
     height: 100% !important;
   }
+
+  /*custom select arrow*/
+  select::-ms-expand {
+    display: none;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .upload-pdf {
+    width: 100%;
+    .input {
+      height: 45px;
+      max-height: 45px;
+      @include flex($justify: space-between);
+      padding: 0 0.3rem 0 1rem;
+    }
+    button {
+      height: 85% !important;
+      color: white !important;
+    }
+  }
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  .input,
+  textarea,
+  .select-mui {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+    padding: 0 1rem;
+    border-radius: 6px;
+    font-size: 12px;
+    flex-grow: 2;
+    line-height: 14px;
+    color: var(--textClr);
+    border: 0.7px solid #c9c9c9;
+    &:focus {
+      border: 1px solid #a0aec0;
+      outline: none;
+    }
+  }
+  textarea {
+    border-radius: 6px !important;
+    padding: 15px !important;
+  }
+  ::placeholder {
+    color: #b5b5bd;
+  }
 }
 
 // create a div with classname of form-group-wra to arrange input in 2's
@@ -159,57 +211,7 @@
     border-color: var(--primary);
   }
 }
-/*custom select arrow*/
-select::-ms-expand {
-  display: none;
-}
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.upload-pdf {
-  width: 100%;
-  .input {
-    height: 45px;
-    max-height: 45px;
-    @include flex($justify: space-between);
-    padding: 0 0.3rem 0 1rem;
-  }
-  button {
-    height: 85% !important;
-    color: white !important;
-  }
-}
-input:not([type="checkbox"]):not([type="radio"]),
-select,
-.input,
-textarea,
-.select-mui {
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  overflow-y: hidden;
-  padding: 0 1rem;
-  border-radius: 6px;
-  font-size: 12px;
-  flex-grow: 2;
-  line-height: 14px;
-  color: var(--textClr);
-  border: 0.7px solid #c9c9c9;
-  &:focus {
-    border: 1px solid #a0aec0;
-    outline: none;
-  }
-}
-textarea {
-  border-radius: 6px !important;
-  padding: 15px !important;
-}
-::placeholder {
-  color: #b5b5bd;
-}
+
 // material ui select
 .select-mui {
   padding: 0;
@@ -346,5 +348,131 @@ textarea {
     justify-content: center;
     align-items: center;
     top: 13% !important;
+  }
+}
+
+.pd_custom_flag_drop_down {
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  &:focus-within {
+    .cover_all {
+      .drop_box {
+        .search {
+          display: block;
+        }
+      }
+    }
+  }
+  .cover_all {
+    label {
+      color: #0d458a !important;
+      margin-bottom: 8px;
+      font-weight: 500;
+      @include flex($justify: space-between);
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    .drop_box {
+      background: #ffffff;
+      border: 0.7px solid #c9c9c9;
+      box-sizing: border-box;
+      border-radius: 6px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      padding: 0 21px;
+      position: relative;
+      height: 48px;
+      input {
+        border: none;
+        background: none;
+        outline: none;
+        width: 90%;
+        height: 100%;
+      }
+      .search {
+        display: none;
+        margin-right: 9.88px;
+      }
+      .dropIcon {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        right: 20px;
+      }
+    }
+  }
+
+  .drop_down {
+    background: #ffffff;
+    border: 0.7px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    margin-top: -5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 329px;
+    width: 100%;
+    z-index: 5;
+    padding: 26px 22px;
+    padding-top: 31px;
+    position: absolute;
+    display: none;
+    &.show {
+      display: block;
+    }
+    p.empty {
+      margin: 0;
+      color: #f34018;
+    }
+    .overflow {
+      height: 100%;
+      overflow-y: auto;
+      width: 100%;
+      @include webkit3;
+    }
+    .own_country,
+    .all_country {
+      width: 100%;
+      .title {
+        font-weight: 400;
+        font-size: 7.43423px;
+        line-height: 9px;
+        margin: 0;
+        color: #000000;
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+.pd_each_location {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  cursor: pointer;
+  img {
+    width: 22px;
+  }
+  .code {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-left: 5px;
+    margin-right: 8px;
+    width: 40px;
+  }
+  .country_name {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12.4342px;
+    line-height: 15px;
+    color: #000000;
   }
 }

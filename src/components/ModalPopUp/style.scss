@@ -6,7 +6,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(23, 57, 99, 0.85);
+  backdrop-filter: blur(4px);
   z-index: 20;
   overflow: hidden;
   @include flex();
@@ -27,7 +28,10 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    max-width: 420px;
+
+    max-width: 526px;
+    padding: 39px 35px;
+    padding-bottom: 77px;
     .btn-wrap {
       display: flex;
       justify-content: flex-end;
@@ -35,6 +39,14 @@
         min-width: 118px;
       }
     }
+    .top {
+      display: flex;
+      justify-content: flex-end;
+      .cancel {
+        width: 26px;
+      }
+    }
+
     .input-icon-wrap,
     .select-mui {
       background-color: #f7fafc;
