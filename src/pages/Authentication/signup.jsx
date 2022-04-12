@@ -35,7 +35,7 @@ const Signup = () => {
             <InputField
               type="email"
               name="email"
-              placeholder="raji@gmail.com"
+              placeholder="stephen@gmail.com"
               id="email"
               label="Email Address"
               errMsg="invalid email input"
