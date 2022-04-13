@@ -64,11 +64,7 @@ const IdentityInfo = () => {
               form_label={"back"}
             />
 
-            <SubmitBtn
-              disabled={false}
-              isLoading={false}
-              btnText={"Continue"}
-            />
+            <SubmitBtn disabled={false} isLoading={false} btnText={"Submit"} />
           </form>
         </FormProvider>
       </div>
