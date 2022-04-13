@@ -13,6 +13,7 @@ const Feature = ({
   text1,
   text2,
   showBtn,
+  className,
 }) => {
   return (
     <div className="feature">
