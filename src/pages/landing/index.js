@@ -7,6 +7,7 @@ import Transfer from "components/Transfer";
 import Transactions from "components/Transactions";
 import Referral from "components/Referral";
 import VirtualCard from "components/VirtualCard";
+import Investment from "components/Investment";
 
 const Landing = () => {
   return (
@@ -19,6 +20,7 @@ const Landing = () => {
       <Transactions />
       <Referral />
       <VirtualCard />
+      <Investment />
     </div>
   );
 };
