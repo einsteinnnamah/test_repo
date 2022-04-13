@@ -10,6 +10,7 @@ import VirtualCard from "components/VirtualCard";
 import Investment from "components/Investment";
 import Article from "components/Article";
 import Subscription from "components/Subscription";
+import Footer from "components/Footer";
 
 const Landing = () => {
   return (
@@ -25,6 +26,7 @@ const Landing = () => {
       <Investment />
       <Article />
       <Subscription />
+      <Footer />
     </div>
   );
 };
