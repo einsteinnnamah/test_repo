@@ -9,6 +9,7 @@ import Referral from "components/Referral";
 import VirtualCard from "components/VirtualCard";
 import Investment from "components/Investment";
 import Article from "components/Article";
+import Subscription from "components/Subscription";
 
 const Landing = () => {
   return (
@@ -23,6 +24,7 @@ const Landing = () => {
       <VirtualCard />
       <Investment />
       <Article />
+      <Subscription />
     </div>
   );
 };
