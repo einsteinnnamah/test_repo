@@ -7,7 +7,7 @@ const InvestmentFeature = ({ title, text }) => {
     <div className="investment-content">
       <h4>{title}</h4>
       <p>{text}</p>
-      <GetStartedBtn />
+      <GetStartedBtn btnText="Get Started" />
     </div>
   );
 };

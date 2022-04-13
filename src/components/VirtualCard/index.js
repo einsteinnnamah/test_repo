@@ -33,7 +33,7 @@ const VirtualCard = () => {
           </div>
         </div>
         <div className="virtual-btns">
-          <GetStartedBtn />
+          <GetStartedBtn btnText="Get Started" />
           <button className="watch-btn">Watch how it works</button>
         </div>
       </div>
