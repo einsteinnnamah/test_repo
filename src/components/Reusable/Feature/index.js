@@ -12,6 +12,7 @@ const Feature = ({
   subheading2,
   text1,
   text2,
+  showBtn,
 }) => {
   return (
     <div className="feature">
@@ -44,8 +45,19 @@ const Feature = ({
         </div>
       </div>
       <div className="feature-btns">
-        <button>Get Started</button>
-        <button>Watch how it works</button>
+        <button className="btn1">Get Started</button>
+        {showBtn ? (
+          <button
+            className="btn1"
+            style={{
+              background: "#ffffff",
+              color: "#3aa64c",
+              border: "1px solid #3aa64c",
+            }}
+          >
+            Watch how it works
+          </button>
+        ) : null}
       </div>
     </div>
   );

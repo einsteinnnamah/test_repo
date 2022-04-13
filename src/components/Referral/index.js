@@ -1,32 +1,14 @@
 import Feature from "components/Reusable/Feature";
-import React from "react";
-import usaflag from "../../assets/drawables/usaflag.png";
-import nigflag from "../../assets/drawables/nigflag.png";
-import gbpflag from "../../assets/drawables/gbpflag.png";
+import React, { useState } from "react";
+import referralCard from "../../assets/drawables/referralCard.svg";
 import "./index.css";
 
 const Referral = () => {
+  const [showBtn, setShowBtn] = useState(false);
   return (
     <div className="referral">
       <div className="referral-left">
-        <div className="referral-card">
-          <h5>Referral</h5>
-          <div className="referral-currency">
-            <span>
-              <img src={usaflag} alt="" />
-              USD
-            </span>
-            <span>
-              <img src={nigflag} alt="" />
-              NGN
-            </span>
-            <span>
-              <img src={gbpflag} alt="" />
-              GBP
-            </span>
-          </div>
-          <div className="referral-nums"></div>
-        </div>
+        <img src={referralCard} alt="referral" />
       </div>
       <div className="referral-right">
         <Feature
@@ -38,6 +20,7 @@ const Referral = () => {
           subheading2="Earn in different currencies"
           text1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d"
           text2="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d"
+          showBtn={showBtn}
         />
       </div>
     </div>

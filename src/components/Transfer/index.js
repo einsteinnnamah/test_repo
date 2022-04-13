@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import usaflag from "../../assets/drawables/usaflag.png";
 import Arrow from "../../assets/drawables/Arrow1.png";
@@ -10,6 +10,7 @@ import transferImg from "../../assets/drawables/transferImg.png";
 import transfer from "../../assets/drawables/transfer.png";
 
 const Transfer = () => {
+  const [showBtn, setShowBtn] = useState(true);
   return (
     <div className="transfer">
       <div className="transfer-left">
@@ -63,6 +64,7 @@ const Transfer = () => {
           text2="Get same-day transfers on most major currencies."
           // btnText1="Get Started"
           // btnText2="Watch how it works"
+          showBtn
         />
       </div>
     </div>

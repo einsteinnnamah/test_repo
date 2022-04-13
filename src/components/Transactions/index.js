@@ -1,5 +1,5 @@
 import Feature from "components/Reusable/Feature";
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import currency from "../../assets/drawables/currency.png";
 import cash from "../../assets/drawables/cash.png";
@@ -8,6 +8,8 @@ import transusaflag from "../../assets/drawables/trans-usaflag.png";
 import eurflag from "../../assets/drawables/eurflag.png";
 
 const Transactions = () => {
+  const [showBtn, setShowBtn] = useState(true);
+
   return (
     <div className="transactions">
       <div className="transactions-left">
@@ -21,6 +23,7 @@ const Transactions = () => {
           text2="Use your account details to receive money and manage your earnings."
           //   btnText1="Get Started"
           //   btnText2="Watch how it works"
+          showBtn
         />
       </div>
       <div className="transactions-right">
