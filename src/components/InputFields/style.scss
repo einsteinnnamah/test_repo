@@ -129,6 +129,7 @@
   }
   input:not([type="checkbox"]):not([type="radio"]),
   select,
+  .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root,
   .input,
   textarea,
   .select-mui {
@@ -149,6 +150,7 @@
       outline: none;
     }
   }
+
   textarea {
     border-radius: 6px !important;
     padding: 15px !important;
@@ -163,9 +165,14 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-
+  @include mq(600px) {
+    flex-direction: column;
+  }
   .form-group {
     width: 48%;
+    @include mq(600px) {
+      width: 100%;
+    }
   }
 }
 .form-group {
@@ -208,9 +215,11 @@
 // material ui select
 .select-mui {
   padding: 0;
+  width: 100% !important;
   border-radius: 6px !important;
   background-color: white;
   font-size: 12px !important;
+
   svg {
     fill: var(--iconBg);
   }
@@ -219,9 +228,9 @@
     border: none !important;
   }
   fieldset {
-    border-radius: 30px;
     border-width: 1px !important;
     border-color: #c9c9c9;
+
     &:focus {
       border-color: $primary !important;
     }

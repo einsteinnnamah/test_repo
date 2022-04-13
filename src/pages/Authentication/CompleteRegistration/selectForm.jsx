@@ -1,13 +1,14 @@
 import ProgressBar from "components/ProgressBar/progressbar";
-import { useState } from "react";
+
 import profile from "../../../assets/drawables/profile.svg";
 import identity from "../../../assets/drawables/identity.svg";
 import "./style.scss";
 import SubmitBtn from "components/SubmitBtn/SubmitBtn";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import greenmark from "../../../assets/drawables/greenmark.svg";
 const SelectForm = () => {
-  const [stage, setStage] = useState("personal");
+  // const [stage, setStage] = useState("personal");
+  const navigate = useNavigate();
   return (
     <div className="pd_select_form">
       <div className="center_container">
@@ -42,7 +43,12 @@ const SelectForm = () => {
             </div>
           </div>
         </div>
-        <SubmitBtn btnText={"Continue Verification"} />
+        <SubmitBtn
+          onClick={() => {
+            navigate("/complete/profile");
+          }}
+          btnText={"Continue Verification"}
+        />
         <Link className="later_link" to="/">
           I will do this later
         </Link>

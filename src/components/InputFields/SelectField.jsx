@@ -1,11 +1,11 @@
 import * as React from "react";
-import {Controller, useFormContext} from "react-hook-form";
+import { Controller, useFormContext } from "react-hook-form";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import {FormLabel} from "@mui/material";
+import { FormLabel } from "@mui/material";
 import InputErrorMsg from "./InputErrorMsg";
-
+import "./style.scss";
 export default function SelectField({
   name,
   errMsg,
@@ -20,24 +20,24 @@ export default function SelectField({
 }) {
   const {
     control,
-    formState: {errors},
+    formState: { errors },
   } = useFormContext();
   return (
     <FormControl
-      sx={{m: "10px 0"}}
+      sx={{ m: "10px 0" }}
       className={`form-group select-group ${className}`}
     >
       {label && <FormLabel htmlFor={name}>{label}</FormLabel>}
       <Controller
         control={control}
         name={name}
-        rules={{required: required ? "This field is required" : false}}
-        render={({field: {onChange, value = "", ref}}) => (
+        rules={{ required: required ? "This field is required" : false }}
+        render={({ field: { onChange, value = "", ref } }) => (
           <Select
             className="select-mui"
             ref={ref}
             value={value || ""}
-            onChange={e => {
+            onChange={(e) => {
               onChange(e.target.value);
               console.log(e.target.value);
               handleCustomChange && handleCustomChange(e.target.value);
