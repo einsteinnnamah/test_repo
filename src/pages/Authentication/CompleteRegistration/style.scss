@@ -113,7 +113,7 @@
   }
   .center_container {
     @include center_container;
-    width: 30%;
+    width: 40%;
     margin-top: 90px;
     .formHead {
       display: flex;
@@ -189,6 +189,36 @@
             border-radius: 6px;
 
             color: $primary;
+          }
+        }
+      }
+    }
+    .command {
+      display: flex;
+      .eachCommand {
+        display: flex;
+        margin-right: 12px;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          margin-right: 8px;
+        }
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 10.3398px;
+          line-height: 13px;
+
+          color: #5c5c5c;
+          @include mq(600px) {
+            font-size: 8px;
+          }
+          @include mq(380px) {
+            font-size: 7px;
+          }
+          @include mq(350px) {
+            font-size: 6px;
           }
         }
       }
