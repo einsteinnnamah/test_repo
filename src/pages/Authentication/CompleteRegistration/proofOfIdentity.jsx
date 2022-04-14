@@ -5,12 +5,12 @@ import SubmitBtn from "components/SubmitBtn/SubmitBtn";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import identity from "../../../assets/drawables/identity.svg";
-import yellowbtn from "../../../assets/drawables/yellowarrow.svg";
 
 import mark from "../../../assets/drawables/mark.svg";
 import ImageUpload from "components/InputFields/imageUpload";
 import SupportBtn from "components/SupportBtn";
 import { useNavigate } from "react-router-dom";
+import BackBtn from "components/BackBtn";
 const IdentityInfo = () => {
   const methods = useForm();
   const navigate = useNavigate();
@@ -22,10 +22,7 @@ const IdentityInfo = () => {
   };
   return (
     <div className="pd_complete_registration">
-      <button className="yellow_btn">
-        <img src={yellowbtn} alt="yellow" />
-        Back
-      </button>
+      <BackBtn />
       <SupportBtn />
       <div className="center_container">
         <FormProvider {...methods}>

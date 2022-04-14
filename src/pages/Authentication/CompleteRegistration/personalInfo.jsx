@@ -10,6 +10,7 @@ import yellowbtn from "../../../assets/drawables/yellowarrow.svg";
 import CustomFlagDropDown from "components/InputFields/customFlagDropDown";
 import SupportBtn from "components/SupportBtn";
 import { useNavigate } from "react-router-dom";
+import BackBtn from "components/BackBtn";
 const PersonalInfo = () => {
   const methods = useForm();
   const navigate = useNavigate();
@@ -21,10 +22,7 @@ const PersonalInfo = () => {
   };
   return (
     <div className="pd_complete_registration">
-      <button className="yellow_btn">
-        <img src={yellowbtn} alt="yellow" />
-        Back
-      </button>
+      <BackBtn />
       <SupportBtn />
       <div className="center_container">
         <FormProvider {...methods}>
