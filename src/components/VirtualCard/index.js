@@ -1,14 +1,14 @@
 import Feature from "components/Reusable/Feature";
 import GetStartedBtn from "components/Reusable/GetStartedBtn";
 import React, { useState } from "react";
-import virtualcard from "../../assets/drawables/virtualcard.svg";
+import VirtualCreditCards from '../../assets/drawables/landing_credit_cards.png'
 import "./index.css";
 
 const VirtualCard = () => {
   return (
     <div className="virtual">
       <div className="virtual-left">
-        <img src={virtualcard} alt="virtual-card" className="virtual-card" />
+        <img src={VirtualCreditCards} alt="virtual-card" className="virtual-card" />
       </div>
       <div className="virtual-right">
         <h3>Get a virtual card for your transactions</h3>

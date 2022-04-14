@@ -6,6 +6,7 @@ import cash from "../../assets/drawables/cash.png";
 import TransactionCard from "components/Reusable/TransactionCard";
 import transusaflag from "../../assets/drawables/trans-usaflag.png";
 import eurflag from "../../assets/drawables/eurflag.png";
+import CurrencyPairCards from '../../assets/drawables/landing_currency_pair_cards.svg'
 
 const Transactions = () => {
   const [showBtn, setShowBtn] = useState(true);
@@ -27,18 +28,7 @@ const Transactions = () => {
         />
       </div>
       <div className="transactions-right">
-        <TransactionCard
-          img={transusaflag}
-          title="USD"
-          subtitle="UNITED STATES DOLLAR"
-          className="trans-card1"
-        />
-        <TransactionCard
-          img={eurflag}
-          title="EUR"
-          subtitle="EUROPEAN EUROS"
-          className="trans-card2"
-        />
+          <img src={CurrencyPairCards} alt="currency pairs" />
       </div>
     </div>
   );

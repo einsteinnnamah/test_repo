@@ -2,6 +2,8 @@ import InvestmentFeature from "components/Reusable/InvestmentFeature";
 import React from "react";
 import "./index.css";
 import investImg from "../../assets/drawables/invest.svg";
+import CurrencySummaryCardsGroup from '../../assets/drawables/landing_currency_summary_cards_group.svg'
+import InvestmentTrackerCard from '../../assets/drawables/landing_investment_tracker.svg'
 import growthImg from "../../assets/drawables/growthprofit.svg";
 
 const Investment = () => {
@@ -18,12 +20,12 @@ const Investment = () => {
           />
         </div>
         <div className="invest-smart-right">
-          <img src={investImg} alt="invest" />
+          <img src={CurrencySummaryCardsGroup} alt="currency summary" />
         </div>
       </div>
       <div className="invest-track">
         <div className="invest-track-left">
-          <img src={growthImg} alt="growth" />
+          <img src={InvestmentTrackerCard} alt="investment tracker" />
         </div>
         <div className="invest-track-right">
           <InvestmentFeature
