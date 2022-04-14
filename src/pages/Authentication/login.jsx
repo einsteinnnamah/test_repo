@@ -1,7 +1,7 @@
 import InputField from "components/InputFields";
 import AuthTemplate from "components/Templates/authTemplate";
 import { FormProvider, useForm } from "react-hook-form";
-import { ReactComponent as Indicate } from "../../assets/drawables/indicate.svg";
+// import { ReactComponent as Indicate } from "../../assets/drawables/indicate.svg";
 // import { ReactComponent as Apple } from "../../assets/drawables/apple.svg";
 // import { ReactComponent as Google } from "../../assets/drawables/google.svg";
 // import { ReactComponent as Facebook } from "../../assets/drawables/facebook.svg";
