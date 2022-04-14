@@ -1,0 +1,67 @@
+.subscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0d458a 0%, #173963 100%);
+  padding: 5.5rem 7.5rem;
+}
+
+.subscription .subscription-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1d4981;
+  border-radius: 16px;
+  padding: 2.5rem;
+  gap: 8rem;
+}
+
+.subscription-content .subscripton-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscripton-left h4 {
+  /* font-family: 'SQ Market'; */
+  font-weight: 600;
+  font-size: 32px;
+  /* line-height: 150%; */
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.subscripton-left p {
+  /* font-family: 'Rubik'; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.subscription-content .subscripton-right {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.subscripton-right input[type="text"] {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  background: #1d4981;
+  margin-right: 2rem;
+  width: 350px;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.subscripton-right input[type="text"]::placeholder {
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}

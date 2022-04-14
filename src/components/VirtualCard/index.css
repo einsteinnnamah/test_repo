@@ -1,0 +1,70 @@
+.virtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c4170;
+  padding: 6rem 6.5rem;
+}
+
+.virtual .virtual-left,
+.virtual .virtual-right {
+  flex: 1;
+}
+
+.virtual-right h3 {
+  /* font-family: 'SQ Market Bold'; */
+  font-weight: 700;
+  font-size: 35.4061px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 6rem;
+}
+
+.virtual-right .virtual-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  margin-bottom: 3.5rem;
+  gap: 4rem;
+}
+
+.virtual-content .text-left p:first-child,
+.virtual-content .text-right p:first-child {
+  /* font-family: 'SQ Market'; */
+  font-weight: 500;
+  font-size: 17.4559px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.virtual-content .text-left p:last-child,
+.virtual-content .text-right p:last-child {
+  /* font-family: 'SQ Market'; */
+  font-weight: 300;
+  font-size: 15.552px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.virtual-btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.virtual-btns .watch-btn {
+  background: #ffffff;
+  border: 1px solid #3aa64c;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* font-family: 'SQ Market'; */
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #3aa64c;
+  cursor: pointer;
+  padding: 20px 35px;
+  border: 1px solid #3aa64c;
+}

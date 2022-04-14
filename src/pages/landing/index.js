@@ -6,6 +6,11 @@ import Market from "components/market";
 import Transfer from "components/Transfer";
 import Transactions from "components/Transactions";
 import Referral from "components/Referral";
+import VirtualCard from "components/VirtualCard";
+import Investment from "components/Investment";
+import Article from "components/Article";
+import Subscription from "components/Subscription";
+import Footer from "components/Footer";
 
 const Landing = () => {
   return (
@@ -17,6 +22,11 @@ const Landing = () => {
       <Transfer />
       <Transactions />
       <Referral />
+      <VirtualCard />
+      <Investment />
+      <Article />
+      <Subscription />
+      <Footer />
     </div>
   );
 };

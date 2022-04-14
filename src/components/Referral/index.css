@@ -1,7 +1,8 @@
 .referral {
   display: flex;
   /* padding: 50px; */
-  /* padding: 2rem 5rem; */
+  padding: 4.5rem 10rem;
+  gap: 6rem;
 }
 
 .referral-left {
