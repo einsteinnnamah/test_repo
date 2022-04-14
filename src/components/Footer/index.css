@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8.5rem 20rem 3rem 20rem;
+}
+
+.footer .footer-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  gap: 2.5rem;
+}
+
+.footer-top .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top .footer-links h4 {
+  /* font-family: 'SQ Market'; */
+  font-weight: 600;
+  font-size: 17px;
+  /* line-height: 150%; */
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.footer-top .footer-links p {
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 35px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.footer-links .footer-social-links {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-links .footer-social-links img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.footer-links .footer-social-links img:hover {
+  opacity: 0.5;
+}
+
+.footer .footer-bottom {
+  /* font-family: 'SQ Market'; */
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
