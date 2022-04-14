@@ -58,7 +58,7 @@ const InputPhone = () => {
         <input
           name="mobile"
           {...register("country", {
-            required: true,
+            required: false,
           })}
           type="tel"
         />

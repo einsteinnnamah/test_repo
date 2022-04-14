@@ -19,7 +19,7 @@ const InputField = ({
   iconPlaceholder,
   iconPosition = "right",
   className,
-  required = true,
+  required = false,
   label,
   validatePassword,
   extraPattern,

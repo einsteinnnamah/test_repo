@@ -1,3 +1,9 @@
+#currency-pair-cards {
+  background: url("../../assets/drawables/landing_currency_pair_cards.svg") no-repeat center;
+  width: 458px;
+  height: 415px;
+}
+
 .transactions {
   display: flex;
   align-items: center;

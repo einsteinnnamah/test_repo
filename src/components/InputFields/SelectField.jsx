@@ -10,7 +10,7 @@ export default function SelectField({
   name,
   errMsg,
   className,
-  required = true,
+  required = false,
   selectOption = [],
   label,
   isLoading,

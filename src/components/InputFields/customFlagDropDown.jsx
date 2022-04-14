@@ -76,7 +76,7 @@ const CustomFlagDropDown = () => {
             name="country"
             value={searchValue}
             {...register("country", {
-              required: true,
+              required: false,
             })}
             onChange={(e) => {
               setSearchValue(e.target.value);

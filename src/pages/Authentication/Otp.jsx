@@ -25,7 +25,7 @@ const Otp = () => {
         </div>
 
         <button className="resend_btn">Resend</button>
-        <Link className="later_link" to="/">
+        <Link className="later_link" to="/complete">
           I will do this later
         </Link>
       </div>

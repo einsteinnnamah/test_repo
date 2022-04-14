@@ -1,0 +1,44 @@
+.investment {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: #10315a;
+  padding: 7.5rem 6.8rem;
+}
+
+.investment .invest-smart,
+.investment .invest-track {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.investment h3 {
+  /* font-family: 'SQ Market Bold'; */
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5.5rem;
+}
+
+.investment .invest-smart {
+  margin-bottom: 11rem;
+  gap: 9rem;
+}
+
+.investment .invest-track {
+  gap: 7rem;
+}
+
+.invest-smart .invest-smart-left,
+.invest-smart .invest-smart-right,
+.invest-smart .invest-track-left,
+.invest-smart .invest-track-right {
+  flex: 1;
+}
+
+.invest-track {
+}
