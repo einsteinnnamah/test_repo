@@ -9,12 +9,15 @@ import yellowbtn from "../../../assets/drawables/yellowarrow.svg";
 import support from "../../../assets/drawables/support.svg";
 import mark from "../../../assets/drawables/mark.svg";
 import ImageUpload from "components/InputFields/imageUpload";
+import {useNavigate} from "react-router-dom";
 const IdentityInfo = () => {
   const methods = useForm();
+  const navigate = useNavigate()
   const [upload, setUpload] = useState();
   console.log(upload);
   const onSubmit = (data) => {
     console.log(data);
+    navigate('/complete')
   };
   return (
     <div className="pd_complete_registration">

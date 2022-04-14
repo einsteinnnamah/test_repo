@@ -8,12 +8,15 @@ import profile from "../../../assets/drawables/profile.svg";
 import yellowbtn from "../../../assets/drawables/yellowarrow.svg";
 import support from "../../../assets/drawables/support.svg";
 import CustomFlagDropDown from "components/InputFields/customFlagDropDown";
+import {useNavigate} from "react-router-dom";
 const PersonalInfo = () => {
   const methods = useForm();
+  const navigate = useNavigate()
   const [upload, setUpload] = useState();
   console.log(upload);
   const onSubmit = (data) => {
     console.log(data);
+    navigate('/complete/identity')
   };
   return (
     <div className="pd_complete_registration">
