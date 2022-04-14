@@ -66,30 +66,7 @@
   .pd_custom_flag_drop_down {
     padding: 0 !important;
   }
-  .support {
-    background: #ffffff;
-    border: 0.4px solid #edf5ff;
-    box-sizing: border-box;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    padding: 10px 16px;
-    top: 400px;
-    right: 82px;
-    img {
-      margin-right: 3px;
-    }
-    font-weight: 500;
-    font-size: 12.3893px;
-    line-height: 15px;
 
-    color: #0d458a;
-    @include mq(868px) {
-      display: none;
-    }
-  }
   .yellow_btn {
     position: fixed;
     text-decoration: underline;

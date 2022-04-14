@@ -1,0 +1,36 @@
+@use "../../assets//sass/index" as *;
+
+.pd_page_description {
+  background: #173e6f;
+  padding: 33px 89px;
+  padding-right: 0;
+  @include mq(768px) {
+    padding-left: 40px;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 31.163px;
+    line-height: 38px;
+    color: #ffffff;
+  }
+  .description {
+    font-weight: 300;
+    font-size: 12.0679px;
+    line-height: 15px;
+    margin-top: 6px;
+    color: #ffffff;
+  }
+  .date {
+    background: #2d5f9c;
+    border-radius: 82.8539px;
+    padding: 6.75px 8.41px;
+    width: max-content;
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 7.38351px;
+    line-height: 9px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}

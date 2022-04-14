@@ -6,9 +6,10 @@ import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import identity from "../../../assets/drawables/identity.svg";
 import yellowbtn from "../../../assets/drawables/yellowarrow.svg";
-import support from "../../../assets/drawables/support.svg";
+
 import mark from "../../../assets/drawables/mark.svg";
 import ImageUpload from "components/InputFields/imageUpload";
+import SupportBtn from "components/SupportBtn";
 const IdentityInfo = () => {
   const methods = useForm();
   const [upload, setUpload] = useState();
@@ -22,10 +23,7 @@ const IdentityInfo = () => {
         <img src={yellowbtn} alt="yellow" />
         Back
       </button>
-      <button className="support">
-        <img src={support} alt="support" />
-        Support
-      </button>
+      <SupportBtn />
       <div className="center_container">
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>
