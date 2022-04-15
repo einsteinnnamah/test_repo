@@ -1,10 +1,9 @@
-import InputField from "components/InputFields";
 import ListConversion from "components/ListConversion";
 import TopNavbar from "components/navbar/top_navbar";
 import PageDescription from "components/PageDescription";
-import { ReactComponent as SearchIcon } from "../../assets/drawables/search.svg";
+
 import { useState } from "react";
-import { FormProvider, useForm } from "react-hook-form";
+
 import { ReactComponent as Star } from "../../assets/drawables/star.svg";
 import cad from "../../assets/drawables/england.svg";
 import redArr from "../../assets/drawables/redArrow.svg";
@@ -12,9 +11,10 @@ import greenArr from "../../assets/drawables/greenArrow.svg";
 import "./style.scss";
 import Trend from "react-trend";
 import { Pagination } from "@mui/material";
+import SearchComponent from "components/SearchComponent";
 const MarketPage = () => {
-  const methods = useForm();
   const [status, setStatus] = useState("tracked");
+  const [searchResult, setSearchResult] = useState("");
   const [alphabetStatus, setAlphabetStatus] = useState("A-Z");
   const [regionStatus, setRegionStatus] = useState("All");
   const [riskStatus, setRiskStatus] = useState("All");
@@ -41,6 +41,7 @@ const MarketPage = () => {
   const handleStatus = (type) => {
     setStatus(type);
   };
+  console.log(searchResult);
   return (
     <div className="pd_market_page">
       <TopNavbar />
@@ -72,23 +73,7 @@ const MarketPage = () => {
               );
             })}
           </div>
-          <div className="search_cover">
-            <FormProvider {...methods}>
-              <form>
-                {" "}
-                <InputField
-                  type="text"
-                  name="search"
-                  placeholder="Search currencies"
-                  id="search"
-                  required={false}
-                  iconPosition={"left"}
-                  iconPlaceholder={<SearchIcon />}
-                  errMsg="invalid  input"
-                />{" "}
-              </form>
-            </FormProvider>
-          </div>
+          <SearchComponent handleChange={setSearchResult} />
         </div>
 
         <div className="extraFilter">

@@ -1,0 +1,16 @@
+@use "../../assets/sass/index" as *;
+
+.pd_back_to_market {
+  font-weight: 300;
+  font-size: 12.3969px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #173963;
+  border: none;
+  outline: none;
+  background: none;
+  img {
+    margin-right: 3px;
+  }
+}

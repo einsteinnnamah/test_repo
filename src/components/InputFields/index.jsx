@@ -1,9 +1,10 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./style.scss";
 import InputErrorMsg from "./InputErrorMsg";
-import {useFormContext, get} from "react-hook-form";
+import { useFormContext, get } from "react-hook-form";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import { SettingsOverscanOutlined } from "@mui/icons-material";
 export const trapSpacesForRequiredFields = (value, required) => {
   if (required) {
     return !!value.trim();
@@ -23,6 +24,7 @@ const InputField = ({
   label,
   validatePassword,
   extraPattern,
+  setvalue,
   extraValidation,
   rounded = true,
   ...props
@@ -51,7 +53,7 @@ const InputField = ({
   const [showPassword, setShowPassword] = useState(true);
   const {
     register,
-    formState: {errors},
+    formState: { errors },
   } = useFormContext();
   const error = get(errors, name);
 
@@ -83,9 +85,13 @@ const InputField = ({
               name={name}
               type={showPassword ? "password" : "text"}
               id={id}
+              onChange={(e) => {
+                console.log(e.target.value);
+                setvalue && setvalue(e.target.value);
+              }}
               {...register(name, {
                 required: required ? "You must specify a password" : false,
-                validate: value =>
+                validate: (value) =>
                   validatePassword ? validatePassword(value) : null,
                 minLength: {
                   value: 8,
@@ -98,7 +104,7 @@ const InputField = ({
             />
             <button
               disabled={props.disabled}
-              onClick={() => setShowPassword(prev => !prev)}
+              onClick={() => setShowPassword((prev) => !prev)}
               type="button"
               className="icon icon-right"
             >
@@ -114,7 +120,7 @@ const InputField = ({
               id={id || name}
               {...register(name, {
                 required: required ? "This Field is required" : false,
-                validate: value => {
+                validate: (value) => {
                   trapSpacesForRequiredFields(value, required);
                   extraValidation && extraValidation(value);
                 },
