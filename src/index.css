@@ -1,10 +1,13 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("./assets/font/SQ\ Market\ Regular\ Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "SQ Market";
+  font-family: myFirstFont;
 }
-
 body {
   margin: 0;
 
