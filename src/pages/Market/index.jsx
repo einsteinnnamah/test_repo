@@ -214,6 +214,7 @@ const MarketPage = () => {
                             autoDraw
                             autoDrawDuration={3000}
                             autoDrawEasing="ease-in"
+                            gradient={["#34E36F"]}
                           />
                         </div>
                       </td>
