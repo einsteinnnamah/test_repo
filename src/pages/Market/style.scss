@@ -61,5 +61,166 @@
         }
       }
     }
+    .extraFilter {
+      display: flex;
+      align-items: center;
+      margin-top: 26px;
+      .each_extra_filter {
+        margin-right: 35px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+        p {
+          font-weight: 300;
+          font-size: 13.1492px;
+          line-height: 16px;
+          text-align: center;
+          color: #5c5c5c;
+          padding: 0 5px;
+        }
+
+        .line {
+          border-radius: 20px 20px 0px 0px;
+          width: 100%;
+          margin-top: 2px;
+          height: 3.65px;
+        }
+        &.active {
+          p {
+            color: #0d458a;
+            font-weight: 600;
+          }
+          .line {
+            background: #eaac0c;
+          }
+        }
+      }
+    }
+    .marketTable {
+      width: 100%;
+      margin-top: 35px;
+      .overflow {
+        width: 100%;
+        overflow-x: auto;
+        background: #ffffff;
+        border: 0.736708px solid #e5e5e5;
+        box-sizing: border-box;
+        box-shadow: 0px 24.8508px 24.8508px rgba(243, 243, 243, 0.4);
+        border-radius: 11.8778px;
+        table {
+          width: 100%;
+          min-width: 1000px;
+          border-collapse: collapse;
+          thead {
+            border-bottom: 1.18778px solid #e1e1e1;
+            th {
+              padding: 20px 15px;
+              font-weight: 500;
+              font-size: 15.6183px;
+              line-height: 19px;
+              text-align: right;
+              text-align: left;
+              color: #5c5c5c;
+              border-bottom: 1.18778px solid #e1e1e1;
+            }
+          }
+          tbody {
+            td {
+              padding: 15px;
+            }
+            .serial {
+              font-weight: 600;
+              font-size: 14.4305px;
+              line-height: 18px;
+
+              color: #000000;
+            }
+            .trend {
+              svg {
+                width: 150px;
+                display: block;
+                margin: auto;
+              }
+            }
+            .country {
+              display: flex;
+              align-items: flex-start;
+              .textSide {
+                margin-left: 15px;
+                .top {
+                  font-weight: 500;
+                  font-size: 16.8061px;
+                  line-height: 21px;
+
+                  color: #000000;
+                  margin-bottom: 3.75px;
+                }
+                .bottom {
+                  font-weight: 300;
+                  font-size: 13.0656px;
+                  line-height: 16px;
+
+                  color: #000000;
+                }
+              }
+            }
+            .growth {
+              display: flex;
+              align-items: center;
+              font-weight: 600;
+              font-size: 14.4305px;
+              line-height: 18px;
+              text-align: center;
+              p {
+                margin-left: 3px;
+              }
+              &.red {
+                color: #f34018;
+              }
+            }
+            .invest {
+              background: #deedff;
+              border-radius: 71.2668px;
+              font-weight: 400;
+              font-size: 14.4305px;
+              line-height: 18px;
+              border: none;
+              padding: 8px 25px;
+              text-align: center;
+
+              /* Primary Color */
+
+              color: #173963;
+            }
+            .risk {
+              p {
+                font-weight: 600;
+                font-size: 13.1492px;
+                line-height: 16px;
+                text-align: center;
+                color: #000000;
+              }
+
+              .line {
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
+                margin-top: 14px;
+                height: 3.65px;
+                background-color: #34e36f;
+              }
+            }
+          }
+        }
+      }
+      .pagination-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 34px;
+        .css-1pi9rcw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+          background-color: $primary;
+        }
+      }
+    }
   }
 }
