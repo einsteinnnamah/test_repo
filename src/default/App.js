@@ -8,6 +8,8 @@ import Login from "../pages/Authentication/login";
 import SelectForm from "../pages/Authentication/CompleteRegistration/selectForm";
 import PersonalInfo from "../pages/Authentication/CompleteRegistration/personalInfo";
 import IdentityInfo from "../pages/Authentication/CompleteRegistration/proofOfIdentity";
+import MarketPage from "../pages/Market/index";
+import CurrencyPage from "../pages/Market/currencypage";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route index path="/complete" element={<SelectForm />} />
         <Route index path="/complete/profile" element={<PersonalInfo />} />
         <Route index path="/complete/identity" element={<IdentityInfo />} />
+        <Route index path="/market" element={<MarketPage />} />
+        <Route index path="/market/:id" element={<CurrencyPage />} />
       </Routes>
     </div>
   );

@@ -6,28 +6,24 @@ import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import profile from "../../../assets/drawables/profile.svg";
 import yellowbtn from "../../../assets/drawables/yellowarrow.svg";
-import support from "../../../assets/drawables/support.svg";
+
 import CustomFlagDropDown from "components/InputFields/customFlagDropDown";
-import {useNavigate} from "react-router-dom";
+import SupportBtn from "components/SupportBtn";
+import { useNavigate } from "react-router-dom";
+import BackBtn from "components/BackBtn";
 const PersonalInfo = () => {
   const methods = useForm();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [upload, setUpload] = useState();
   console.log(upload);
   const onSubmit = (data) => {
     console.log(data);
-    navigate('/complete/identity')
+    navigate("/complete/identity");
   };
   return (
     <div className="pd_complete_registration">
-      <button className="yellow_btn">
-        <img src={yellowbtn} alt="yellow" />
-        Back
-      </button>
-      <button className="support">
-        <img src={support} alt="support" />
-        Support
-      </button>
+      <BackBtn />
+      <SupportBtn />
       <div className="center_container">
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>

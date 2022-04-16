@@ -97,6 +97,7 @@ const Login = () => {
       <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
         <LoginModal />
       </Modal>
+
       <Modal closeModal={() => setOpenModal2(false)} openModal={openModal2}>
         <SignUpModal />
       </Modal>

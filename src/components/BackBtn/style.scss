@@ -1,0 +1,23 @@
+@use "../../assets/sass/index" as *;
+
+.yellow_btn {
+  position: fixed;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  color: #eaac0c;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17.0067px;
+  line-height: 21px;
+  text-decoration: none;
+  top: 150px;
+  left: 40px;
+  img {
+    margin-right: 4px;
+  }
+  @include mq(768px) {
+    display: none;
+  }
+}

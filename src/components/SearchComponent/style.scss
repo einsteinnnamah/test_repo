@@ -1,0 +1,16 @@
+@use "../../assets/sass/index" as *;
+.search_cover {
+  width: 280px;
+  @include mq(500px) {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    .form-group {
+      input {
+        box-shadow: 0px 20.9221px 20.9221px rgba(243, 243, 243, 0.4);
+        border-radius: 10px;
+      }
+    }
+  }
+}

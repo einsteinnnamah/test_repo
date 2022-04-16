@@ -1,0 +1,33 @@
+@use "../../assets/sass/index" as *;
+
+.pd_each_top_country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 26px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    .text_side {
+      margin-left: 5px;
+      p.top {
+        font-weight: 600;
+        font-size: 13.6121px;
+        line-height: 17px;
+        margin-bottom: 3px;
+        color: #000000;
+      }
+      p.bottom {
+        font-weight: 300;
+        font-size: 7.57566px;
+        line-height: 9px;
+
+        color: #000000;
+      }
+    }
+  }
+}
