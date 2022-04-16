@@ -17,51 +17,60 @@ function CustomLink({ children, to, ...props }) {
     </Link>
   );
 }
-const Sidebar = () => {
+const Sidebar = ({ toggleNav, setToggleNav }) => {
   return (
-    <div className="pd_sidebar">
-      <div className="open_up">
-        <img src={arr} alt="arr" />
-        <img src={stack} alt="stack" />
-      </div>
+    <>
+      {toggleNav && (
+        <div className="pd_sidebar">
+          <div
+            onClick={() => {
+              setToggleNav(false);
+            }}
+            className="open_up"
+          >
+            <img src={arr} alt="arr" />
+            <img src={stack} alt="stack" />
+          </div>
 
-      <div className="link_side">
-        <CustomLink to="">
-          <Home className="iconSide" />
-          <p>Home</p>
-        </CustomLink>
+          <div className="link_side">
+            <CustomLink to="">
+              <Home className="iconSide" />
+              <p>Home</p>
+            </CustomLink>
 
-        <CustomLink to="markets">
-          <Market className="iconSide" />
-          <p>Markets</p>
-        </CustomLink>
+            <CustomLink to="markets">
+              <Market className="iconSide" />
+              <p>Markets</p>
+            </CustomLink>
 
-        <CustomLink to="portfolio">
-          <Portfolio className="iconSide" />
-          <p>Portfolio</p>
-        </CustomLink>
+            <CustomLink to="portfolio">
+              <Portfolio className="iconSide" />
+              <p>Portfolio</p>
+            </CustomLink>
 
-        <CustomLink to="bank">
-          <Bank className="iconSide" />
-          <p>Bank</p>
-        </CustomLink>
+            <CustomLink to="bank">
+              <Bank className="iconSide" />
+              <p>Bank</p>
+            </CustomLink>
 
-        <CustomLink to="profile">
-          <Profile className="iconSide" />
-          <p>Profile</p>
-        </CustomLink>
+            <CustomLink to="profile">
+              <Profile className="iconSide" />
+              <p>Profile</p>
+            </CustomLink>
 
-        <CustomLink to="referral">
-          <Referal className="iconSide" />
-          <p>Referral</p>
-        </CustomLink>
+            <CustomLink to="referral">
+              <Referal className="iconSide" />
+              <p>Referral</p>
+            </CustomLink>
 
-        <CustomLink to="settings">
-          <Setting className="iconSide" />
-          <p>Settings</p>
-        </CustomLink>
-      </div>
-    </div>
+            <CustomLink to="settings">
+              <Setting className="iconSide" />
+              <p>Settings</p>
+            </CustomLink>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

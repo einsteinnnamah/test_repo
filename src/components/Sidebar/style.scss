@@ -9,19 +9,7 @@
   position: sticky;
   top: 0;
   min-height: 100vh;
-  .open_up {
-    margin-bottom: 57px;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    padding-left: 30px;
-    img {
-      margin-right: 3px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
+
   .link_side {
     width: 100%;
     display: flex;
@@ -63,6 +51,19 @@
           color: #173e6f;
         }
       }
+    }
+  }
+}
+.open_up {
+  margin-bottom: 57px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 30px;
+  img {
+    margin-right: 3px;
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

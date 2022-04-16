@@ -8,14 +8,29 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { ReactComponent as LogOutIcon } from "../../assets/drawables/logout.svg";
 import avatar from "../../assets/drawables/avatar.png";
 import bell from "../../assets/drawables/bell.svg";
-const NavbarDashboard = () => {
+import arr from "../../assets/drawables/sidebar/arr.svg";
+import stack from "../../assets/drawables/sidebar/stack.svg";
+const NavbarDashboard = ({ setToggleNav, toggleNav }) => {
   const [toggle, setToggle] = useState(true);
   const handleToggle = () => {
     setToggle(!toggle);
   };
   return (
     <div className="pd_navbar_dashboard">
-      <p className="page_title">Home</p>
+      <div className="page_title">
+        {!toggleNav && (
+          <div
+            onClick={() => {
+              setToggleNav(true);
+            }}
+            className="open_up"
+          >
+            <img src={arr} alt="arr" />
+            <img src={stack} alt="stack" />
+          </div>
+        )}
+        <p>Home</p>
+      </div>
       <div className="right">
         <div className="toggleSide">
           <img src={sun} alt="sun" />
