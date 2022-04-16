@@ -4,6 +4,7 @@ import "./style.scss";
 import { Outlet } from "react-router-dom";
 
 const DashboardLayout = () => {
+  const [toggleNav, setToggleNav] = useState(true);
   return (
     <div className="dashboard_layout">
       <Sidebar />
