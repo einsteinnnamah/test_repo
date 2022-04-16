@@ -12,6 +12,7 @@ import MarketPage from "../pages/Market/index";
 import CurrencyPage from "../pages/Market/currencypage";
 import DashboardLayout from "components/Templates/dahsboard";
 import Home from "../pages/Dashboard/Home";
+import Bank from "../pages/Dashboard/Bank";
 
 function App() {
   const user = true;
@@ -50,7 +51,7 @@ function App() {
           {/* you can change the component here, please do no change the path */}
           <Route path="markets" element={<Home />} />
           <Route path="portfolio" element={<Home />} />
-          <Route path="bank" element={<Home />} />
+          <Route path="bank" element={<Bank />} />
           <Route path="profile" element={<Home />} />
           <Route path="referral" element={<Home />} />
           <Route path="settings" element={<Home />} />
