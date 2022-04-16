@@ -47,6 +47,7 @@ function App() {
           }
         >
           <Route path="" element={<Home />} />
+          {/* you can change the component here, please do no change the path */}
           <Route path="markets" element={<Home />} />
           <Route path="portfolio" element={<Home />} />
           <Route path="bank" element={<Home />} />
