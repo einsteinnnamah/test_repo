@@ -1,0 +1,13 @@
+@use "../../../assets/sass/index" as *;
+
+.dashboard_layout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .main_side {
+    flex: auto;
+    .screen_content {
+      width: 100%;
+    }
+  }
+}

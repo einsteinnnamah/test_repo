@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import LandingPage from "../pages/landing";
 import Signup from "../pages/Authentication/signup";
 import VerifyPhone from "../pages/Authentication/verifyPhone";
@@ -10,11 +10,21 @@ import PersonalInfo from "../pages/Authentication/CompleteRegistration/personalI
 import IdentityInfo from "../pages/Authentication/CompleteRegistration/proofOfIdentity";
 import MarketPage from "../pages/Market/index";
 import CurrencyPage from "../pages/Market/currencypage";
+import DashboardLayout from "components/Templates/dahsboard";
+import Home from "../pages/Dashboard/Home";
 
 function App() {
+  const user = true;
+  const PrivateRoute = ({ children }) => {
+    let location = useLocation();
+    return (
+      <>{user ? children : <Navigate to="/" state={{ from: location }} />}</>
+    );
+  };
   return (
     <div className="app_wrapper">
       <Routes>
+        {/* public routes */}
         <Route index path="/" element={<LandingPage />} />
         <Route index path="/signup/:account" element={<Signup />} />
         <Route index path="/verify" element={<VerifyPhone />} />
@@ -25,6 +35,25 @@ function App() {
         <Route index path="/complete/identity" element={<IdentityInfo />} />
         <Route index path="/market" element={<MarketPage />} />
         <Route index path="/market/:id" element={<CurrencyPage />} />
+
+        {/* private routes */}
+
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <DashboardLayout />
+            </PrivateRoute>
+          }
+        >
+          <Route path="" element={<Home />} />
+          <Route path="markets" element={<Home />} />
+          <Route path="portfolio" element={<Home />} />
+          <Route path="bank" element={<Home />} />
+          <Route path="profile" element={<Home />} />
+          <Route path="referral" element={<Home />} />
+          <Route path="settings" element={<Home />} />
+        </Route>
       </Routes>
     </div>
   );
