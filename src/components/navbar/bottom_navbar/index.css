@@ -1,13 +1,14 @@
 .bottomnav {
   display: flex;
-  justify-content: center;
+  /* justify-content: flex-end; */
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   scroll-behavior: smooth;
   background: #002149;
-  padding: 5px 0;
+  /* padding: 10px 0; */
+  padding: 14px 0px 14px 70px;
 }
 
 .bottomnav::-webkit-scrollbar {
@@ -17,9 +18,9 @@
 
 .bottomnav-item {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  margin-right: 20px;
+  margin-right: 28px;
 }
 
 .bottomnav-item p:first-child {

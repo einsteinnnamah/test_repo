@@ -40,5 +40,9 @@
   flex: 1;
 }
 
-.invest-track {
+.invest-smart .invest-smart-left {
+  /* margin-top: 60px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

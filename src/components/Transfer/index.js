@@ -10,14 +10,14 @@ import transferImg from "../../assets/drawables/transferImg.png";
 import transfer from "../../assets/drawables/transfer.png";
 
 const Transfer = () => {
-  const [showBtn, setShowBtn] = useState(true);
+  // const [showBtn, setShowBtn] = useState(true);
   return (
     <div className="transfer">
       <div className="transfer-left">
-        {/* <div className="successful">
-          <p>Successful</p>
-        </div> */}
         <div className="transfer-card">
+          <div className="successful">
+            <p>Successful</p>
+          </div>
           <div className="countries">
             <img src={usaflag} alt="" />
             <img src={Arrow} alt="" />

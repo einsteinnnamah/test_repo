@@ -12,7 +12,7 @@
   /* min-width: 250px; */
   min-width: 300px;
   /* padding: 15px; */
-  padding: 20px;
+  padding: 25px;
 }
 
 .form h3 {
@@ -21,17 +21,31 @@
   font-size: 17.5429px;
   line-height: 21px;
   color: #173963;
+  margin-bottom: 15px;
 }
 
-.form h3,
-.form-details,
-.charges {
-  margin-bottom: 15px;
+.form-details {
+  margin-bottom: 20px;
 }
 
 .form-details {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.form-details .currconvert {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  top: 37%;
+  left: 45%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaac0c;
 }
 
 .tender,
@@ -39,7 +53,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5px;
+  padding: 15px 18px;
 }
 
 .tender {
@@ -70,29 +84,30 @@
   color: #b3b3b3;
 }
 
-.tender-right select,
-.buy-right select {
+.tender-right,
+.buy-right {
   background: #f5faff;
   border-radius: 6.55855px;
   padding: 5px;
-
-  /* font-family: 'SQ Market'; */
   font-weight: 400;
   font-size: 15.3529px;
   line-height: 19px;
   color: #173963;
+  /* padding: 13px 9.8px; */
+  /* width: 100px;s */
 }
 
 .charges {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
 
-.charges p:first-child,
+/* .charges p:first-child,
 .form button {
   margin-left: 0;
-}
+} */
 
 .charges p:first-child {
   /* font-family: 'SQ Market'; */
@@ -120,8 +135,10 @@
   line-height: 18px;
   text-align: center;
   color: #ffffff;
-  padding: 10px;
+  padding: 14px 45px;
   border: none;
+  margin-top: 12px;
+  cursor: pointer;
 }
 
 .form button:hover {
