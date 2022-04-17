@@ -1,0 +1,247 @@
+@use "../../../assets/sass/index" as *;
+.pd_home {
+  width: 100%;
+  .home_flex {
+    width: 100%;
+    display: flex;
+    @include mq(768px) {
+      flex-direction: column;
+    }
+    .white_part {
+      background: white;
+      padding-left: 47px;
+      width: 65%;
+      @include mq(768px) {
+        width: 100%;
+      }
+      .welcome {
+        font-weight: 400;
+        font-size: 22.7369px;
+        line-height: 28px;
+        color: #173963;
+        margin-bottom: 5px;
+        span {
+          font-weight: 600;
+        }
+      }
+      .sub_welcome {
+        font-weight: 300;
+        font-size: 11.5361px;
+        line-height: 14px;
+        color: #000000;
+      }
+      .money_box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        .first_box {
+          .top {
+            font-weight: 300;
+            font-size: 12.3893px;
+            line-height: 15px;
+            margin-bottom: 12px;
+            color: #5c5c5c;
+          }
+          .flex_currency {
+            display: flex;
+            img {
+              margin-left: 5px;
+            }
+          }
+        }
+        .sec_box {
+          .port {
+            font-weight: 400;
+            font-size: 9.7333px;
+            line-height: 12px;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #000000;
+          }
+          .money {
+            font-weight: 700;
+            font-size: 34.7261px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #000000;
+          }
+          .green {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            img {
+              margin-right: 3px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 11.4395px;
+              line-height: 14px;
+
+              color: #3aa64c;
+            }
+          }
+        }
+        p.date {
+          font-weight: 400;
+          font-size: 11.3433px;
+          line-height: 14px;
+          text-align: right;
+          color: #173e6f;
+        }
+      }
+      .pink_box {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .cover {
+          background: #fff8e6;
+          border-radius: 11.3294px 11.3294px 0px 0px;
+          width: 210px;
+          display: flex;
+          align-items: center;
+          padding: 11px 15px;
+          img {
+            margin-left: 12px;
+          }
+          p {
+            font-weight: 500;
+            font-size: 11.3294px;
+            line-height: 14px;
+            color: #000000;
+            span {
+              color: #3aa64c;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .account_side {
+        margin-top: 44px;
+        width: 98%;
+
+        .first_text {
+          margin-bottom: 18px;
+          font-size: 13px;
+          text-align: left;
+        }
+        .cover_flex {
+          width: 100%;
+          &.overflow {
+            overflow-x: auto;
+
+            @include webkit4;
+          }
+        }
+        .account_flex {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          &.over {
+            width: 1000px;
+            max-width: max-content;
+            justify-content: unset;
+          }
+          .create_box {
+            display: flex;
+            height: 103px;
+            width: 30%;
+            align-items: center;
+            justify-content: center;
+            mix-blend-mode: normal;
+            border: 1.10774px dashed #aaaaaa;
+            box-sizing: border-box;
+            border-radius: 11.0774px;
+          }
+        }
+      }
+    }
+    .dark_part {
+      padding: 16px 31px;
+      background: #f9fbff;
+      width: 35%;
+      box-shadow: 0px 13.9706px 13.9706px #f9fbff;
+      .convBox {
+        background: #ffffff;
+        border-radius: 20px;
+        z-index: 2;
+        padding: 26px 36px;
+        width: 100%;
+
+        .title {
+          font-weight: 700;
+          font-size: 17.5429px;
+          line-height: 21px;
+
+          color: #173963;
+          margin-bottom: 16px;
+        }
+        .changeBox {
+          position: relative;
+          margin-bottom: 22px;
+          .top {
+            border: 0.7px solid #c4c4c4;
+            box-sizing: border-box;
+            border-radius: 0px 0px 10px 10px;
+            padding: 17px 23px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &.hard {
+              border: 0.7px solid #173963;
+              border-radius: 10px 10px 0px 0px;
+            }
+
+            .left {
+              .changeText {
+                font-weight: 300;
+                font-size: 13.3331px;
+                line-height: 16px;
+                margin-bottom: 10px;
+                color: #656565;
+              }
+              .number {
+                font-weight: 600;
+                font-size: 22.3331px;
+                line-height: 27px;
+                color: #b3b3b3;
+              }
+            }
+          }
+        }
+        .cover_transaction {
+          margin-top: 34px;
+          .title_flex {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              font-weight: 600;
+              font-size: 13.3893px;
+              line-height: 16px;
+              color: #000000;
+            }
+            a {
+              font-weight: 400;
+              font-size: 13.3893px;
+              line-height: 16px;
+              text-decoration: none;
+              color: #173e6f;
+            }
+          }
+          .day {
+            font-weight: 300;
+            font-size: 11.4815px;
+            line-height: 10px;
+            /* identical to box height, or 86% */
+
+            color: #818181;
+            margin: 24px 0 25px;
+          }
+        }
+      }
+    }
+  }
+}

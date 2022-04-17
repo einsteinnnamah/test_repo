@@ -41,10 +41,18 @@
     }
     .top {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
       cursor: pointer;
       .cancel {
         width: 26px;
+      }
+      p {
+        font-weight: 600;
+        font-size: 16.9237px;
+        line-height: 21px;
+        margin-bottom: 0;
+        color: #0d458a;
       }
     }
 

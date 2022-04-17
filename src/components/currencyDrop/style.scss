@@ -1,6 +1,11 @@
 @use "../../assets/sass/index" as *;
 .custom_select {
   position: relative;
+  background: #eff5ff;
+  border-radius: 6.55855px;
+  padding: 13px 9.8px;
+  width: 110px;
+
   .showCurrency,
   .eachCurrency {
     display: flex;

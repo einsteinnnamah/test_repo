@@ -1,0 +1,33 @@
+.css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+  padding-top: 0 !important;
+}
+.css-ha3bif-MuiTimelineItem-root:before {
+  content: unset !important;
+}
+.css-1fe7e6p-MuiTimelineSeparator-root {
+  img {
+    width: 20px !important;
+  }
+}
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+  padding: 0 !important;
+  width: 20px !important;
+}
+.css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+  .top {
+    font-weight: 600;
+    font-size: 11.5252px;
+    line-height: 14px;
+
+    color: #000000;
+  }
+  .bottom {
+    font-weight: 400;
+    font-size: 11.3537px;
+    line-height: 14px;
+    color: #000000;
+  }
+}
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+  color: #eaac0c !important;
+}
