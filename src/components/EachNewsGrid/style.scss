@@ -8,6 +8,10 @@
   border-bottom: 0.950019px solid #eaeaea;
   padding: 25px 49px;
   .left {
+    width: 60%;
+    @include mq(768px) {
+      width: 100%;
+    }
     .top {
       display: flex;
       margin-bottom: 21px;
@@ -37,6 +41,14 @@
       line-height: 18px;
       color: #000000;
       margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 1.4em;
+      max-height: 2 * 1.2rem;
+      @include cut_text;
     }
     .money {
       background: #f5faff;

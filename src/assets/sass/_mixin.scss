@@ -122,6 +122,16 @@
     width: 80%;
   }
 }
+@mixin cut_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.4em;
+  max-height: 2 * 1.2rem;
+}
+
 @mixin drop_down {
   background: #ffffff;
   border: 0.7px solid #dbdbdb;
