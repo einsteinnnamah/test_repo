@@ -1,0 +1,48 @@
+@use "../../../../assets/sass/index" as *;
+
+.pd_each_market {
+  .main_page {
+    padding: 24px 70px !important;
+    .abount_currency {
+      .right {
+        a {
+          background: #3aa64c;
+          box-shadow: 0px 21.5746px 53.9365px rgba(0, 0, 0, 0.1);
+          border-radius: 16.1809px;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 20.1423px;
+          line-height: 25px;
+          /* identical to box height */
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 50px;
+        }
+      }
+    }
+    .news_flex_grid {
+      background: #ffffff;
+      border: 0.950019px solid #f4f4f4;
+      box-sizing: border-box;
+      box-shadow: 0px 23.7505px 23.7505px #f9fbff;
+      border-radius: 21.3754px;
+      width: 69%;
+      margin-top: 40px;
+      @include mq(1100px) {
+        width: 100%;
+      }
+      .first_text {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #000000;
+        margin: 50px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ const Modal = ({ children, closeModal, openModal = true, title }) => {
         <Slide direction="up" in={openModal} mountOnEnter unmountOnExit>
           <div className="popBox2">
             <div className="top">
+              <p className="title">{title}</p>
               <img
                 onClick={closeModal}
                 src={cancel}
@@ -19,8 +20,7 @@ const Modal = ({ children, closeModal, openModal = true, title }) => {
                 alt="cancel"
               />
             </div>
-
-            {children}
+            <div className="modal_cover">{children}</div>
           </div>
         </Slide>
       </div>

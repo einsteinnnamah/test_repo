@@ -1,0 +1,66 @@
+@use "../../assets/sass/index" as *;
+
+.pd_each_asset {
+  width: 249px;
+  background: #f6f6f6;
+  mix-blend-mode: normal;
+  border-radius: 11.3448px;
+  padding: 21px 22px;
+  margin-right: 26px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .top_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17.6px;
+    .currency_side {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-weight: 600;
+        font-size: 14.7508px;
+        line-height: 18px;
+        /* identical to box height */
+        text-align: right;
+        margin-left: 9px;
+        color: #000000;
+      }
+    }
+    .grow {
+      display: flex;
+      align-items: center;
+      p {
+        font-weight: 500;
+        font-size: 11.5899px;
+        line-height: 14px;
+        margin-left: 6px;
+      }
+      &.red {
+        p {
+          color: #f34018;
+        }
+      }
+      &.green {
+        p {
+          color: #34e36f;
+        }
+      }
+    }
+  }
+  .amount {
+    font-weight: 400;
+    font-size: 17.9117px;
+    line-height: 22px;
+    color: #4c4c66;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    padding-left: 12px;
+  }
+  .trend {
+    width: 100%;
+  }
+}

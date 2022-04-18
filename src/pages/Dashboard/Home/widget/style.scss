@@ -1,0 +1,80 @@
+@use "../../../../assets/sass/index" as *;
+
+.pd_track_transaction {
+  width: 100%;
+
+  .head {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .money {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #173e6f;
+  }
+  .details {
+    width: 100%;
+    padding: 14px 20px;
+    background: #f5faff;
+    border-radius: 10px;
+    margin: 18px 0 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      .bank_name {
+        font-weight: 600;
+        margin-bottom: 12px;
+        font-size: 11.1473px;
+        line-height: 14px;
+        color: #000000;
+      }
+      .name {
+        font-weight: 400;
+        font-size: 12.1473px;
+        line-height: 15px;
+        color: #000000;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      p {
+        font-weight: 600;
+        font-size: 9.33307px;
+        line-height: 11px;
+        text-align: right;
+        margin-left: 5px;
+        color: #0d458a;
+      }
+    }
+  }
+  .last {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      line-height: 18px;
+      text-align: center;
+      &.share {
+        color: #3aa64c;
+      }
+      &.close {
+        color: #173e6f;
+      }
+    }
+  }
+}
