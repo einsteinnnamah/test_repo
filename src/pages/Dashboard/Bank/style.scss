@@ -1,0 +1,47 @@
+.bank_options{
+    padding: 20px;
+}
+
+.bank_options span{
+    margin: 10px;
+    font-size: 17px;
+}
+
+.bank_card{
+    color: rgba(13, 69, 138, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.2524px;
+    line-height: 17px;
+    text-decoration: underline;
+    text-decoration-color: rgba(234, 172, 12, 1);
+    text-decoration-thickness: 3px;
+}
+
+
+.empty_card{
+    margin: 20px;
+    border-color: rgba(102, 102, 102, 1);
+    border: dashed 1px;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.no_account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

@@ -12,6 +12,7 @@ import MarketPage from "../pages/Market/index";
 import CurrencyPage from "../pages/Market/currencypage";
 import DashboardLayout from "components/Templates/dahsboard";
 import Home from "../pages/Dashboard/Home";
+import Bank from "../pages/Dashboard/Bank";
 import MarketDashboard from "../pages/Dashboard/Market";
 import EachMarket from "../pages/Dashboard/Market/EachMarket";
 
@@ -53,7 +54,7 @@ function App() {
           <Route path="markets" element={<MarketDashboard />} />
           <Route path="markets/:id" element={<EachMarket />} />
           <Route path="portfolio" element={<Home />} />
-          <Route path="bank" element={<Home />} />
+          <Route path="bank" element={<Bank />} />
           <Route path="profile" element={<Home />} />
           <Route path="referral" element={<Home />} />
           <Route path="settings" element={<Home />} />
