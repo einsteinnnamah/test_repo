@@ -26,7 +26,10 @@ const Feature = ({
       <div className="feature-content">
         <div className="feature-content-left">
           {/* <img src={licencedkey} alt="" /> */}
-          <img src={image1} alt="" />
+          <div className="coverImg">
+            <img src={image1} alt="" />
+          </div>
+
           {/* <h5>Trusted & secure</h5> */}
           <h5>{subheading1}</h5>
           {/* <p>Fully licensed and regulated by the Central Bank of Ireland.</p> */}
@@ -36,7 +39,10 @@ const Feature = ({
         </div>
         <div className="feature-content-right">
           {/* <img src={transferImg} alt="" /> */}
-          <img src={image2} alt="" />
+          <div className="coverImg">
+            <img src={image2} alt="" />
+          </div>
+
           {/* <h5>Fast, reliable transfers</h5> */}
           <h5>{subheading2}</h5>
           {/* <p>Get same-day transfers on most major currencies.</p> */}
