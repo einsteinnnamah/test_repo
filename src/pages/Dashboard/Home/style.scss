@@ -139,8 +139,8 @@
           width: 100%;
           justify-content: space-between;
           &.over {
-            width: 1000px;
-            max-width: max-content;
+            width: max-content;
+
             justify-content: unset;
           }
           .create_box {

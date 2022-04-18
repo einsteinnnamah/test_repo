@@ -1,0 +1,33 @@
+@use "../../assets/sass/index" as *;
+
+.pd_complete_registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  width: 100%;
+  background: #fff9ea;
+  img {
+    &:first-child {
+      margin-right: 17px;
+    }
+    &:last-child {
+      margin-left: 9px;
+    }
+  }
+  p,
+  a {
+    font-weight: 400;
+    font-size: 13.3893px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+  a {
+    color: #34e36f;
+  }
+  P {
+    margin-right: 5px;
+  }
+}

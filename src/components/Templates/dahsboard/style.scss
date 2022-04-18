@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   .main_side {
-    flex: auto;
+    flex-grow: 2;
+    width: calc(100% - 237px);
     .screen_content {
       width: 100%;
     }
