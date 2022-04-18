@@ -1,24 +1,29 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    background: url("../../assets/drawables/heroimg.png") no-repeat center center;
-    background-size: cover;
-    height: 70vh;
-    padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  background: url("../../assets/drawables/heroimg.png") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  padding: 35px 70px;
+  /* align-items: flex-start; */
 }
 
 .header-text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 474px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* width: 474px; */
 }
 
 .header-text h2 {
-    /* font-family: "SQ Market Bold"; */
-    font-weight: 700;
-    font-size: 46.7174px;
-    line-height: 55px;
-    color: #ffffff;
-    word-break: break-all;
+  /* font-family: "SQ Market Bold"; */
+  font-weight: 700;
+  font-size: 46.7174px;
+  line-height: 55px;
+  color: #ffffff;
+  word-break: break-all;
+}
+
+.header-form {
+  /* margin: 20px 0; */
 }
