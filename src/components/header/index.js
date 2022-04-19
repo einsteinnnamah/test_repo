@@ -18,7 +18,7 @@ const Header = () => {
     <div className="header">
       <div className="header-text">
         <h2 id={"header-text-main"}>
-          Make Money from <br /> the Money Transfer <br /> Market
+          Make Money, <br/> &nbsp;&nbsp; Send Money
         </h2>
       </div>
       <div className="header-form">

@@ -1,4 +1,5 @@
 import "./style.scss";
+import React from "react";
 const AuthTemplate = ({ children }) => {
   return (
     <div className="pd_auth_template">
@@ -8,7 +9,7 @@ const AuthTemplate = ({ children }) => {
       <div className="right_container">
         <div className="overlay">
           <p>
-            Make Money from the <br /> Money Transfer Market
+              Make Money, <br/> &nbsp;&nbsp; Send Money
           </p>
         </div>
       </div>

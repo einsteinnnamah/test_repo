@@ -131,7 +131,7 @@ const EachMarket = () => {
               <img src={england} alt="england" />
               <p>
                 <span className="currency_code">USD</span>
-                <span className="currency_name">Dollar Back Securities</span>
+                <span className="currency_name">Dollar Backed Securities</span>
               </p>
               <button className="track">
                 {" "}
