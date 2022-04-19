@@ -8,6 +8,7 @@ import CardType from './CardType';
 import NewCard from './NewCard';
 import CardOTP from './CardOTP';
 import CardCreated from './CardCreated';
+import underline from 'assets/drawables/Rectangle_702.png'
 const Bank = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
@@ -21,8 +22,8 @@ const Bank = () => {
     <div className='bank'>
       <BottomNav />
         <div className='bank_options'>
-          <span onClick={""}>Account</span>
-          <span className='bank_card'>Cards</span>
+          <div onClick={""}>Account</div>
+          <div className='bank_card'>Cards <img src={underline}></img></div>
         </div>
 
         <div onClick={() => {
