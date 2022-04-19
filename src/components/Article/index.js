@@ -17,7 +17,7 @@ const blogs = [
   {
     id: 2,
     image: blogbank,
-    blogTitle: "Opening a Dollar Account withICE Bank",
+    blogTitle: "Opening a Dollar Account with ICE Bank",
     blogText: "ICE Bank",
     blogTime: "3",
   },
