@@ -9,7 +9,7 @@ import sun from "../../../assets/drawables/sun.svg";
 import moon from "../../../assets/drawables/moon.svg";
 import "./style.scss";
 const TopNavbar = () => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("GB");
   const [openModal, setOpenModal] = useState(false);
   const navigate = useNavigate();
 
