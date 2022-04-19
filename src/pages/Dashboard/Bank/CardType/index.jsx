@@ -33,7 +33,7 @@ const CardType = ({setOpenModal2, setOpenModal}) => {
                   setOpenModal2(true);
                   setOpenModal(false);
                 }}>
-                <button  type="submit">Proceed</button>
+                <button  style={{backgroundColor: "#173E6F"}} type="submit">Proceed</button>
                
             </div>
 

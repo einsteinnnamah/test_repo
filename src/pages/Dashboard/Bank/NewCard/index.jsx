@@ -70,7 +70,7 @@ const NewCard = ({setOpenModal3, setOpenModal2}) => {
           setOpenModal2(false);
         }}
         className='btn'>
-          <button>Proceed</button>
+          <button  style={{backgroundColor: "#173E6F"}}>Proceed</button>
         </div>
         </div>
 
