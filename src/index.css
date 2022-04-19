@@ -1,7 +1,18 @@
 @font-face {
   font-family: myFirstFont;
-  src: url("./assets/font/SQ\ Market\ Regular\ Regular.ttf");
+  src: url("./assets/fonts/SQ\ Market\ Regular\ Regular.ttf");
 }
+
+@font-face {
+  font-family: sqMarketBold;
+  src: url("./assets/fonts/SQ\ Market\ Bold\ Bold.ttf");
+}
+
+@font-face {
+  font-family: sqMarketMedium;
+  src: url("./assets/fonts/SQ\ Market\ Medium.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
