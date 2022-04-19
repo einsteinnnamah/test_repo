@@ -12,7 +12,7 @@ const CardType = () => {
         <p className='select'>What kind of card do you want to create?</p>
             <div className='all_cards'>
             <div className='card_options'>
-            
+
               <div className='virtual_card'>
                   <div className='card_prop'>
                   <div className='card_img'>
@@ -20,25 +20,25 @@ const CardType = () => {
                     </div>
                     <p>Virtual card</p>
                   </div>
-                  
+
               </div>
               <div className='physical_card'>
                   <div className='card_prop'>
                     <div className='card_img'>
-                      
+
                     </div>
                       <p>Physical Card</p>
                   </div>
-                  
+
               </div>
             </div>
 
 
-            <div className='btn' onClick={() => {
+            <div className='bank_card_btn' onClick={() => {
                   setOpenModal(true);
                 }}>
                 <button  type="submit">Proceed</button>
-               
+
             </div>
 
 
@@ -47,12 +47,12 @@ const CardType = () => {
             <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
                <NewCard />
             </Modal>
-       
-            
+
+
         </div>
-      
-      
-  
+
+
+
   )
 }
 
