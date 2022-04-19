@@ -8,50 +8,14 @@ import Feature from "components/Reusable/Feature";
 import licencedkey from "../../assets/drawables/licencedkey.png";
 import transferImg from "../../assets/drawables/transferImg.png";
 import transfer from "../../assets/drawables/transfer.png";
+import TransferDemoCard from '../../assets/drawables/landing_page_transfer_demo.svg'
 
 const Transfer = () => {
   // const [showBtn, setShowBtn] = useState(true);
   return (
     <div className="transfer">
       <div className="transfer-left">
-        <div className="transfer-card">
-          <div className="successful">
-            <p>Successful</p>
-          </div>
-          <div className="countries">
-            <img src={usaflag} alt="" />
-            <img src={Arrow} alt="" />
-            <img src={nigflag} alt="" />
-          </div>
-          <div className="transfer-details">
-            <div className="details">
-              <p>You are sending</p>
-              <p>$20</p>
-            </div>
-            <div className="details">
-              <p>Recipient will recieve</p>
-              <p>₦8,311.20 </p>
-            </div>
-            <div className="details">
-              <p>Exchange rate</p>
-              <p>1 NGN = 564 USD</p>
-            </div>
-            <div className="details">
-              <p>Processing fee</p>
-              <p>$1.54</p>
-            </div>
-          </div>
-          <div className="recipient">
-            <DummyRectangle
-              title="RECIPIENT"
-              subheading="Bank Transfer"
-              img={transfer}
-            />
-          </div>
-          <div className="transfer-amount">
-            <h5>Total: $21.54</h5>
-          </div>
-        </div>
+        <img src={TransferDemoCard} alt={"Transfer Demo Card"} />
       </div>
       <div className="transfer-right">
         <Feature
