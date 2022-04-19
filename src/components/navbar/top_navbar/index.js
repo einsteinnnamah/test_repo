@@ -67,7 +67,7 @@ const TopNavbar = () => {
               }}
               className="login"
             >
-              Login
+              Log In
             </button>
             <button
               onClick={() => {
