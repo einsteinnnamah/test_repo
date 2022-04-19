@@ -6,7 +6,8 @@ import search from 'assets/drawables/searchicon.svg'
 import usaflag from 'assets/drawables/flags/USA.png'
 import Briflag from 'assets/drawables/flags/British.png'
 import euroflag from 'assets/drawables/flags/Euro.png'
-const NewCard = () => {
+
+const NewCard = ({setOpenModal3, setOpenModal2}) => {
   const [onSelect, showSelect] = useState(true)
  
   return (
@@ -20,6 +21,7 @@ const NewCard = () => {
 
             <label className='card_name'>
               <p>Card Name</p>  
+  
               <input value="Ademola Adekanbi" />
             </label> 
 
@@ -63,7 +65,11 @@ const NewCard = () => {
           <p className='con_2'>Please note that this includes an additional card creation fee of NGN1,158.00 (USD2).</p>
           </div>
 
-        <div className='btn'>
+        <div onClick={() => {
+          setOpenModal3(true);
+          setOpenModal2(false);
+        }}
+        className='btn'>
           <button>Proceed</button>
         </div>
         </div>

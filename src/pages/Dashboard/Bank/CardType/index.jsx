@@ -30,7 +30,7 @@ const CardType = ({setOpenModal2, setOpenModal}) => {
 
 
             <div className='btn' onClick={() => {
-                  setOpenModal2(true); 
+                  setOpenModal2(true);
                   setOpenModal(false);
                 }}>
                 <button  type="submit">Proceed</button>

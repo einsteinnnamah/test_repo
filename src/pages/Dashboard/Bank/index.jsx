@@ -6,10 +6,12 @@ import Modal from "components/ModalPopUp";
 import { useNavigate } from "react-router-dom";
 import CardType from './CardType';
 import NewCard from './NewCard';
+import CardOTP from './CardOTP';
 const Bank = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
-  console.log(openModal);
+  const [openModal3, setOpenModal3] = useState(false);
+
   const navigate = useNavigate();
 
   return (
@@ -38,7 +40,11 @@ const Bank = () => {
         </Modal>
 
         <Modal closeModal={() => setOpenModal2(false)} openModal={openModal2}>
-            <NewCard />
+            <NewCard setOpenModal3={setOpenModal3} setOpenModal2={setOpenModal2} />
+        </Modal>
+
+        <Modal closeModal={() => setOpenModal3(false)} openModal={openModal3}>
+            <CardOTP />
         </Modal>
 
     </div>
