@@ -39,6 +39,7 @@ const CurrencyDrop = ({ defaultCurrency, handleCurrency }) => {
                     code: item.code,
                   });
                   setRealCurrency("SFD");
+                  handleShow()
                 }}
                 className="eachCurrency"
               >

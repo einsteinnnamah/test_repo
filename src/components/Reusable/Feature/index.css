@@ -10,7 +10,7 @@
 }
 
 .feature-heading h3 {
-  /* font-family: 'SQ Market Bold'; */
+  font-family: sqMarketBold;
   font-weight: 700;
   font-size: 32px;
   line-height: 35px;
@@ -45,9 +45,17 @@
   align-items: flex-start;
 }
 
+.feature-content .feature-content-left .coverImg,
+.feature-content .feature-content-right .coverImg {
+  margin-bottom: 15px;
+  width: 64px;
+  height: 51px;
+  /* width: 30px;
+  height: 30px; */
+}
+
 .feature-content .feature-content-left img,
 .feature-content .feature-content-right img {
-  margin-bottom: 15px;
   /* width: 30px;
   height: 30px; */
 }

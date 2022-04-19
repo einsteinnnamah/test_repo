@@ -6,10 +6,10 @@
 }
 
 .investment-content h4 {
-  /* font-family: 'SQ Market'; */
+   font-family: sqMarketMedium;
   font-weight: 500;
   /* font-size: 28px; */
-  font-size: 25px;
+  font-size: 28px;
   /* line-height: 150%; */
   color: #ffffff;
   margin-bottom: 25px;

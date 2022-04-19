@@ -3,10 +3,14 @@
 .listConversion {
   width: 100%;
   padding: 14px 80px;
-  overflow-x: auto;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   background-color: #002149;
+  .overlay::before,
+  .overlay::after {
+    background: none;
+  }
   .eachConversion {
     display: flex;
     align-items: center;
