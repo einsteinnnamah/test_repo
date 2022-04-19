@@ -8,7 +8,7 @@ import Briflag from 'assets/drawables/flags/British.png'
 import euroflag from 'assets/drawables/flags/Euro.png'
 
 const NewCard = ({setOpenModal3, setOpenModal2}) => {
-  const [onSelect, showSelect] = useState(true)
+  const [onSelect, showSelect] = useState(false)
  
   return (
     <div className='new_card'>

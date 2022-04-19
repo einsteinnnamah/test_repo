@@ -7,10 +7,12 @@ import { useNavigate } from "react-router-dom";
 import CardType from './CardType';
 import NewCard from './NewCard';
 import CardOTP from './CardOTP';
+import CardCreated from './CardCreated';
 const Bank = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
   const [openModal3, setOpenModal3] = useState(false);
+  const [openModal4, setOpenModal4] = useState(false);
 
   const navigate = useNavigate();
 
@@ -44,7 +46,11 @@ const Bank = () => {
         </Modal>
 
         <Modal closeModal={() => setOpenModal3(false)} openModal={openModal3}>
-            <CardOTP />
+            <CardOTP setOpenModal4={setOpenModal4} setOpenModal3={setOpenModal3}/>
+        </Modal>
+
+        <Modal closeModal={() => setOpenModal4(false)} openModal={openModal4}>
+            <CardCreated />
         </Modal>
 
     </div>
