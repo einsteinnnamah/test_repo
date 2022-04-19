@@ -10,19 +10,28 @@ const cardData = [
     id: 1,
     image: usaflag,
     text: "USD. Dollar Backed Security",
-    amount: "USD  219.09",
+    currency: "USD",
+    currency_value: "219.09",
+    change_type: 'positive',
+    change_value: 1.47
   },
   {
     id: 2,
     image: nigflag,
     text: "NGN. Naira Backed Security",
-    amount: "NGN  219.09",
+    currency: "USD",
+    currency_value: "219.09",
+    change_type: 'negative',
+    change_value: 10.98
   },
   {
     id: 3,
     image: cadflag,
     text: "CAD. Dollar Backed Security",
-    amount: "CAD  219.09",
+    currency: "CAD",
+    currency_value: "219.09",
+    change_type: 'positive',
+    change_value: 50
   },
 ];
 
@@ -44,9 +53,7 @@ const Market = () => {
       <div className="market-cards">
         {cardData.map((item) => (
           <Card
-            image={item.image}
-            text={item.text}
-            amount={item.amount}
+            {...item}
             key={item.id}
           />
         ))}
