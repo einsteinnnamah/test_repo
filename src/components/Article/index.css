@@ -7,9 +7,9 @@
 }
 
 .article h3 {
-  /* font-family: 'SQ Market Bold'; */
+   font-family: sqMarketBold;
   font-weight: 700;
-  font-size: 35.4061px;
+  font-size: 36px;
   line-height: 40px;
   text-align: center;
   color: #173e6f;

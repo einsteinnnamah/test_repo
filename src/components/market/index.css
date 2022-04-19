@@ -13,9 +13,9 @@
 }
 
 .market-title h4 {
-  /* font-family: "SQ Market"; */
+  font-family: sqMarketMedium;
   font-weight: 500;
-  font-size: 39.7982px;
+  font-size: 40px;
   line-height: 49px;
   color: #ffffff;
   margin-bottom: 7px;

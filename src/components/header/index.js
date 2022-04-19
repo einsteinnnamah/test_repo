@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-text">
-        <h2>
+        <h2 id={"header-text-main"}>
           Make Money from <br /> the Money Transfer <br /> Market
         </h2>
       </div>

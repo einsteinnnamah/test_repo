@@ -11,14 +11,13 @@
     justify-content: space-between;
     p {
       display: flex;
-      font-weight: 400;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 18px;
       text-align: center;
       color: #000000;
       span {
         &:first-child {
-          font-weight: 600;
+          font-family: sqMarketMedium;
         }
         &.dot {
           margin: 0 22px;
@@ -61,8 +60,8 @@
         cursor: pointer;
       }
       .login {
-        font-weight: 600;
-        font-size: 15px;
+        font-family: sqMarketMedium;
+        font-size: 16px;
         line-height: 18px;
         text-align: center;
         color: #173963;
@@ -71,8 +70,8 @@
       .signup {
         background: #3aa64c;
         border-radius: 10px;
-        font-weight: 500;
-        font-size: 15px;
+        font-family: sqMarketMedium;
+        font-size: 16px;
         line-height: 18px;
         text-align: center;
         color: #ffffff;

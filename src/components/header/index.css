@@ -12,7 +12,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  /* width: 474px; */
+}
+
+#header-text-main {
+  font-family: sqMarketBold;
 }
 
 .header-text h2 {
