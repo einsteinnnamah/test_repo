@@ -30,7 +30,8 @@ const NewCard = () => {
               { onSelect && 
             <div className='show_currency'>
               <div className='search_currency'>
-                <img src={search}></img> Search for Currency
+                <input  placeholder='Search for currency'/>
+               
                 
               </div>
               <hr></hr>
@@ -49,10 +50,18 @@ const NewCard = () => {
 
             <label className='fund'>
             <p>How much money do you want to fund the card with?</p> 
-              <input type="number" />
+              <input type="number" placeholder='$'/>
+          
             </label> 
 
+            
+
         </form>
+
+          <div className='conditions'>
+          <p>You wil be charged NGN13.896.00 at NGN579.00 to USD1</p>
+          <p className='con_2'>Please note that this includes an additional card creation fee of NGN1,158.00 (USD2).</p>
+          </div>
 
         <div className='btn'>
           <button>Proceed</button>

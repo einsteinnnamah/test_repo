@@ -1,5 +1,4 @@
 import React from 'react'
-import NewCard from '../NewCard'
 import './style.scss'
 const CardType = ({setOpenModal2, setOpenModal}) => {
   return (

@@ -65,6 +65,7 @@
     height: 49.75px;
     border: 1px solid #C9C9C9;
     border-radius: 6px;
+    padding: 10px;
 }
 
 .btn{
@@ -80,11 +81,16 @@
 
 .search_currency{
     color: #828282;
-    margin-top: 12px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     padding: 10px;
+}
+
+.search_currency input{
+    width: 401.03px;
+    height: 49.75px;
+    padding: 10px;
+    border: none;
 }
 
 .search_currency img{
@@ -108,6 +114,17 @@
     font-weight: bolder;
 }
 
+.conditions{
+    margin-top: 23px;
+}
+
+.conditions p{
+    font-size: 10.5px;
+}
+
+.con_2{
+    margin-top: 5px;
+}
 
 
 
