@@ -8,8 +8,10 @@ import CardType from './CardType';
 import NewCard from './NewCard';
 const Bank = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
+  console.log(openModal);
   const navigate = useNavigate();
-  
+
   return (
     
     <div className='bank'>
@@ -32,10 +34,13 @@ const Bank = () => {
         </div>
 
         <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
-         <CardType />
+         <CardType setOpenModal2={setOpenModal2} setOpenModal={setOpenModal} />
         </Modal>
 
-    
+        <Modal closeModal={() => setOpenModal2(false)} openModal={openModal2}>
+            <NewCard />
+        </Modal>
+
     </div>
   )
 }
