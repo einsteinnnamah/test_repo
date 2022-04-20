@@ -27,8 +27,8 @@
   margin-left: 20px;
 }   
 
-.card_btn span{
-    margin: 40px;
+.card_btn{
+    display: flex;
     cursor: pointer;
     color: #173963;
 }
@@ -66,5 +66,20 @@
 .card_btn option{
     color: #173963;
 }
+
+.manage_card{
+    position: relative;
+    margin-left: 70px;
+}
+
+.manage_card_options{
+    position: absolute;
+    font-size: 12px;
+}
+
+.manage_card_options div{
+    margin-top: 10px;
+}
+
 
 

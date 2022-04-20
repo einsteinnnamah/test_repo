@@ -12,6 +12,7 @@ import ChangePIN from '../ChangePIN'
 const CardTrans = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
+  const [onSelect, showSelect] = useState(false)
   console.log();
   return (
     <div className='card_trans'>
@@ -31,17 +32,18 @@ const CardTrans = () => {
             
           </div>
           <div className='card_btn'>
-            <span onClick={() => {
+            <div onClick={() => {
               setOpenModal(true);
-            }}>View Details</span>
-            <select>
-              <option style={{color: '#0D458A'}}>Manage Card</option>
-              <option onClick={() => {
-              setOpenModal(true);
-            }}>Change PIN</option>
-              <option >Deactivate Card</option>
-              <option style={{color: '#F34018'}}>Delete Card</option>
-            </select>
+            }}>View Details</div>
+            <div className='manage_card' onClick={() => showSelect(!onSelect)}>Manage Card{onSelect === true ? '' : ''}
+            { onSelect && 
+            <div className='manage_card_options'>
+              <div>Card PIN</div>
+              <div>Deactivate Card</div>
+              <div>Delete card</div>
+            </div>
+              }
+            </div>
 
           </div>
         
