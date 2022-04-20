@@ -25,7 +25,7 @@ const CardPin = () => {
         </div>
 
         <div className='btn'>
-       <button>Show Details</button>
+       <button style={{backgroundColor: '#173963'}}>Show Details</button>
         </div>
     </div>
   )
