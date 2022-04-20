@@ -24,7 +24,7 @@ const CardOTP= ({setOpenModal3, setOpenModal4}) => {
             separator={<span> </span>}
           />
         </div>
-        <div className='otp_wrap'>
+        <div className='otp_wrap confirm_pin'>
           <label> Confirm PIN</label>
         <OtpInput
             value={otp}

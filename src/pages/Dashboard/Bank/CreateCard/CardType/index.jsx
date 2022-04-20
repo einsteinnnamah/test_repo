@@ -40,7 +40,6 @@ const CardType = ({setOpenModal2, setOpenModal}) => {
 
             </div>
 
-          
        
             
         </div>

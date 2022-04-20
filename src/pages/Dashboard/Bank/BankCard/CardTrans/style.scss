@@ -1,0 +1,70 @@
+.card_trans_items{
+    padding: 20px;
+    display: flex;
+}
+
+.back{
+    margin-bottom: 27px;
+    
+}
+
+.back p{
+    color: #173963;
+    font-weight: 300;
+    font-size: 12.3969px;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+
+.id_card{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.card_btn{
+  margin-top: 11rem;
+  margin-left: 20px;
+}   
+
+.card_btn span{
+    margin: 40px;
+    cursor: pointer;
+    color: #173963;
+}
+
+.card_details{
+    padding: 20px;
+}
+
+.card_details h3{
+    margin-top: 52px;
+}
+
+.card_details hr{
+    margin-top: 16px;
+}
+
+.card_id{
+    margin-top: 36px;
+}
+
+.card_num{
+    margin-top: 36px;
+}
+
+.card_date{
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill_address{
+    margin-top: 36px;
+}
+
+.card_btn option{
+    color: #173963;
+}
+
+

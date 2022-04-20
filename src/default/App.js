@@ -12,7 +12,11 @@ import MarketPage from "../pages/Market/index";
 import CurrencyPage from "../pages/Market/currencypage";
 import DashboardLayout from "components/Templates/dahsboard";
 import Home from "../pages/Dashboard/Home";
-import Bank from "../pages/Dashboard/Bank";
+import Bank from "../pages/Dashboard/Bank/CreateCard/index";
+import UserCard from "../pages/Dashboard/Bank/BankCard/index"
+import CardTrans from "../pages/Dashboard/Bank/BankCard/CardTrans";
+
+
 
 function App() {
   const user = true;
@@ -52,6 +56,9 @@ function App() {
           <Route path="markets" element={<Home />} />
           <Route path="portfolio" element={<Home />} />
           <Route path="bank" element={<Bank />} />
+          <Route path="bank/UserCard" element={<UserCard />} />
+          <Route path="bank/UserCard/CardTrans" element={<CardTrans />} />
+          <Route path="bank/UserCard" element={<CardTrans />} />
           <Route path="profile" element={<Home />} />
           <Route path="referral" element={<Home />} />
           <Route path="settings" element={<Home />} />

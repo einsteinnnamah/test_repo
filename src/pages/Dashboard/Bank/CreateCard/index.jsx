@@ -1,5 +1,5 @@
-import '../Bank/style.scss'
-import BottomNav from "components/navbar/bottom_navbar"
+import './style.scss'
+import BottomNav from 'components/navbar/bottom_navbar'
 import wallets from 'assets/drawables/wallets.png'
 import { useState } from 'react'
 import Modal from "components/ModalPopUp";
@@ -9,11 +9,13 @@ import NewCard from './NewCard';
 import CardOTP from './CardOTP';
 import CardCreated from './CardCreated';
 import underline from 'assets/drawables/Rectangle_702.png'
+import CardTrans from '../BankCard/CardTrans';
 const Bank = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
   const [openModal3, setOpenModal3] = useState(false);
   const [openModal4, setOpenModal4] = useState(false);
+  const [openModal5, setOpenModal5] = useState(false);
 
   const navigate = useNavigate();
 
@@ -50,8 +52,12 @@ const Bank = () => {
             <CardOTP setOpenModal4={setOpenModal4} setOpenModal3={setOpenModal3}/>
         </Modal>
 
-        <Modal closeModal={() => setOpenModal4(false)} openModal={openModal4}>
+        <Modal closeModal={() => setOpenModal4(false)} openModal={openModal4} NoModal={true}>
             <CardCreated />
+        </Modal>
+
+        <Modal closeModal={() => setOpenModal5(false)} openModal={openModal5}>
+            <CardTrans setOpenModal5={setOpenModal5} />
         </Modal>
 
     </div>
