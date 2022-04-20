@@ -38,9 +38,9 @@ const CardTrans = () => {
             <div className='manage_card' onClick={() => showSelect(!onSelect)}>Manage Card{onSelect === true ? '' : ''}
             { onSelect && 
             <div className='manage_card_options'>
-              <div>Card PIN</div>
-              <div>Deactivate Card</div>
-              <div>Delete card</div>
+              <div style={{color: 'black'}}>Card PIN</div>
+              <div style={{color: 'black'}}>Deactivate Card</div>
+              <div style={{color: '#F34018'}}>Delete card</div>
             </div>
               }
             </div>
