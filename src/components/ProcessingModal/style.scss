@@ -1,0 +1,47 @@
+.successP {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #3aa64c;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.pd_progress_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .wait {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #000000;
+  }
+}
+.pd_suc_modal {
+  .successP {
+    margin-top: 60px;
+  }
+  .story {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 40px;
+    display: block;
+    color: #173963;
+  }
+}

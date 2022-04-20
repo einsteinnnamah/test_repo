@@ -6,33 +6,29 @@ import dropIcon from "../../assets/drawables/dropIcon.svg";
 import { useState } from "react";
 import EachLocation from "./EachLocation";
 import { useFormContext } from "react-hook-form";
-const InputPhone = ({ label }) => {
+const CurrencyPhone = ({ label }) => {
   const countryList = [
-    { img: nigeria, code: "+234", country: "Nigeria" },
-    { img: england, code: "+61", country: "England" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: nigeria, code: "+234", country: "Nigeria" },
-    { img: england, code: "+61", country: "England" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: nigeria, code: "+234", country: "Nigeria" },
-    { img: england, code: "+61", country: "England" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: nigeria, code: "+234", country: "Nigeria" },
-    { img: england, code: "+61", country: "England" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: nigeria, code: "+234", country: "Nigeria" },
-    { img: england, code: "+61", country: "England" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: angola, code: "+1", country: "Angola" },
-    { img: nigeria, code: "+234", country: "Nigeria" },
-    { img: england, code: "+61", country: "England" },
-    { img: angola, code: "+1", country: "Angola" },
+    { img: nigeria, code: "USD", country: "Nigeria" },
+    { img: england, code: "CAD", country: "England" },
+    { img: angola, code: "ALG", country: "Angola" },
+    { img: nigeria, code: "ANG", country: "Nigeria" },
+    { img: england, code: "WER", country: "England" },
+    { img: angola, code: "AGS", country: "Angola" },
+    { img: nigeria, code: "FSD", country: "Nigeria" },
+    { img: england, code: "QWS", country: "England" },
+    { img: angola, code: "UIT", country: "Angola" },
+    { img: angola, code: "SFC", country: "Angola" },
+    { img: nigeria, code: "ANG", country: "Nigeria" },
+    { img: england, code: "WER", country: "England" },
+    { img: angola, code: "AGS", country: "Angola" },
+    { img: nigeria, code: "FSD", country: "Nigeria" },
+    { img: england, code: "QWS", country: "England" },
+    { img: angola, code: "UIT", country: "Angola" },
+    { img: angola, code: "SFC", country: "Angola" },
   ];
   const [selected, setSelected] = useState({
     img: nigeria,
-    code: "+234",
+    code: "NIG",
   });
   const [show, setShow] = useState(false);
   const {
@@ -89,4 +85,4 @@ const InputPhone = ({ label }) => {
   );
 };
 
-export default InputPhone;
+export default CurrencyPhone;

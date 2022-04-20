@@ -1,0 +1,65 @@
+@use "../../../../../assets/sass/index" as *;
+
+.pd_pick_bank {
+  background: #f5faff;
+  border: 0.74825px solid #c6dfff;
+  box-sizing: border-box;
+  border-radius: 10.6893px;
+  padding: 27px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  position: relative;
+  cursor: pointer;
+  .ice_amount {
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    color: #000000;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  img.mark {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    display: none;
+  }
+  &.active {
+    background: #ffffff;
+    border: 1px solid #3aa64c;
+    img.mark {
+      display: block;
+    }
+  }
+  .cover_img {
+    background: #ffffff;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 11px 13px;
+    margin-right: 23px;
+  }
+  .text_side {
+    .top {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 12px;
+      color: #000000;
+    }
+    .bottom {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 15px;
+      /* or 141% */
+      color: #5c5c5c;
+    }
+  }
+}

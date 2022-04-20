@@ -64,7 +64,7 @@ const PersonalInfo = () => {
               label="Email Address"
               errMsg="invalid email input"
             />
-            <InputPhone />
+            <InputPhone label={"Enter mobile Number"} />
             <div className="form-group-wrap">
               <InputField
                 type="date"

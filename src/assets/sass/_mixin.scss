@@ -122,6 +122,163 @@
     width: 80%;
   }
 }
+@mixin check {
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+
+  .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root {
+    padding: 0;
+  }
+  .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+  .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #eaac0c;
+  }
+  .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root {
+    color: #eaac0c;
+  }
+  p {
+    font-weight: 300;
+    font-size: 9.63183px;
+    line-height: 12px;
+    text-align: center;
+    margin-left: 5px;
+    a {
+      text-decoration: none;
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+}
+@mixin set_card {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+}
+@mixin main_aspect {
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+  @include mq(768px) {
+    width: 60%;
+  }
+  @include mq(668px) {
+    width: 80%;
+  }
+  @include mq(468px) {
+    width: 90%;
+  }
+}
+
+@mixin right_nav {
+  display: flex;
+  align-items: center;
+  .toggleSide {
+    display: flex;
+
+    .togDiv {
+      margin: 0 6px;
+      .switch {
+        position: relative;
+        width: 40px;
+        height: 21.05px;
+        float: left;
+
+        input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #edf5ff;
+          border: 2px solid #b7d7ff;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          &:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 4px;
+            top: 8%;
+            bottom: 4px;
+            background-color: #eaac0c;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+          /* Rounded sliders */
+          &.round {
+            border-radius: 34px;
+          }
+
+          &.round:before {
+            border-radius: 50%;
+          }
+        }
+        input:checked + .slider {
+          // background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #ffffff;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(13px);
+          -ms-transform: translateX(13px);
+          transform: translateX(13px);
+        }
+      }
+    }
+  }
+  .cover_drop {
+    margin: 0 22px 0 57px;
+    .css-toezm8-MuiButtonBase-root-MuiButton-root {
+      background: #f5faff;
+      border: 1px solid #deedff;
+      padding: 7px;
+      box-sizing: border-box;
+      box-shadow: 0px 10px 30px rgba(23, 57, 99, 0.1);
+      border-radius: 15px;
+    }
+    .name_action {
+      font-weight: 400;
+      font-size: 12.3893px;
+      line-height: 15px;
+      text-transform: capitalize;
+      color: #173963;
+      margin-right: 30px;
+    }
+  }
+  .notification {
+    display: flex;
+    outline: none;
+    border: none;
+    background: linear-gradient(136.67deg, #eaac0c 8.34%, #f34018 95.26%);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    box-shadow: 0px 5px 34px rgba(186, 19, 88, 0.42);
+    border-radius: 14px;
+    padding: 8.58px 14.39px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    justify-content: center;
+    color: #ffffff;
+    img {
+      margin-right: 4px;
+    }
+  }
+}
+
 @mixin cut_text {
   overflow: hidden;
   text-overflow: ellipsis;

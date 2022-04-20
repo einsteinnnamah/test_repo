@@ -1,0 +1,268 @@
+@use "../../../../assets/sass/index" as *;
+
+.pd_card_invest {
+  width: 100%;
+  .cover_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 50px;
+    @include mq(800px) {
+      padding: 0 20px;
+    }
+    @include mq(1000px) {
+      flex-direction: column;
+      align-items: unset;
+    }
+    .left {
+      width: 30%;
+      @include mq(1000px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .title {
+        font-weight: 400;
+        font-size: 12px;
+        width: 80%;
+        margin: auto;
+        line-height: 14px;
+        color: #000000;
+        margin-bottom: 12px;
+        @include mq(1000px) {
+          width: 100%;
+        }
+      }
+      .card_left {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        width: 80%;
+        margin: auto;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 25px 22px;
+        @include mq(1200px) {
+        }
+        @include mq(1000px) {
+          width: 40%;
+          margin: unset;
+          margin-bottom: 20px;
+        }
+        @include mq(800px) {
+          width: 60%;
+        }
+        @include mq(600px) {
+          width: 100%;
+        }
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-bottom: 21px;
+          border-bottom: 0.5px solid #c9c9c9;
+          .flag_side {
+            display: flex;
+
+            .flag_div {
+              display: flex;
+              align-items: center;
+              p {
+                font-weight: 400;
+                font-size: 9.92898px;
+                line-height: 12px;
+                color: #000000;
+              }
+              img {
+                width: 22px;
+                margin-right: 4px;
+              }
+            }
+            .line_div {
+              margin-left: 2px;
+              p {
+                font-weight: 600;
+              }
+            }
+          }
+          .rate_side {
+            font-weight: 400;
+            font-size: 9.3946px;
+            line-height: 11px;
+
+            color: #000000;
+            span {
+              color: #34e36f;
+              margin-left: 3px;
+            }
+          }
+        }
+        .bottom {
+          padding: 30px 0;
+        }
+      }
+      .indicate_div {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 10px;
+        @include mq(1000px) {
+          width: 100%;
+        }
+        p {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 12px;
+          margin-left: 4px;
+          color: #5c5c5c;
+        }
+      }
+    }
+    .right {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include mq(1000px) {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .leftAmount {
+        width: 60%;
+
+        @include mq(800px) {
+          width: 100%;
+        }
+
+        .amount_box {
+          width: 100%;
+          .currency_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              font-weight: 600;
+              font-size: 17.36px;
+              line-height: 21px;
+              color: #0d458a;
+            }
+            img {
+              width: 19px;
+              cursor: pointer;
+            }
+          }
+          .currency_form {
+            background: #ffffff;
+            border: 0.842286px solid #eaeaea;
+            box-sizing: border-box;
+            border-radius: 14.9161px;
+            padding: 34px 46px;
+            margin-top: 21px;
+            padding-bottom: 70px;
+          }
+          .indicate_div {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            img {
+              margin-right: 5px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 10.89px;
+              line-height: 13px;
+              color: #5c5c5c;
+            }
+          }
+        }
+        .bank_select_box {
+          width: 100%;
+          .title {
+            font-weight: 600;
+            font-size: 17.3587px;
+            line-height: 21px;
+            margin-bottom: 32px;
+            color: #0d458a;
+          }
+        }
+      }
+      .rightAmount {
+        background: #ffffff;
+        border: 0.7px solid #eaeaea;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 27px 22px;
+        width: 30%;
+        @include mq(800px) {
+          width: 325px;
+          margin: 20px 0;
+        }
+        .title {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 40px;
+          color: #0d458a;
+        }
+        .amount_div {
+          width: 100%;
+        }
+        .each_amount,
+        .total_div {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .left_text {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #5c5c5c;
+          }
+          .right_text {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+
+            color: #000000;
+          }
+        }
+        .process {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .left_text {
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 6px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 10.043px;
+              line-height: 12px;
+
+              color: #5c5c5c;
+            }
+          }
+          .right_text {
+            font-weight: 600;
+            font-size: 10.5748px;
+            line-height: 13px;
+            text-align: right;
+
+            color: #0d458a;
+          }
+        }
+      }
+    }
+  }
+}

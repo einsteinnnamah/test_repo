@@ -11,6 +11,10 @@
   padding: 10px 16px;
   top: 400px;
   right: 82px;
+  &.down {
+    bottom: 37px;
+    top: unset;
+  }
   img {
     margin-right: 3px;
   }

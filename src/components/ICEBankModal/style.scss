@@ -1,0 +1,79 @@
+@use "../../assets/sass/index" as *;
+
+.pd_each_ice {
+  padding: 24px 20px;
+  background: #f5faff;
+  border-radius: 10.6421px;
+  width: 100%;
+  margin-bottom: 14px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .top_ice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .left_ice {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 7px;
+        width: 28px;
+      }
+      p.code {
+        font-weight: 600;
+        margin-bottom: 3px;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000;
+      }
+      p.desc {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #000000;
+      }
+    }
+    .right_ice {
+      display: flex;
+      align-items: center;
+      p {
+        font-weight: 600;
+        font-size: 17.9598px;
+        line-height: 22px;
+        text-align: right;
+        margin-right: 20px;
+        color: #000000;
+      }
+    }
+  }
+  .additional {
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 11px;
+    margin-top: 10px;
+    color: #3aa64c;
+  }
+  &.active {
+    background: #ffffff;
+    border: 1.06421px solid #3aa64c;
+  }
+}
+
+.pd_ice_bank_modal {
+  width: 100%;
+  .available {
+    font-weight: 500;
+    font-size: 12.3433px;
+    line-height: 15px;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 2px;
+    span {
+      color: #3aa64c;
+    }
+  }
+}

@@ -15,6 +15,11 @@ import Home from "../pages/Dashboard/Home";
 import Bank from "../pages/Dashboard/Bank";
 import MarketDashboard from "../pages/Dashboard/Market";
 import EachMarket from "../pages/Dashboard/Market/EachMarket";
+import CardInvest from "../pages/Dashboard/Market/Invest/index";
+import SetCard from "../pages/Dashboard/Market/SetCard";
+import SetBank from "../pages/Dashboard/Market/SetBank";
+import Receipt from "../pages/Dashboard/Market/Receipt";
+import SendMoneyIce from "../pages/Dashboard/Market/SendMoneyIce";
 
 function App() {
   const user = true;
@@ -53,12 +58,19 @@ function App() {
           {/* you can change the component here, please do no change the path */}
           <Route path="markets" element={<MarketDashboard />} />
           <Route path="markets/:id" element={<EachMarket />} />
+
           <Route path="portfolio" element={<Home />} />
           <Route path="bank" element={<Bank />} />
           <Route path="profile" element={<Home />} />
           <Route path="referral" element={<Home />} />
           <Route path="settings" element={<Home />} />
         </Route>
+        {/* outside dashboard */}
+        <Route path="invest" element={<CardInvest />} />
+        <Route path="/invest/setcard" element={<SetCard />} />
+        <Route path="/invest/setbank" element={<SetBank />} />
+        <Route path="/invest/receipt" element={<Receipt />} />
+        <Route path="/invest/sendmoney" element={<SendMoneyIce />} />
       </Routes>
     </div>
   );
