@@ -1,0 +1,42 @@
+.referral_link{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.referral_link img {
+    margin-bottom: 21px;
+}
+
+.referral_link h3{
+    margin-top: 36px;
+    margin-bottom: 8px;
+    color: #173E6F;
+    font-weight: bold;
+}
+
+.referral_btn{
+    height: 35px;
+    background-color: #F2F6FE;
+    border-radius: 70px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.referral_btn span{
+    margin: 20px;
+}
+
+.referral_icons{
+    margin: 20px;
+}
+
+.referral_icons img{
+    margin: 10px;
+    cursor: pointer;
+}
+
