@@ -1,0 +1,79 @@
+.currency_details{
+    margin: 30px;
+    display: flex;
+}
+
+.by_usd{
+    width: 100px;
+    height: 40px;
+    background-color: #DEEDFF;
+    border-radius: 100px;
+    border: 0.81px solid rgba(23, 57, 99, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usa{
+    display: flex;
+    align-items: center;
+}
+
+.usa img{
+    margin-right: 5px;
+}
+
+.by_ngn{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.81px solid rgba(222, 222, 222, 1);
+    border-radius: 100px;
+    margin-left: 21px;
+}
+
+.ngn img{
+    margin-right: 5px;
+}
+
+.ngn{
+    display: flex;
+    align-items: center;
+}
+
+.by_gbp{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.81px solid rgba(222, 222, 222, 1);
+    border-radius: 100px;
+    margin-left: 21px;
+}
+
+.gbp img{
+    margin-right: 5px;
+}
+
+
+.gbp{
+    display: flex;
+    align-items: center;
+}
+
+.referred_list{
+    margin: 30px;
+}
+
+
+
+.referred_list h3{
+    margin-top: 10rem ;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+

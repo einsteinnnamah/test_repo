@@ -8,6 +8,7 @@ import help from 'assets/drawables/help.svg'
 import nodata from 'assets/drawables/nodata.svg'
 import ReferralLink from './ReferralLink'
 import support from 'assets/drawables/support.svg'
+import { Link } from 'react-router-dom'
 const Overview = () => {
   return (
     <div className='referral_overview'>
@@ -17,7 +18,7 @@ const Overview = () => {
             
             <div className='referral_toggle'>
                 <div className='r_toggle'>Overview <img src={underline}></img></div>
-                <div>By Currency</div>
+                <Link style={{ textDecoration: 'none' , color: '#525252' }} to="/dashboard/referral/ByCurrency">   <div>By Currency</div> </Link>
             </div>
 
             <div className='total_earns'>
