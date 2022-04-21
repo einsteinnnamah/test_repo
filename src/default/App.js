@@ -15,6 +15,7 @@ import Home from "../pages/Dashboard/Home";
 import Bank from "../pages/Dashboard/Bank/CreateCard/index";
 import UserCard from "../pages/Dashboard/Bank/BankCard/index"
 import CardTrans from "../pages/Dashboard/Bank/BankCard/CardTrans";
+import Account from "../pages/Dashboard/Bank/Account";
 
 
 
@@ -59,6 +60,7 @@ function App() {
           <Route path="bank/UserCard" element={<UserCard />} />
           <Route path="bank/UserCard/CardTrans" element={<CardTrans />} />
           <Route path="bank/UserCard" element={<CardTrans />} />
+          <Route path="bank/Account" element={<Account />} />
           <Route path="profile" element={<Home />} />
           <Route path="referral" element={<Home />} />
           <Route path="settings" element={<Home />} />

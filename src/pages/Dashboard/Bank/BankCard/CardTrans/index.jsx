@@ -6,12 +6,17 @@ import back_icon from 'assets/drawables/backicon.svg'
 import usercard from 'assets/drawables/usercard.png'
 import BottomNav from 'components/navbar/bottom_navbar'
 import TransDetails from './TransDetails'
-import Modal from "components/ModalPopUp";
+import Modal from "components/ModalPopUp"
 import CardPin from '../CardPin'
 import ChangePIN from '../ChangePIN'
+import DeactivatePIN from '../DeactivatePIN'
+import DeleteCard from '../DeleteCard'
+import { color } from '@mui/system'
 const CardTrans = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
+  const [openModal3, setOpenModal3] = useState(false);
+  const [openModal4, setOpenModal4] = useState(false);
   const [onSelect, showSelect] = useState(false)
   console.log();
   return (
@@ -22,7 +27,7 @@ const CardTrans = () => {
          
             <div className='back'>
             
-              <p><Link  to="/dashboard/bank/UserCard"><img src={back_icon}></img> Back to ICE Bank</Link></p>
+              <p><Link style={{ textDecoration: 'none' , color: '#173963' }} to="/dashboard/bank/UserCard"><img src={back_icon}></img> Back to ICE Bank</Link></p>
               
             </div>
 
@@ -38,9 +43,15 @@ const CardTrans = () => {
             <div className='manage_card' onClick={() => showSelect(!onSelect)}>Manage Card{onSelect === true ? '' : ''}
             { onSelect && 
             <div className='manage_card_options'>
-              <div style={{color: 'black'}}>Card PIN</div>
-              <div style={{color: 'black'}}>Deactivate Card</div>
-              <div style={{color: '#F34018'}}>Delete card</div>
+              <div style={{color: 'black'}} onClick={() => {
+                setOpenModal2(true);
+              }}>Card PIN</div>
+              <div style={{color: 'black'}} onClick={() => {
+                setOpenModal3(true);
+              }}>Deactivate Card</div>
+              <div style={{color: '#F34018'}} onClick={() => {
+                setOpenModal4(true);
+              }}>Delete card</div>
             </div>
               }
             </div>
@@ -86,9 +97,6 @@ const CardTrans = () => {
         </div>
 
         </div>
-
-       
-        
            
         <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
             <CardPin />
@@ -98,6 +106,13 @@ const CardTrans = () => {
             <ChangePIN />
         </Modal>
      
+        <Modal closeModal={() => setOpenModal3(false)} openModal={openModal3}>
+            <DeactivatePIN />
+        </Modal>
+
+        <Modal closeModal={() => setOpenModal4(false)} openModal={openModal4}>
+            <DeleteCard />
+        </Modal>
       
     </div>
   )

@@ -10,6 +10,7 @@ import CardOTP from './CardOTP';
 import CardCreated from './CardCreated';
 import underline from 'assets/drawables/Rectangle_702.png'
 import CardTrans from '../BankCard/CardTrans';
+import { Link } from 'react-router-dom';
 const Bank = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
@@ -24,7 +25,7 @@ const Bank = () => {
     <div className='bank'>
       <BottomNav />
         <div className='bank_options'>
-          <div onClick={""}>Account</div>
+        <Link style={{ textDecoration: 'none' , color: '#525252' }} to="/dashboard/bank/Account"> <div onClick={""}>Account</div> </Link>
           <div className='bank_card'>Cards <img src={underline}></img></div>
         </div>
 

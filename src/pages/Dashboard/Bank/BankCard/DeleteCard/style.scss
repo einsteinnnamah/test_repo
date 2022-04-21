@@ -1,0 +1,27 @@
+.delete_card h3{
+    color: #F34018;
+    margin-bottom: 56px;
+}
+
+
+.delete_card_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.delete_card_items span{
+    margin-bottom: 19px;
+}
+
+.delete_card_items img {
+    margin-bottom: 17px;
+}
+
+.delete_card_items p{
+    margin-bottom: 27px;
+    font-weight: bold;
+    cursor: pointer;
+}
