@@ -86,7 +86,12 @@ const SetBank = () => {
             </FormProvider>
           )}
 
-          <SubmitBtn btnText={"Next"} />
+          <SubmitBtn
+            onClick={() => {
+              navigate("/invest/receipt");
+            }}
+            btnText={"Next"}
+          />
         </div>
       </div>
       <SmallModal closeModal={() => setOpenModal(false)} openModal={openModal}>
