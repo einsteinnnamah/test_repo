@@ -20,6 +20,9 @@ import SetCard from "../pages/Dashboard/Market/SetCard";
 import SetBank from "../pages/Dashboard/Market/SetBank";
 import Receipt from "../pages/Dashboard/Market/Receipt";
 import SendMoneyIce from "../pages/Dashboard/Market/SendMoneyIce";
+import Setting from "../pages/Dashboard/Settings";
+import Notification from "../pages/Dashboard/Settings/notification";
+import Language from "../pages/Dashboard/Settings/language";
 
 function App() {
   const user = true;
@@ -63,7 +66,9 @@ function App() {
           <Route path="bank" element={<Bank />} />
           <Route path="profile" element={<Home />} />
           <Route path="referral" element={<Home />} />
-          <Route path="settings" element={<Home />} />
+          <Route path="settings" element={<Setting />} />
+          <Route path="settings/notification" element={<Notification />} />
+          <Route path="settings/language" element={<Language />} />
         </Route>
         {/* outside dashboard */}
         <Route path="invest" element={<CardInvest />} />

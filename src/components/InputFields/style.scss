@@ -440,6 +440,17 @@
     line-height: 15px;
     color: #000000;
   }
+  &.eachlang {
+    border-radius: 3px;
+    padding: 10px;
+    &:hover {
+      background: #173e6f;
+
+      .country_name {
+        color: white;
+      }
+    }
+  }
 }
 
 .each_number {

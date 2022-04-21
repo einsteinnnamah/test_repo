@@ -1,0 +1,218 @@
+@use "../../../assets/sass/index" as *;
+
+.pd_setting {
+  width: 100%;
+
+  .setting_box {
+    .setting_title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 5px;
+      color: #000000;
+    }
+    .setting_desc {
+      font-weight: 300;
+      font-size: 12.3893px;
+      line-height: 15px;
+
+      color: #5c5c5c;
+    }
+    .white_box {
+      @include white_box;
+      .each_wite_box {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 26px;
+        text-decoration: none;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .right_white {
+          flex-grow: 2;
+          display: flex;
+          margin-left: 23px;
+          align-items: center;
+          justify-content: space-between;
+          .left_text {
+            .topic {
+              font-weight: 600;
+              font-size: 13.5453px;
+              line-height: 17px;
+              margin-bottom: 5px;
+              color: #000000;
+            }
+            .desc {
+              font-weight: 300;
+              font-size: 11.9973px;
+              line-height: 15px;
+              color: #5c5c5c;
+            }
+            .tag {
+              display: flex;
+              padding: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: 400;
+              font-size: 10.4921px;
+              line-height: 13px;
+              width: max-content;
+              color: #0d458a;
+              margin-top: 15px;
+              background: #ecf4ff;
+              border-radius: 4.23435px;
+              .greentag {
+                color: #34e36f;
+              }
+              .redtag {
+                color: #f34018;
+              }
+              img {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.setting_box {
+  width: 100%;
+  padding: 39px 40px;
+}
+
+.pd_setting_head {
+  margin: 30px 0;
+  .backlink {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 27px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #173963;
+    img {
+      margin-right: 3px;
+    }
+  }
+  .flex_set {
+    display: flex;
+    align-items: flex-start;
+    img {
+      margin-right: 14px;
+    }
+    .text_side {
+      .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 5px;
+        color: #000000;
+      }
+      .desc {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #5c5c5c;
+      }
+    }
+  }
+}
+
+.pd_notification {
+  .notify_table {
+    @include white_box;
+    table {
+      width: 100%;
+      th {
+        font-weight: 600;
+        font-size: 12.5453px;
+        line-height: 15px;
+
+        text-align: left;
+        color: #000000;
+        padding: 15px;
+        padding-left: 22px;
+      }
+      td {
+        // .cover_check {
+        //   display: flex;
+        //   justify-content: center;
+        //   width: 100%;
+        // }
+        padding: 15px;
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+          color: $primary;
+        }
+        .css-i4bv87-MuiSvgIcon-root {
+          font-size: 2rem;
+        }
+        .bold {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+
+          color: #000000;
+        }
+        .faint {
+          font-weight: 300;
+          font-size: 11.9973px;
+          line-height: 15px;
+          margin-top: 7px;
+          color: #5c5c5c;
+        }
+      }
+    }
+    .cover_btn {
+      display: flex;
+      padding-right: 55px;
+      justify-content: flex-end;
+      @include mq(768px) {
+        padding-right: 0;
+      }
+    }
+    .btn_box {
+      width: 212px;
+    }
+  }
+}
+.pd_language {
+  .language_box {
+    @include white_box;
+    padding-bottom: 98px;
+    padding-top: 51px;
+    form {
+      width: 50%;
+      @include mq(800px) {
+        width: 100%;
+      }
+      .pd_custom_flag_drop_down .cover_all .drop_box {
+        background: #f5faff;
+        border: none;
+      }
+      .pd_custom_flag_drop_down .cover_all label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #000000 !important;
+      }
+    }
+    .cover_btn {
+      display: flex;
+
+      justify-content: flex-end;
+      @include mq(768px) {
+        padding-right: 0;
+      }
+    }
+    .btn_box {
+      width: 212px;
+    }
+  }
+}
