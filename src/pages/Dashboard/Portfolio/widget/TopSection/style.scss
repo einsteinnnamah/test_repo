@@ -1,0 +1,92 @@
+@use "../../../../../assets/sass/index" as *;
+
+.pd_top_section {
+  background: #ffffff;
+  border: 0.784026px solid #e5e5e5;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 35px 60px;
+  display: flex;
+  justify-content: space-between;
+  .first_sect {
+    display: flex;
+    align-items: center;
+    .see {
+      font-weight: 300;
+      font-size: 12.3893px;
+      line-height: 15px;
+      color: #5c5c5c;
+      margin-right: 5px;
+    }
+    .choose_currency_box {
+      position: relative;
+      margin-right: 7px;
+      .show_currency {
+        width: 64px;
+        background: #eff5ff;
+        border-radius: 8.38704px;
+        padding: 6px 7px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        .flag {
+          width: 12px;
+          margin-right: 3px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 11px;
+          color: #173963;
+          margin-right: 6px;
+        }
+        .downarr {
+        }
+      }
+      .currency_list {
+        background: #ffffff;
+        border: 0.532529px solid #dbdbdb;
+        box-sizing: border-box;
+        box-shadow: 0px 11.4113px 22.8227px rgba(0, 0, 0, 0.1);
+        border-radius: 7.60755px;
+        position: absolute;
+        bottom: -209px;
+        right: 0;
+        padding: 25px 18px;
+        width: 141px;
+        display: none;
+        &.active {
+          display: block;
+        }
+        .each_currency_list {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+          cursor: pointer;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            width: 18px;
+            margin-right: 7px;
+          }
+          .code {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            /* identical to box height */
+
+            color: #000000;
+          }
+          .desc {
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 9px;
+
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

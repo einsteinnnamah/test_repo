@@ -25,6 +25,7 @@ import Notification from "../pages/Dashboard/Settings/notification";
 import Language from "../pages/Dashboard/Settings/language";
 import LoginSetting from "../pages/Dashboard/Settings/loginSetting";
 import TwoFactor from "../pages/Dashboard/Settings/twofactor";
+import Portfolio from "../pages/Dashboard/Portfolio";
 
 function App() {
   const user = true;
@@ -64,9 +65,10 @@ function App() {
           <Route path="markets" element={<MarketDashboard />} />
           <Route path="markets/:id" element={<EachMarket />} />
 
-          <Route path="portfolio" element={<Home />} />
+          <Route path="portfolio" element={<Portfolio />} />
           <Route path="bank" element={<Bank />} />
           <Route path="profile" element={<Home />} />
+
           <Route path="referral" element={<Home />} />
           <Route path="settings" element={<Setting />} />
           <Route path="settings/notification" element={<Notification />} />
