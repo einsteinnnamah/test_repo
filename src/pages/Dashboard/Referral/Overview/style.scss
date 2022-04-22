@@ -17,10 +17,26 @@
     font-weight: bold;
 }
 
+.total_earns{
+    width: 663px;
+    height: 200px;
+    border: 0.5px solid #E5E5E5;
+    box-shadow: 0px 18px 18px rgba(243, 243, 243, 0.4);
+    border-radius: 16px;
+    padding: 20px;
+}
+
 .te_title{
     display: flex;
-    padding: 30px;
     align-items: center;
+}
+
+.total_earns{
+    width: 663px;
+    height: 200px;
+    border: 0.5px solid #E5E5E5;
+    box-shadow: 0px 18px 18px rgba(243, 243, 243, 0.4);
+    border-radius: 16px;
 }
 
 .te_title div{
@@ -46,8 +62,8 @@
 }
 
 .te_options{
+    margin-top: 36px;
     display: flex;
-    padding: 30px;
 }
 
 .te_options_earn{
@@ -61,10 +77,13 @@
 }
 
 .people_referred{
-    margin-top: 100px;
+    box-shadow: 0px 18px 18px rgba(243, 243, 243, 0.4);
+    border-radius: 16px;
     padding: 30px;
     width: 663px;
     height: 402px;
+    border: 0.5px solid #E5E5E5;
+    margin-top: 25px;
 }
 
 .people_referred h3{
@@ -86,20 +105,29 @@
 
 .overview{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .support_btn{
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20rem;
+    width: 118px;
+    height: 52px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background: #FFFFFF;
-    border: 0.4px solid #EDF5FF;
+    color: #0D458A;
+    font-weight: bold;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    float: right;
 }
+
+.support_btn img{
+    margin-right: 10px;
+}
+
+
+
 
 
 

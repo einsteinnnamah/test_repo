@@ -13,14 +13,12 @@ const Overview = () => {
   return (
     <div className='referral_overview'>
          <BottomNav />
-         <div className='overview'>
-            <div className='overview_details'>
-            
             <div className='referral_toggle'>
                 <div className='r_toggle'>Overview <img src={underline}></img></div>
                 <Link style={{ textDecoration: 'none' , color: '#525252' }} to="/dashboard/referral/ByCurrency">   <div>By Currency</div> </Link>
             </div>
-
+            <div className='overview'>
+            <div className='overview_details'>
             <div className='total_earns'>
                 <div className='te_title'>
                     <p>See your total earnings in </p>
@@ -51,10 +49,10 @@ const Overview = () => {
 
         
             </div>
-            <div className='referral_link'>
+            <div>
                 <ReferralLink />
                 <div className='support_btn'>
-                <div><img src={support}></img></div>
+                <img src={support}></img>
                     <p>Support</p>
                 </div>
             </div>
