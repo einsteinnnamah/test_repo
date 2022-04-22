@@ -22,18 +22,19 @@ const CardTrans = () => {
   return (
     <div className='card_trans'>
         <BottomNav />
-        <div className='card_trans_items'>
-          < div className='card_items'>
-         
-            <div className='back'>
+        <div className='back'>
             
-              <p><Link style={{ textDecoration: 'none' , color: '#173963' }} to="/dashboard/bank/UserCard"><img src={back_icon}></img> Back to ICE Bank</Link></p>
-              
-            </div>
-
-          <h3 className='id_card'>Your Card</h3>
-          <div className='card_img'>
+            <p><Link style={{ textDecoration: 'none' , color: '#173963' }} to="/dashboard/bank/UserCard"><img src={back_icon}></img> Back to ICE Bank</Link></p>
+            
+          </div>
+        <div className='card_trans_items'>
+          <div className='card_items'>
+            <div className='img_usercard'>
+            <h3 className='id_card'>Your Card</h3>
+            <div>
             <img src={usercard}></img>
+            </div>
+          
             
           </div>
           <div className='card_btn'>
