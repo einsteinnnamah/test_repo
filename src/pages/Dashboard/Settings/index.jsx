@@ -8,7 +8,12 @@ import arrowLeft from "../../../assets/drawables/arrowblue.svg";
 import guard from "../../../assets/drawables/guard.svg";
 import "./style.scss";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Modal from "components/ModalPopUp";
+import SetOffModal from "./setOffModal";
 const Setting = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [setOffAction, setSetOffAction] = useState("active");
   return (
     <div className="pd_setting">
       <ListConversion />
@@ -19,7 +24,7 @@ const Setting = () => {
           on.
         </p>
         <div className="white_box">
-          <Link to="/" className="each_wite_box">
+          <Link to="/dashboard/settings/login" className="each_wite_box">
             <img src={log} alt="" />
             <div className="right_white">
               <div className="left_text">
@@ -36,7 +41,7 @@ const Setting = () => {
               <img src={arrowLeft} alt="arrow" />
             </div>
           </Link>
-          <Link to="/" className="each_wite_box">
+          <Link to="/dashboard/settings/notification" className="each_wite_box">
             <img src={not} alt="" />
             <div className="right_white">
               <div className="left_text">
@@ -49,7 +54,13 @@ const Setting = () => {
               <img src={arrowLeft} alt="arrow" />
             </div>
           </Link>
-          <Link to="/" className="each_wite_box">
+          <div
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            to="/"
+            className="each_wite_box"
+          >
             <img src={set} alt="" />
             <div className="right_white">
               <div className="left_text">
@@ -59,13 +70,21 @@ const Setting = () => {
                   do eiusmod <br /> tempor incididunt
                 </p>
                 <span className="tag">
-                  Status: <span className="redtag">Off</span>
+                  Status:{" "}
+                  <span
+                    className={`redtag ${
+                      setOffAction === "active" ? "green" : "red"
+                    }`}
+                  >
+                    {" "}
+                    {setOffAction === "active" ? "On" : "Off"}{" "}
+                  </span>
                 </span>
               </div>
               <img src={arrowLeft} alt="arrow" />
             </div>
-          </Link>
-          <Link to="/" className="each_wite_box">
+          </div>
+          <Link to="/dashboard/settings/twofactor" className="each_wite_box">
             <img src={two} alt="" />
             <div className="right_white">
               <div className="left_text">
@@ -83,7 +102,7 @@ const Setting = () => {
               <img src={arrowLeft} alt="arrow" />
             </div>
           </Link>
-          <Link to="/" className="each_wite_box">
+          <Link to="/dashboard/settings/language" className="each_wite_box">
             <img src={lan} alt="lan" />
             <div className="right_white">
               <div className="left_text">
@@ -100,6 +119,14 @@ const Setting = () => {
           </Link>
         </div>
       </div>
+
+      <Modal
+        title={"Set off Settings"}
+        closeModal={() => setOpenModal(false)}
+        openModal={openModal}
+      >
+        <SetOffModal setSetOffAction={setSetOffAction} action={setOffAction} />
+      </Modal>
     </div>
   );
 };

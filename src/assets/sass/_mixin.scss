@@ -150,6 +150,31 @@
     }
   }
 }
+@mixin tag {
+  display: flex;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 10.4921px;
+  line-height: 13px;
+  width: max-content;
+  color: #0d458a;
+  margin-top: 15px;
+  background: #ecf4ff;
+  border-radius: 4.23435px;
+
+  .redtag {
+    color: #f34018;
+    &.green {
+      color: #34e36f;
+    }
+  }
+  img {
+    margin-right: 5px;
+  }
+}
 @mixin white_box {
   background: #ffffff;
   border: 0.518739px solid #e5e5e5;
@@ -159,7 +184,7 @@
   margin-top: 37px;
   padding: 31px 40px;
   width: 80%;
-  @include mq(768px) {
+  @include mq(1068px) {
     width: 100%;
   }
 }

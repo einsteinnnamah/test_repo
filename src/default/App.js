@@ -23,6 +23,8 @@ import SendMoneyIce from "../pages/Dashboard/Market/SendMoneyIce";
 import Setting from "../pages/Dashboard/Settings";
 import Notification from "../pages/Dashboard/Settings/notification";
 import Language from "../pages/Dashboard/Settings/language";
+import LoginSetting from "../pages/Dashboard/Settings/loginSetting";
+import TwoFactor from "../pages/Dashboard/Settings/twofactor";
 
 function App() {
   const user = true;
@@ -69,6 +71,8 @@ function App() {
           <Route path="settings" element={<Setting />} />
           <Route path="settings/notification" element={<Notification />} />
           <Route path="settings/language" element={<Language />} />
+          <Route path="settings/login" element={<LoginSetting />} />
+          <Route path="settings/twofactor" element={<TwoFactor />} />
         </Route>
         {/* outside dashboard */}
         <Route path="invest" element={<CardInvest />} />

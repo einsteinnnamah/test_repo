@@ -14,10 +14,12 @@ import ProcessingModal from "components/ProcessingModal";
 import jointtype from "../../../../assets/drawables/jointtype.svg";
 import perstype from "../../../../assets/drawables/perstype.svg";
 import EachBankType from "components/EachBankType";
+import { useNavigate } from "react-router-dom";
 const SetBank = () => {
   const methods = useForm();
   const [openModal, setOpenModal] = useState(false);
   const [selected, setSelected] = useState("");
+  const navigate = useNavigate();
   const onSubmit = (val) => {};
   const handleChangeType = (id) => {
     setSelected(id);
