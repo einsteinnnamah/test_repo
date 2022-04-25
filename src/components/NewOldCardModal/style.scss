@@ -1,0 +1,32 @@
+@use "../../assets/sass/index" as *;
+.pd_new_old_card_modal {
+  width: 100%;
+  .pd_new_side {
+    width: 100%;
+    img {
+      width: 100%;
+      margin: auto;
+      margin-top: 100px;
+      width: 89px;
+      display: block;
+      margin-bottom: 134px;
+    }
+  }
+  .pd_old_side {
+    .add_new {
+      border: none;
+      background: none;
+      text-decoration: underline;
+      width: 100%;
+      font-weight: 600;
+      display: block;
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      text-decoration-line: underline;
+
+      color: #173963;
+    }
+  }
+}

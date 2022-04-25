@@ -21,6 +21,13 @@
     color: black;
     font-size: 1rem;
   }
+  &.small {
+    .popBox2 {
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+    }
+  }
   .popBox2 {
     @include modalLay;
     position: relative;

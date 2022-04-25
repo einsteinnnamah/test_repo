@@ -185,6 +185,15 @@
   label {
     @include label;
   }
+  .cover_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    img {
+      margin-bottom: 8px;
+    }
+  }
 
   &.half-width {
     width: 48%;
@@ -431,6 +440,17 @@
     line-height: 15px;
     color: #000000;
   }
+  &.eachlang {
+    border-radius: 3px;
+    padding: 10px;
+    &:hover {
+      background: #173e6f;
+
+      .country_name {
+        color: white;
+      }
+    }
+  }
 }
 
 .each_number {
@@ -468,7 +488,7 @@
     .number_div {
       background: #edf5ff;
       border-radius: 5px;
-      width: 85px;
+      // width: 85px;
       padding: 10px 9.5px;
       .current_hold {
         width: 100%;

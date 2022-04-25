@@ -1,0 +1,352 @@
+@use "../../../../assets/sass/index" as *;
+.pd_eachportfolio {
+  width: 100%;
+  padding: 0 60px;
+  .back_box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 21px;
+    img {
+      margin-right: 3px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+
+      color: #173963;
+    }
+  }
+  .page_topic_box {
+    display: flex;
+    margin-bottom: 20px;
+    img {
+      width: 22px;
+      margin-right: 11px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      color: #0d458a;
+      margin-right: 5px;
+    }
+    span {
+      font-weight: 400;
+      display: flex;
+      align-items: flex-end;
+      font-size: 14px;
+      line-height: 18px;
+      color: #0d458a;
+    }
+  }
+  .portfolio_flex {
+    display: flex;
+    align-items: unset;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    //   @include mq(768px){
+    //       flex-direction: column;
+    //   }
+    .left_portfolio_side {
+      width: 65%;
+      @include mq(1000px) {
+        width: 100%;
+      }
+      .first_port {
+        width: 100%;
+        background: #ffffff;
+        border: 0.8px solid #f4f4f4;
+        box-sizing: border-box;
+        box-shadow: 0px 20px 20px #f9fbff;
+        border-radius: 18px;
+
+        .money_side {
+          position: relative;
+          padding: 29px 28px 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .amount {
+            font-weight: 400;
+            font-size: 34px;
+            margin-bottom: 10px;
+            line-height: 42px;
+            letter-spacing: -0.02em;
+
+            color: #000000;
+          }
+          .time_show {
+            position: absolute;
+            right: 28px;
+            top: 36px;
+            display: flex;
+            align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              /* identical to box height */
+
+              text-align: right;
+
+              color: #0d458a;
+            }
+          }
+        }
+        .action_wrap {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 25px 0 22px;
+          border-top: 0.8px solid #eaeaea;
+          flex-wrap: wrap;
+          //   @include mq(768px) {
+          //     margin-bottom: 10px;
+          //   }
+          button {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 13.0393px;
+            line-height: 16px;
+            background: #f5faff;
+            border: 0.6px solid #cbddf3;
+            box-sizing: border-box;
+            box-shadow: 18.4376px 9.2188px 18.4376px #edf5ff;
+            border-radius: 9.2188px;
+            padding: 11px 22px;
+            color: #173963;
+            margin-right: 24px;
+
+            margin-bottom: 10px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+            img {
+              margin-right: 5px;
+            }
+            &.buy {
+              color: white;
+              background: #3aa64c;
+            }
+          }
+        }
+      }
+      .sec_port {
+        background: #ffffff;
+        border: 0.8px solid #f4f4f4;
+        box-sizing: border-box;
+        box-shadow: 0px 20px 20px #f9fbff;
+        border-radius: 18px;
+        margin-top: 38px;
+        width: 100%;
+        .title_box {
+          display: flex;
+          padding: 25px 46px;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          border-bottom: 0.8px solid #eaeaea;
+          p.title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: #000000;
+          }
+          .dateField {
+            label {
+              font-weight: 400;
+              cursor: pointer;
+              font-size: 10px;
+              flex: auto;
+              height: 100%;
+              line-height: 12px;
+              color: #666666;
+            }
+            img {
+              margin-left: 13px;
+            }
+          }
+          input {
+            display: flex;
+            align-items: center;
+            background: #f5faff;
+            border: 0.670663px solid #cbddf3;
+            box-sizing: border-box;
+            box-shadow: 13.4133px 6.70663px 13.4133px #edf5ff;
+            border-radius: 13.4133px;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 12px;
+          }
+        }
+        .main_content {
+          padding: 23px 49px;
+          width: 100%;
+          .cover_day {
+            width: 100%;
+            margin-bottom: 32px;
+            .day {
+              font-weight: 300;
+              font-size: 12.4815px;
+              line-height: 10px;
+              margin-bottom: 22px;
+              color: #818181;
+            }
+          }
+        }
+        .view_activity {
+          width: 100%;
+          padding: 25px;
+          padding-bottom: 72px;
+          .gain_box {
+            margin-top: 26px;
+            .gain {
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 27px;
+              text-align: center;
+
+              color: #000000;
+            }
+            .amount_gained {
+              font-weight: 500;
+              font-size: 30.6476px;
+              line-height: 27px;
+              /* or 87% */
+
+              text-align: center;
+
+              margin: 5px 0 3px;
+              &.gained {
+                color: #3aa64c;
+              }
+              &.lost {
+                color: #f34018;
+              }
+              &.bought {
+                color: $primary;
+              }
+            }
+            .line_box {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              p {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+
+                color: #656565;
+              }
+              &.lost {
+                path {
+                  stroke: #f34018;
+                }
+              }
+              &.gained {
+                path {
+                  stroke: #3aa64c;
+                }
+              }
+            }
+            .trend {
+              width: 300px;
+              margin: auto;
+              margin-top: 20px;
+            }
+          }
+          .list_detail {
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            .each_detail {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 15px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              .left_Det {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 30px;
+                /* or 269% */
+
+                color: #000000;
+              }
+              .right_det {
+                display: flex;
+                align-items: center;
+                img {
+                  margin-right: 10px;
+                }
+                p {
+                  font-weight: 600;
+                  font-size: 12px;
+                  line-height: 30px;
+                  /* or 269% */
+
+                  text-align: right;
+
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+      .third_port {
+        width: 100%;
+        margin-top: 31px;
+        .chart_box {
+          @include chart_box;
+          width: 100% !important;
+        }
+      }
+      .fourth_port {
+        margin-top: 38px;
+        width: 100%;
+        .information_container {
+          @include info_container;
+          width: 100% !important;
+        }
+      }
+      .fifth_port {
+        margin-top: 40px;
+        width: 100%;
+        padding-bottom: 20px;
+        .news_flex_grid {
+          @include news_flex_grid;
+          width: 100% !important;
+        }
+      }
+      @include mq(768px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .right_portfolio_side {
+      width: 33%;
+      .watchlist {
+        width: 100%;
+        margin-bottom: 37px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mq(1000px) {
+        width: 100%;
+      }
+    }
+  }
+}

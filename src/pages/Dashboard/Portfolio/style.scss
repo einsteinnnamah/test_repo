@@ -1,0 +1,92 @@
+@use "../../../assets/sass/index" as *;
+
+.pd_portfolio {
+  button.explore {
+    font-weight: 500;
+    font-size: 14.4544px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 160px;
+    background: #3aa64c;
+    box-shadow: 0px 15.4822px 38.7056px rgba(0, 0, 0, 0.1);
+    border-radius: 11.6117px;
+    height: 42px;
+    cursor: pointer;
+  }
+  .highlight_part {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    .market_title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 4px;
+      color: #000000;
+      padding: 0 60px;
+    }
+    .desc {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 47px;
+      color: #000000;
+      padding: 0 60px;
+    }
+    button.explore {
+      margin: auto;
+      display: block;
+      margin-top: 60px;
+    }
+  }
+  .cover_portfolio {
+    .port.bold {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      color: #000000;
+      margin-bottom: 4px;
+      padding-left: 60px;
+    }
+    .port {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #5c5c5c;
+      padding-left: 60px;
+    }
+    .cover_invest {
+      padding-bottom: 30px;
+      img {
+        display: block;
+        margin: auto;
+      }
+      .show {
+        margin: 8px 0 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+      }
+      .active {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 50px;
+      }
+      .explore {
+        display: block;
+
+        margin: auto;
+      }
+    }
+  }
+}

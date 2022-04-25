@@ -1,0 +1,58 @@
+@use "../../../../assets/sass/index" as *;
+.pd_nav_card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 19px 43px;
+  .cover {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(900px) {
+      width: 100%;
+    }
+    .box_first {
+      display: flex;
+      align-items: center;
+      width: 45%;
+      @include mq(900px) {
+        width: 60%;
+      }
+      .side {
+        display: flex;
+        align-items: center;
+        &.active {
+          .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+            display: block;
+          }
+        }
+        &:first-child {
+          margin-right: 17px;
+        }
+        &:last-child {
+          margin-left: 17px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #173963;
+          margin-right: 6px;
+        }
+        .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+          color: #eaac0c !important;
+          display: none;
+        }
+      }
+      .separatorline {
+        flex-grow: 2;
+        height: 2px;
+        background-color: #b2b2b2;
+      }
+    }
+    .right {
+      @include right_nav;
+    }
+  }
+}

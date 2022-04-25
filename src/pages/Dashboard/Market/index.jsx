@@ -211,7 +211,7 @@ const MarketDashboard = () => {
                           <Trend
                             data={[0, 10, 5, 22, 3.6, 11]}
                             autoDraw
-                            autoDrawDuration={3000}
+                            autoDrawDuration={200}
                             autoDrawEasing="ease-in"
                             gradient={["#34E36F"]}
                           />

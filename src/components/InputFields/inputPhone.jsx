@@ -6,7 +6,7 @@ import dropIcon from "../../assets/drawables/dropIcon.svg";
 import { useState } from "react";
 import EachLocation from "./EachLocation";
 import { useFormContext } from "react-hook-form";
-const InputPhone = () => {
+const InputPhone = ({ label }) => {
   const countryList = [
     { img: nigeria, code: "+234", country: "Nigeria" },
     { img: england, code: "+61", country: "England" },
@@ -41,7 +41,7 @@ const InputPhone = () => {
   } = useFormContext();
   return (
     <div className="pd_input_phone">
-      <label htmlFor="">Enter mobile Number</label>
+      <label htmlFor="">{label}</label>
       <div className="pd_mobile_container">
         <div
           onClick={() => {

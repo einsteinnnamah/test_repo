@@ -4,7 +4,15 @@ import redArr from "../../assets/drawables/redArrow.svg";
 import greenArr from "../../assets/drawables/greenArrow.svg";
 import "./style.scss";
 import meter from "../../assets/drawables/meter.svg";
-const EachTopCountry = ({ flag, name, code, isMarked, rate, rateNo }) => {
+const EachTopCountry = ({
+  flag,
+  name,
+  code,
+  isMarked,
+  rate,
+  rateNo,
+  isCheck,
+}) => {
   return (
     <div className="pd_each_top_country">
       <div className="about">
@@ -19,7 +27,9 @@ const EachTopCountry = ({ flag, name, code, isMarked, rate, rateNo }) => {
         <p>{rateNo}</p>
       </div>
       <img src={meter} alt="meter" className="meter" />
-      <img src={isMarked ? plusactive : plus} alt="" className="plus" />
+      {isCheck && (
+        <img src={isMarked ? plusactive : plus} alt="" className="plus" />
+      )}
     </div>
   );
 };

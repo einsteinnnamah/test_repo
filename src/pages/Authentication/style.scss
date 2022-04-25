@@ -22,32 +22,7 @@
     }
   }
   .check_container {
-    display: flex;
-    margin: 20px 0px;
-    align-items: center;
-
-    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root {
-      padding: 0;
-    }
-    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
-    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
-      color: #eaac0c;
-    }
-    .css-1sg8fd1-MuiButtonBase-root-MuiCheckbox-root {
-      color: #eaac0c;
-    }
-    p {
-      font-weight: 300;
-      font-size: 9.63183px;
-      line-height: 12px;
-      text-align: center;
-      margin-left: 5px;
-      a {
-        text-decoration: none;
-        color: $primary;
-        font-weight: 600;
-      }
-    }
+    @include check;
   }
   .continue {
     font-weight: 400;

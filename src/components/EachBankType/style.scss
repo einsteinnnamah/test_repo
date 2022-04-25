@@ -1,0 +1,40 @@
+@use "../../assets/sass/index" as *;
+
+.pd_each_bank_type {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &.active {
+    background: #f4fff6;
+    border-radius: 10px;
+  }
+  .left_bank {
+    display: flex;
+    align-items: center;
+    .cover_box {
+      padding: 3px;
+      background: #f8f8f8;
+      border-radius: 3px;
+      margin-right: 8px;
+    }
+    .text_part {
+      p.type {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 7px;
+        color: #000000;
+      }
+      p.desc {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+
+        color: #000000;
+      }
+    }
+  }
+}

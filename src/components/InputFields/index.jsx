@@ -4,7 +4,8 @@ import InputErrorMsg from "./InputErrorMsg";
 import { useFormContext, get } from "react-hook-form";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import { SettingsOverscanOutlined } from "@mui/icons-material";
+import indicate from "../../assets/drawables/indicate.svg";
+import master from "../../assets/drawables/mastercard.svg";
 export const trapSpacesForRequiredFields = (value, required) => {
   if (required) {
     return !!value.trim();
@@ -26,6 +27,8 @@ const InputField = ({
   extraPattern,
   setvalue,
   extraValidation,
+  isMaster = false,
+  isInd = false,
   rounded = true,
   ...props
 }) => {
@@ -72,7 +75,21 @@ const InputField = ({
   }
   return (
     <div className={`form-group ${className}`}>
-      {label && <label htmlFor={id || name}>{label}</label>}
+      {label && !isInd && !isMaster && (
+        <label htmlFor={id || name}>{label}</label>
+      )}
+      {isInd && (
+        <div className="cover_label">
+          <label htmlFor={id || name}>{label}</label>
+          <img src={indicate} alt="indicator" />
+        </div>
+      )}
+      {isMaster && (
+        <div className="cover_label">
+          <label htmlFor={id || name}>{label}</label>
+          <img src={master} alt="indicator" />
+        </div>
+      )}
       <div
         className={`input-icon-wrap ${
           iconPlaceholder ? "icon-placeholder" : ""
