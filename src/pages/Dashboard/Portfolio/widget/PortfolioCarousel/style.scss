@@ -1,0 +1,97 @@
+@use "../../../../../assets/sass/index" as *;
+
+.pd_portfolio_carousel {
+  width: 100%;
+  .top_side_carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    padding-top: 0;
+    padding-left: 60px;
+    .left_side_carousel {
+      .title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 4px;
+      }
+      .desc {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #5c5c5c;
+      }
+      .btn_flex_box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        button {
+          font-weight: 400;
+          font-size: 13.3065px;
+          margin-right: 20px;
+          line-height: 16px;
+          text-align: center;
+          color: #000000;
+          padding: 10px 15px;
+          border: 1.01197px solid #c5cfdc;
+          box-sizing: border-box;
+          cursor: pointer;
+          margin-bottom: 10px;
+          background: white;
+          border-radius: 113.573px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &.active {
+            border: none;
+            background: #eaac0c;
+            color: white;
+          }
+        }
+      }
+    }
+    .right_side_carousel {
+      display: flex;
+      align-items: center;
+      .view_all {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        margin-right: 23px;
+        color: #173963;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .cover_move {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .overall_carousel {
+    width: 100%;
+    padding-left: 60px;
+    overflow: hidden;
+
+    .eachCar {
+      // style={{
+      //   height: "200px",
+      //   width: "270px",
+      //   border: "1px solid red",
+      //   marginRight: "26px",
+      // }}
+      height: 200px;
+      width: 270px;
+      border: 1px solid red;
+      margin-right: 26px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

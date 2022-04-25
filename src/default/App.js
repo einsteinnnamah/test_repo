@@ -26,6 +26,7 @@ import Language from "../pages/Dashboard/Settings/language";
 import LoginSetting from "../pages/Dashboard/Settings/loginSetting";
 import TwoFactor from "../pages/Dashboard/Settings/twofactor";
 import Portfolio from "../pages/Dashboard/Portfolio";
+import EachPortfolio from "../pages/Dashboard/Portfolio/EachPortfolio";
 
 function App() {
   const user = true;
@@ -66,6 +67,7 @@ function App() {
           <Route path="markets/:id" element={<EachMarket />} />
 
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="portfolio/:id" element={<EachPortfolio />} />
           <Route path="bank" element={<Bank />} />
           <Route path="profile" element={<Home />} />
 

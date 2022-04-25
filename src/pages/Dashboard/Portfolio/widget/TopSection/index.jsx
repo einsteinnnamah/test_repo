@@ -3,15 +3,18 @@ import down from "../../../../../assets/drawables/down.svg";
 import indicate from "../../../../../assets/drawables/indicate.svg";
 import nig from "../../../../../assets/drawables/nigeria.svg";
 import eng from "../../../../../assets/drawables/england.svg";
+import eye from "../../../../../assets/drawables/eye.svg";
+import greenArr from "../../../../../assets/drawables/greenArrow.svg";
 import "./style.scss";
-const TopSection = () => {
+const TopSection = ({ isEmpty }) => {
   const [currency, setCurrency] = useState({
     flag: nig,
     code: "Nig",
     name: "Nigerian naira",
   });
   const [display, setDisplay] = useState(false);
-
+  const [hide, setHide] = useState(false);
+  const [showBtn, setShowBtn] = useState(true);
   const currencyList = [
     {
       flag: nig,
@@ -76,6 +79,22 @@ const TopSection = () => {
           </div>
         </div>
         <img src={indicate} alt="indicate" className="indicate" />
+      </div>
+      <div className="sec_sect">
+        <div className="value">
+          <p>TOTAL PORTFOLIO VALUE</p>
+          <img src={eye} alt="eye" />
+        </div>
+        <p className="amount bold">${hide ? "*******" : "120,345.20"}</p>
+        <p className="growth bold">
+          {" "}
+          <img src={greenArr} alt="greenarrow" /> +1.47% ($3.21)
+        </p>
+      </div>
+      <div className="third_sect">
+        {!isEmpty && showBtn && (
+          <button className={`explore`}>Explore Market</button>
+        )}
       </div>
     </div>
   );

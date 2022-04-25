@@ -7,6 +7,9 @@
   justify-content: space-between;
   border-bottom: 0.950019px solid #eaeaea;
   padding: 25px 49px;
+  &:last-child {
+    border-bottom: 0;
+  }
   .left {
     width: 60%;
     @include mq(768px) {

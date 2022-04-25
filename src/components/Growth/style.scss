@@ -1,0 +1,16 @@
+.pd_growth_show {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 3px;
+  }
+  p {
+    color: #3aa64c !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 14px !important;
+    &.red {
+      color: #f34018 !important;
+    }
+  }
+}

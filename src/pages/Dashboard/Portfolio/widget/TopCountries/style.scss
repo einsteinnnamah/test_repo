@@ -1,0 +1,29 @@
+@use "../../../../../assets/sass/index" as *;
+.pd_top_countries {
+  background: #ffffff;
+  border: 0.738279px solid #f4f4f4;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  box-shadow: 0px 18.457px 18.457px #f9fbff;
+  border-radius: 16.6113px;
+
+  width: 100%;
+  .first_text {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 35px;
+    &.sub {
+      margin-bottom: 9px;
+    }
+  }
+  .sect_text {
+    margin-bottom: 29px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+}
