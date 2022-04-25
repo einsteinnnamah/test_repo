@@ -12,7 +12,7 @@ import MarketPage from "../pages/Market/index";
 import CurrencyPage from "../pages/Market/currencypage";
 import DashboardLayout from "components/Templates/dahsboard";
 import Home from "../pages/Dashboard/Home";
-import Bank from "../pages/Dashboard/Bank";
+// import Bank from "../pages/Dashboard/Bank";
 import MarketDashboard from "../pages/Dashboard/Market";
 import EachMarket from "../pages/Dashboard/Market/EachMarket";
 import CardInvest from "../pages/Dashboard/Market/Invest/index";
@@ -27,6 +27,15 @@ import LoginSetting from "../pages/Dashboard/Settings/loginSetting";
 import TwoFactor from "../pages/Dashboard/Settings/twofactor";
 import Portfolio from "../pages/Dashboard/Portfolio";
 import EachPortfolio from "../pages/Dashboard/Portfolio/EachPortfolio";
+import Bank from "../pages/Dashboard/Bank/CreateCard/index";
+import UserCard from "../pages/Dashboard/Bank/BankCard/index"
+import CardTrans from "../pages/Dashboard/Bank/BankCard/CardTrans";
+import Account from "../pages/Dashboard/Bank/Account";
+import Overview from "../pages/Dashboard/Referral/Overview";
+import ByCurrency from "../pages/Dashboard/Referral/ByCurrency";
+import Profile from "../pages/Dashboard/Profile";
+
+
 
 function App() {
   const user = true;
@@ -77,6 +86,14 @@ function App() {
           <Route path="settings/language" element={<Language />} />
           <Route path="settings/login" element={<LoginSetting />} />
           <Route path="settings/twofactor" element={<TwoFactor />} />
+          <Route path="bank/UserCard" element={<UserCard />} />
+          <Route path="bank/UserCard/CardTrans" element={<CardTrans />} />
+          <Route path="bank/UserCard" element={<CardTrans />} />
+          <Route path="bank/Account" element={<Account />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="referral" element={<Overview />} />
+          <Route path="referral/ByCurrency" element={<ByCurrency/>} />
+          <Route path="settings" element={<Home />} />
         </Route>
         {/* outside dashboard */}
         <Route path="invest" element={<CardInvest />} />

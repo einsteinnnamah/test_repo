@@ -1,0 +1,26 @@
+.deactivate_pin h3{
+    color: #0D458A;
+    margin-bottom: 56px;
+}
+
+.deactivate_pin_details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deactivate_pin_details span{
+    margin-bottom: 19px;
+    font-weight: 500;
+}
+
+.deactivate_pin_details p{
+    margin-top: 27px;
+    color: #0D458A;
+    font-weight: bold;
+}
+
+.deactivate_confirm{
+    cursor: pointer;
+}

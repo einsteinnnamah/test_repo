@@ -1,0 +1,100 @@
+.currency_view{
+    display: flex;
+    justify-content: space-around;
+}
+
+.currency_details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 663px;
+    height: 200px;
+    box-shadow: 0px 18px 18px rgba(243, 243, 243, 0.4);
+    border-radius: 16px;
+    border: 0.5px solid #E5E5E5;
+}
+
+.all_currency{
+    display: flex;
+}
+
+
+.by_usd{
+    width: 100px;
+    height: 40px;
+    background-color: #DEEDFF;
+    border-radius: 100px;
+    border: 0.81px solid rgba(23, 57, 99, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.usa{
+    display: flex;
+    align-items: center;
+}
+
+.usa img{
+    margin-right: 5px;
+}
+
+.by_ngn{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.81px solid rgba(222, 222, 222, 1);
+    border-radius: 100px;
+    margin-left: 21px;
+    cursor: pointer;
+}
+
+.ngn img{
+    margin-right: 5px;
+}
+
+.ngn{
+    display: flex;
+    align-items: center;
+}
+
+.by_gbp{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.81px solid rgba(222, 222, 222, 1);
+    border-radius: 100px;
+    margin-left: 21px;
+    cursor: pointer;
+}
+
+.gbp img{
+    margin-right: 5px;
+}
+
+
+.gbp{
+    display: flex;
+    align-items: center;
+}
+
+.support_btn{
+    width: 118px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0D458A;
+    font-weight: bold;
+}
+
+.support_btn img{
+    margin-right: 10px;
+}
+
+

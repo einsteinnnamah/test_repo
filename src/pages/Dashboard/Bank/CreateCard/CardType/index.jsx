@@ -1,11 +1,6 @@
 import React from 'react'
-import NewCard from '../NewCard'
 import './style.scss'
-import { useState } from 'react'
-import Modal from "components/ModalPopUp";
-const CardType = () => {
-  const [openModal, setOpenModal, ] = useState(false);
-
+const CardType = ({setOpenModal2, setOpenModal}) => {
   return (
     <div className='card_type'>
         <h3>Select Card Type</h3>
@@ -34,19 +29,17 @@ const CardType = () => {
             </div>
 
 
-            <div className='bank_card_btn' onClick={() => {
-                  setOpenModal(true);
+                <div className='btn' onClick={() => {
+                    setOpenModal2(true);
+                    setOpenModal(false);
                 }}>
-                <button  type="submit">Proceed</button>
+                    <button  style={{backgroundColor: "#173E6F"}} type="submit">Proceed</button>
+
+                </div>
+
 
             </div>
 
-
-            </div>
-
-            <Modal closeModal={() => setOpenModal(false)} openModal={openModal}>
-               <NewCard />
-            </Modal>
 
 
         </div>

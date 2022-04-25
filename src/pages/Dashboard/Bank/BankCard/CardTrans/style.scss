@@ -1,0 +1,90 @@
+.card_trans_items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.back{
+    margin-bottom: 27px;
+    
+}
+
+.back p{
+    padding: 20px;
+    color: #173963;
+    font-weight: 300;
+    font-size: 12.3969px;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+
+.id_card{
+    margin-bottom: 15px;
+}
+
+.card_btn{
+    margin-top: 18px;
+    display: flex;
+    cursor: pointer;
+    color: #173963;
+}
+
+
+.card_details{
+    box-shadow: 0px 20px 20px #F9FBFF;
+    border-radius: 18px;
+    width:370px;
+    height: 365.08px;
+    border: 0.8px solid #F4F4F4;
+    padding: 40px;
+}
+
+
+.card_details h3{
+    margin-top: 52px;
+}
+
+.card_details hr{
+    margin-top: 16px;
+    border: 0.8px solid #EAEAEA;
+}
+
+.card_id{
+    margin-top: 36px;
+}
+
+.card_num{
+    margin-top: 36px;
+}
+
+.card_date{
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill_address{
+    margin-top: 36px;
+}
+
+.card_btn option{
+    color: #173963;
+}
+
+.manage_card{
+    position: relative;
+    margin-left: 150px;
+}
+
+.manage_card_options{
+    position: absolute;
+    font-size: 12px;
+}
+
+.manage_card_options div{
+    margin-top: 10px;
+}
+
+
+
+
