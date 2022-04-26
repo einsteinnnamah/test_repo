@@ -43,7 +43,7 @@ const ChangePIN = () => {
             separator={<span> </span>}
           />
         </div>
-        <div className='btn'>
+        <div className='proceed_btn'>
           <button style={{backgroundColor: '#173963'}}>Change PIN</button>
         </div>
     </div>

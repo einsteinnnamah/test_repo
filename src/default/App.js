@@ -78,9 +78,10 @@ function App() {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="portfolio/:id" element={<EachPortfolio />} />
           <Route path="bank" element={<Bank />} />
-          <Route path="profile" element={<Home />} />
-
-          <Route path="referral" element={<Home />} />
+          <Route path="profile" element={<Profile />} />
+          
+  
+          <Route path="referral" element={<Overview />} />
           <Route path="settings" element={<Setting />} />
           <Route path="settings/notification" element={<Notification />} />
           <Route path="settings/language" element={<Language />} />
@@ -90,8 +91,6 @@ function App() {
           <Route path="bank/UserCard/CardTrans" element={<CardTrans />} />
           <Route path="bank/UserCard" element={<CardTrans />} />
           <Route path="bank/Account" element={<Account />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="referral" element={<Overview />} />
           <Route path="referral/ByCurrency" element={<ByCurrency/>} />
           <Route path="settings" element={<Home />} />
         </Route>

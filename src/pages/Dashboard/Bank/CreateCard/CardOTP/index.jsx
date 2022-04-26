@@ -38,7 +38,7 @@ const CardOTP= ({setOpenModal3, setOpenModal4}) => {
           setOpenModal4(true);
           setOpenModal3(false);
         }}
-      className='btn'>
+      className='proceed_btn'>
         <button  
         style={{backgroundColor: "#173E6F"}}>Proceed</button>
       </div>

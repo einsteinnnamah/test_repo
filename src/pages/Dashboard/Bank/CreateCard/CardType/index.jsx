@@ -29,7 +29,7 @@ const CardType = ({setOpenModal2, setOpenModal}) => {
             </div>
 
 
-                <div className='btn' onClick={() => {
+                <div className=' proceed_btn' onClick={() => {
                     setOpenModal2(true);
                     setOpenModal(false);
                 }}>
