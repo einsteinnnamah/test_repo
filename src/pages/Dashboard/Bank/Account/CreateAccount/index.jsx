@@ -1,11 +1,13 @@
 import React from 'react'
 import AccountNavbar from '../AccountNavbar'
-
+import './style.scss'
 const CreateAccount = () => {
   return (
-    <div>
+    <div className='create_account'>
         <AccountNavbar />
-        hello
+        <div className='create_account_details'>
+            <h3>Select Currency</h3>
+        </div>
     </div>
   )
 }

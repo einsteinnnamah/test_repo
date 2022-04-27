@@ -10,6 +10,8 @@ import avatar from "assets/drawables/avatar.png";
 import bell from "assets/drawables/bell.svg";
 import arr from "assets/drawables/sidebar/arr.svg";
 import stack from "assets/drawables/sidebar/stack.svg";
+import circle from "assets/drawables/circleimg.png"
+import liner from "assets/drawables/liner.png"
 const AccountNavbar = ({ setToggleNav, toggleNav }) => {
   const [toggle, setToggle] = useState(true);
   const handleToggle = () => {
@@ -17,6 +19,15 @@ const AccountNavbar = ({ setToggleNav, toggleNav }) => {
   };
   return (
     <div className="pd_navbar_dashboard">
+      <div className="account_navbar_title">
+        Create account
+      </div>
+      <div className="account_currency_bar">
+        <p style={{color: '#173963'}}>Currency</p> 
+        <img className="navbar_circle" src={circle}></img>
+        <img className="navbar_liner" src={liner}></img>
+        <p style={{color: '#B3B3B3'}}>Verification</p>
+      </div>
       <div className=" accountnavbar right">
         <div className="cover_drop">
           <DropDownWrapper
