@@ -35,6 +35,7 @@ import Overview from "../pages/Dashboard/Referral/Overview";
 import ByCurrency from "../pages/Dashboard/Referral/ByCurrency";
 import Profile from "../pages/Dashboard/Profile";
 import Otherpage from "../pages/otherpage";
+import CreateAccount from "../pages/Dashboard/Bank/Account/CreateAccount";
 
 
 
@@ -92,15 +93,18 @@ function App() {
           <Route path="bank/UserCard/CardTrans" element={<CardTrans />} />
           <Route path="bank/UserCard" element={<CardTrans />} />
           <Route path="bank/Account" element={<Account />} />
+          
           <Route path="referral/ByCurrency" element={<ByCurrency/>} />
           <Route path="settings" element={<Home />} />
         </Route>
         {/* outside dashboard */}
+        
         <Route path="invest" element={<CardInvest />} />
         <Route path="/invest/setcard" element={<SetCard />} />
         <Route path="/invest/setbank" element={<SetBank />} />
         <Route path="/invest/receipt" element={<Receipt />} />
         <Route path="/invest/sendmoney" element={<SendMoneyIce />} />
+        <Route path="Account/CreateAccount" element={<CreateAccount />} />
         <Route path="Otherpage" element={<Otherpage />} />
       </Routes>
     </div>
