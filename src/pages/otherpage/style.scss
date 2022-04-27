@@ -1,0 +1,87 @@
+
+.otherpage_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.otherpage_text h1{
+    font-weight: 700;
+    font-size: 42.7576px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.otherpage_search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 57px;
+    width: 564.15px;
+    height: 57.1px;
+    background: #FFFFFF;
+    border: 0.841269px solid #E5E5E5;
+    box-shadow: 0px 28.3779px 28.3779px rgba(243, 243, 243, 0.4);
+    border-radius: 13.5636px;
+    padding: 20px;
+}
+
+.otherpage_text input {
+    width: 564.15px;
+    height: 57.1px;
+    border: none;
+    outline:none;
+    margin-left: 20px;
+}
+
+
+.otherpage_btn{
+    margin-top: 45px;
+}
+
+.otherpage_btn span{
+    margin: 20px;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 112.23px;
+}
+
+.otherpage_card{
+    margin-top: 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    column-gap: 31px;
+    row-gap: 70px;
+}
+
+
+
+.otherpage_card_items{
+    width: 399.81px;
+    height: 428.37px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.otherpage_card_items video{
+    border-radius: 20px 20px 0 0;
+}
+
+
+.otherpage_card_items div{
+    background-color: white;
+    padding: 20px;
+}
+
+.otherpage_card_items div h3{
+    font-size: 20px;
+}
+
+.otherpage_card_items div p{
+    margin-top: 42px;
+    font-size: 12px;
+}

@@ -30,7 +30,7 @@ const NewCard = ({setOpenModal3, setOpenModal2}) => {
               <p>Currency</p>
               <div className='currencies' onClick={() => showSelect(!onSelect)}>Select Currency <img src={down}></img>{onSelect === true ? '' : ''}</div>
               { onSelect && 
-            <div className='show_currency'>
+            <div className='choose_show_currency'>
               <div className='search_currency'>
                 <input  placeholder='Search for currency'/>
                

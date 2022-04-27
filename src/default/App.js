@@ -34,6 +34,7 @@ import Account from "../pages/Dashboard/Bank/Account";
 import Overview from "../pages/Dashboard/Referral/Overview";
 import ByCurrency from "../pages/Dashboard/Referral/ByCurrency";
 import Profile from "../pages/Dashboard/Profile";
+import Otherpage from "../pages/otherpage";
 
 
 
@@ -100,6 +101,7 @@ function App() {
         <Route path="/invest/setbank" element={<SetBank />} />
         <Route path="/invest/receipt" element={<Receipt />} />
         <Route path="/invest/sendmoney" element={<SendMoneyIce />} />
+        <Route path="Otherpage" element={<Otherpage />} />
       </Routes>
     </div>
   );
