@@ -1,0 +1,60 @@
+
+.bank_account{
+    padding: 45px;
+}
+
+.account_currency_info h3{
+    font-size: 26px;
+}
+
+.account_currency{
+    display: flex;
+    align-items: center;
+}
+
+.account_currency_type{
+    margin-left: 10px ;
+    padding: 5px;
+    background: #EFF5FF;
+    border-radius: 8.38704px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #173963;
+}
+
+.bank_account_cards{
+    display: flex;
+    align-items: center;
+}
+
+.no_account_card{
+    top: 25px;
+    position: relative;
+}
+
+.account_card{
+    cursor: pointer;
+    margin-top: 51px;
+    width: 269.87px;
+    height: 129.03px;
+    background: #F6F6F6;
+    border: 1.06051px solid #F4F4F4;
+    border-radius: 12.8256px;
+    padding: 20px;
+}
+
+.account_card span{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.account_card h3{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.account_card h3 img {
+    position: fixed;
+    margin-left: 12rem;
+}

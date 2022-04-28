@@ -13,9 +13,9 @@ const Account = () => {
         <Link style={{ textDecoration: 'none' , color: '#525252'}} to="/dashboard/bank"><div onClick={""}>Card</div></Link>
         </div>
         <Link style={{ textDecoration: 'none' , color: '#525252'}} to="/Account/CreateAccount">
-        <div className='empty_card'>
-          <p>+ Create account</p>
-        </div> </Link>
+          <div className='empty_card'>
+            <p>+ Create account</p>
+          </div> </Link>
         <div className='no_account'>
         <img src={wallets}></img>
         you have no account

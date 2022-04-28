@@ -1,0 +1,82 @@
+.account_balance_details{
+    height: 124.81px;
+    background: #FFFFFF;
+    border: 0.784026px solid #E5E5E5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.view_balance_details{
+    display: flex;
+    margin-left: 20px;
+}
+
+.view_balance_details .currency_logo{
+    margin-right: 15px;
+}
+
+.account_balance_properties{
+    display: flex;
+}
+
+
+.balance_property{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #F5FAFF;
+    border: 0.6px solid #CBDDF3;
+    box-sizing: border-box;
+    box-shadow: 18.4376px 9.2188px 18.4376px #EDF5FF;
+    border-radius: 9.2188px;
+}
+
+.balance_transaction_history{
+    margin: 0 auto;
+    width: 1067.27px;
+    height: 551.13px;
+    background: #FFFFFF;
+    border: 0.8px solid #F4F4F4;
+    box-shadow: 0px 20px 20px #F9FBFF;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+
+.trans_title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trans_title span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #F5FAFF;
+    border: 0.670663px solid #CBDDF3;
+    box-sizing: border-box;
+    box-shadow: 13.4133px 6.70663px 13.4133px #EDF5FF;
+    border-radius: 13.4133px;
+}
+
+.trans_title p{
+    font-weight: bold;
+}
+
+.trans_title span img{
+    margin-left: 20px;
+}
+
+.trans_nodata_icon{
+    margin-top: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}

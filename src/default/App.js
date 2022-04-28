@@ -36,6 +36,10 @@ import ByCurrency from "../pages/Dashboard/Referral/ByCurrency";
 import Profile from "../pages/Dashboard/Profile";
 import Otherpage from "../pages/otherpage";
 import CreateAccount from "../pages/Dashboard/Bank/Account/CreateAccount";
+import AccountCreated from "../pages/Dashboard/Bank/Account/AccountCreated";
+import NoAccountTransaction from "../pages/Dashboard/Bank/Account/NoAccountTransaction";
+import ShowTransactionDetails from "../pages/Dashboard/Bank/Account/ShowTransactionDetails";
+import ViewTransactionDetails from "../pages/Dashboard/Bank/Account/ViewTransactionDetails";
 
 
 
@@ -93,7 +97,10 @@ function App() {
           <Route path="bank/UserCard/CardTrans" element={<CardTrans />} />
           <Route path="bank/UserCard" element={<CardTrans />} />
           <Route path="bank/Account" element={<Account />} />
-          
+          <Route path="bank/Account/AccountCreated" element={<AccountCreated />} />
+          <Route path="bank/Account/AccountCreated/NoAccountTransaction" element={<NoAccountTransaction />} />
+          <Route path="bank/Account/AccountCreated/ShowTransactionDetails" element={<ShowTransactionDetails />} />
+          <Route path="bank/Account/AccountCreated/ViewTransactionDetails" element={<ViewTransactionDetails />} />
           <Route path="referral/ByCurrency" element={<ByCurrency/>} />
           <Route path="settings" element={<Home />} />
         </Route>

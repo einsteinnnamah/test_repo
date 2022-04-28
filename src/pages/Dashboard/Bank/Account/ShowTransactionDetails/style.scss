@@ -1,0 +1,66 @@
+
+
+
+
+.full_trans_info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trans_option_info{
+    display: flex;
+    align-items: center;
+}
+
+.trans_sends{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32.67px;
+    height: 34.58px;
+    background: #F2F8FF;
+    border-radius: 6px;
+}
+
+.trans_name_info{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.to_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 25px;
+    background: #DBEBFF;
+    border-radius: 4px;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+
+.to_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.to_text h3{
+    color: #173E6F;
+    font-size: 14px;
+}
+
+.to_text p{
+    font-size: 12px;
+}
+
+.to_img{
+    margin-left: 50px;
+    cursor: pointer;
+}
+

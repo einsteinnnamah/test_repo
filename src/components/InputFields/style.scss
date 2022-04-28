@@ -380,17 +380,7 @@
       @include label;
     }
     .drop_box {
-      background: #ffffff;
-      border: 0.7px solid #c9c9c9;
-      box-sizing: border-box;
-      border-radius: 6px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-
-      padding: 0 21px;
-      position: relative;
-      height: 48px;
+      @include drop_box;
       input {
         border: none;
         background: none;
@@ -413,6 +403,89 @@
 
   .drop_down {
     @include drop_down;
+    overflow: hidden;
+  }
+  
+}
+
+.account_currency_selector{
+    background-color: white !important;
+    width: 459.93px !important;
+}
+
+.account_select_drop{
+  width: 462.63px !important;
+}
+
+.show_mini_details{
+  display: flex;
+  align-items: center;
+}
+
+.account_droper{
+  margin-left: 25rem;
+  position: fixed;
+}
+
+
+.pd_convert_flag_drop_down {
+    position: relative;
+    background: #eff5ff;
+    border-radius: 6.55855px;
+    padding: 13px 9.8px;
+    width: 110px;
+  .showCurrency {
+  
+
+    div {
+      font-weight: 400;
+      font-size: 15.3529px;
+      line-height: 19px;
+      color: #173963;
+      margin: 0 9px;
+      cursor: pointer;
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+  .drop_box {
+    @include drop_box;
+    width: 100%;
+    border: none;
+    border-bottom: 0.7px solid #dbdbdb;
+    border-radius: 0;
+    input {
+      border: none;
+      background: none;
+      outline: none;
+      width: 90%;
+      height: 100%;
+    }
+    .search {
+      // display: none;
+      margin-right: 9.88px;
+    }
+  }
+  .drop_down {
+    // display: none;
+    @include drop_down;
+    overflow: hidden;
+    width: 301px;
+    right: 0px;
+    top: 50px;
+    padding: 0 !important;
+    padding-bottom: 30px !important;
+    background: #ffffff;
+    border: 0.7px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 10px;
+    .overflow {
+      padding: 26px 20px 40px;
+    }
+    // &.show {
+    //   display: block;
+    // }
   }
 }
 .pd_each_location {
@@ -521,6 +594,20 @@
       margin-top: 0;
       left: 0;
       top: 48px;
+    }
+  }
+  .msg_side {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 3px;
+    }
+    p {
+      margin-top: 2px;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 18px;
+      color: #000000;
     }
   }
 }
