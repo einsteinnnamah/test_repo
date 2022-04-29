@@ -7,6 +7,7 @@ import right_sider from "assets/drawables/flags/right_sider.png"
 import { Link } from 'react-router-dom'
 import ngn from 'assets/drawables/flags/Nigeria.png'
 import usd from 'assets/drawables/flags/USA.png'
+import smallusd from 'assets/drawables/flags/smallusa.png'
 import arrow from 'assets/drawables/flags/arrow.png'
 const ViewTransactionDetails = () => {
   return (
@@ -33,30 +34,25 @@ const ViewTransactionDetails = () => {
             </div>
             <div className='all_trans_details'>
                 <h2>534.23 USD</h2>
-                <div className='view_full_details'>
-                    <div>Reference Code</div>
-                    <span>AGTSJIU685</span>
+                <div className='view_full_trans'>
+                    <div className='full_trans_title'>
+                        <p>Reference Code</p>
+                        <p>Amount tendered</p>
+                        <p>Currency</p>
+                        <p>Exchange Rate</p>
+                        <p>Date & time</p>
+                        <p>Available Balance</p>
+                    </div>
+                    <div className='full_trans_file'>
+                    <p>AGTJIU856</p>
+                    <p>522USD</p>
+                    <p><img src={smallusd}></img> USD</p>
+                    <p>$1=#570</p>
+                    <p>01.02.2022 13:09</p>
+                    <p>$30:001.53</p>
+                    </div>
                 </div>
-                <div className='view_full_details' style={{marginTop: '30px'}}>
-                    <div>Amount tendered</div>
-                    <span>553USD</span>
-                </div>
-                <div className='view_full_details' style={{marginTop: '30px'}}>
-                    <div>Currency</div>
-                    <span>USD</span>
-                </div>
-                <div className='view_full_details' style={{marginTop: '30px'}}>
-                    <div>Exchange rate</div>
-                    <span>$1 = #570</span>
-                </div>
-                <div className='view_full_details' style={{marginTop: '30px'}}>
-                    <div>Date & time</div>
-                    <span>01.02.2022 13:09</span>
-                </div>
-                <div className='view_full_details' style={{marginTop: '30px'}}>
-                    <div>Available Balance</div>
-                    <span>$30,001.56</span>
-                </div>
+               
             </div>
 
         </div>

@@ -10,22 +10,27 @@
 
 .info_currency_details{
     margin-right: 253px;
-    display: flex;
-    align-items: center;
 }
 
 .info_currency_details img{
     padding: 5px;
 }
 
-.view_full_details {
-    margin-top:20px ;
+.view_full_trans{
     display: flex;
+    p{
+        margin-top: 20px;
+    }
 }
 
-.view_full_details span{
-    margin-left: 150px;
-    float: right;
+.full_trans_title{
+    text-align: left;
+   
+}
+
+.full_trans_file{
+    text-align: right;
+    margin-left: 100px;
 }
 
 .all_trans_details{
@@ -33,4 +38,8 @@
     height: 360px;
     text-align: center;
     padding-left: 100px;
+    h2{
+        color: #173E6F;
+    }
 }
+

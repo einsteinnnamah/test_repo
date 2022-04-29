@@ -1,0 +1,67 @@
+.account_balance_details{
+    height: 124.81px;
+    background: #FFFFFF;
+    border: 0.784026px solid #E5E5E5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.view_balance_details{
+    display: flex;
+    margin-left: 20px;
+}
+
+.view_balance_details .currency_logo{
+    margin-right: 15px;
+}
+
+.account_balance_properties{
+    display: flex;
+}
+
+
+.balance_property{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #F5FAFF;
+    border: 0.6px solid #CBDDF3;
+    box-sizing: border-box;
+    box-shadow: 18.4376px 9.2188px 18.4376px #EDF5FF;
+    border-radius: 9.2188px;
+    cursor: pointer;
+}
+
+.balance_property span{
+    display: flex;
+    align-items: center;
+}
+
+.other_balance_menu{
+    position: relative;
+}
+
+.more_menu_options{
+    padding: 20px;
+    position: absolute;
+    width: 231.91px;
+    height: 169.25px;
+    background-color: white;
+    border: 0.8px solid #F4F4F4;
+    box-shadow: 0px 20px 20px #F9FBFF;
+    border-radius: 18px;
+    top: 3rem;
+    right: 20%;
+}
+
+.more_menu_options p{
+    margin-top: 20px;
+}
+
+
+
+
